@@ -162,11 +162,11 @@ p, ul, ol {
 
 pre {
 	@include mq(tabletp) {
-		font-size: $p-medium;
+		font-size: $code-medium;
 	}
 
 	@include mq(laptop) {
-		font-size: $p-large;
+		font-size: $code-large;
 	}
 }
 
