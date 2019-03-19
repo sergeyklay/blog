@@ -158,4 +158,4 @@ advanced_settings:
   analytics_code: ""
   custom_styles: ""
   header_js: ""
-  footer_js: ""
+  footer_js: "<script>if (window.netlifyIdentity) {window.netlifyIdentity.on('init', user => {if (!user) {window.netlifyIdentity.on('login', () => {document.location.href = '/admin/';});}});}</script>"
