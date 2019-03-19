@@ -160,6 +160,16 @@ p, ul, ol {
 	}
 }
 
+pre {
+	@include mq(tabletp) {
+		font-size: $p-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $p-large;
+	}
+}
+
 ul, ol {
 	list-style-position: inside;
 }
@@ -427,6 +437,6 @@ section {
 	}
 
 	@include mq(laptop) {
-		
+
 	}
 }
