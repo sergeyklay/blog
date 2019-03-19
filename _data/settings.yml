@@ -145,7 +145,8 @@ font_settings:
   code:
     small_size: 12
     medium_size: 14
-    large_size: 18
+    large_size: 16
+    line_height: 1.2
   blockquote:
     small_size: 25
     medium_size: 35

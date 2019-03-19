@@ -161,13 +161,20 @@ p, ul, ol {
 }
 
 pre {
-	@include mq(tabletp) {
-		font-size: $code-medium;
-	}
+    font-size: $code-small;
+    line-height: $code-lineheight;
 
-	@include mq(laptop) {
-		font-size: $code-large;
-	}
+    @include mq(tabletp) {
+	font-size: $code-medium;
+    }
+
+    @include mq(laptop) {
+	font-size: $code-large;
+    }
+}
+
+code {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace
 }
 
 ul, ol {
