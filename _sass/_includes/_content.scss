@@ -34,9 +34,9 @@
 			max-width: 70%;
 		}
 	}
-	
+
 	h1 {
-		
+
 		@include mq(tabletp) {
 			white-space: pre-line;
 		}
@@ -65,7 +65,7 @@
 		padding: 40px 60px 60px;
 	}
 
-	h1, h2, h3, h4, h5, h6, p, ul, ol {
+	h1, h2, h3, h4, h5, h6, p, ul, ol, pre {
 		margin-left: auto;
 		margin-right: auto;
 
@@ -213,7 +213,7 @@
 				padding: 20px;
 			}
 		}
-		
+
 		tr {
 
 			&:nth-child(2n) {
