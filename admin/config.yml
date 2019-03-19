@@ -5,6 +5,11 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "/images"
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+  
 collections:
   - name: "post"
     label: "Post"
