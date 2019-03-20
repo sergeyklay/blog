@@ -160,10 +160,13 @@ p, ul, ol {
 	}
 }
 
+pre, code, samp, kbd {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 code {
     background-color: #f3f3f3;
     padding: .2em .4em;
-    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 pre {
@@ -177,10 +180,10 @@ pre {
     @include mq(laptop) {
 	font-size: $code-large;
     }
-}
 
-pre code {
-    background-color: transparent;
+    code {
+        background-color: transparent;
+    }
 }
 
 ul, ol {
