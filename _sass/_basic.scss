@@ -160,6 +160,12 @@ p, ul, ol {
 	}
 }
 
+code {
+    background-color: #f3f3f3;
+    padding: .2em .4em;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 pre {
     font-size: $code-small;
     line-height: $code-lineheight;
@@ -173,8 +179,8 @@ pre {
     }
 }
 
-code {
-    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace
+pre code {
+    background-color: transparent;
 }
 
 ul, ol {
