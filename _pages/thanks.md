@@ -1,6 +1,7 @@
 ---
-title: Контактная форма
-subtitle: Связаться со мной
+title: 'Спасибо, что связались'
+subtitle: Ваше сообщение будет мне отправлено в ближайшее время
 description: Сергей Яковлев
-featured_image: /images/demo/demo-portrait.jpg
+featured_image: /images/img_20171022_141837.jpg
 ---
+Спасибо, что связались. Я постараюсь ответить в ближайшее время.
