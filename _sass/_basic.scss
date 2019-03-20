@@ -160,6 +160,34 @@ p, ul, ol {
 	}
 }
 
+pre, code, samp, kbd {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+code {
+    background-color: #f3f3f3;
+    padding: .2em .4em;
+}
+
+pre {
+    margin-top: 1em;
+    font-size: $code-small;
+    line-height: $code-lineheight;
+
+    @include mq(tabletp) {
+	font-size: $code-medium;
+    }
+
+    @include mq(laptop) {
+	font-size: $code-large;
+    }
+
+    code {
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
 ul, ol {
 	list-style-position: inside;
 }
@@ -427,6 +455,6 @@ section {
 	}
 
 	@include mq(laptop) {
-		
+
 	}
 }

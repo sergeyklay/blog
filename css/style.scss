@@ -109,6 +109,11 @@ $p-weight: {{ site.data.settings.font_settings.p.weight }};
 $p-spacing: {{ site.data.settings.font_settings.p.letter_spacing }}em;
 $p-lineheight: {{ site.data.settings.font_settings.p.line_height }};
 
+$code-small: {{ site.data.settings.font_settings.code.small_size }}px;
+$code-medium: {{ site.data.settings.font_settings.code.medium_size }}px;
+$code-large: {{ site.data.settings.font_settings.code.large_size }}px;
+$code-lineheight: {{ site.data.settings.font_settings.p.line_height }};
+
 $blockquote-small: {{ site.data.settings.font_settings.blockquote.small_size }}px;
 $blockquote-medium: {{ site.data.settings.font_settings.blockquote.medium_size }}px;
 $blockquote-large: {{ site.data.settings.font_settings.blockquote.large_size }}px;
@@ -153,5 +158,3 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 
 @import "_includes/_portfolio";
 @import "_includes/_blog";
-
-
