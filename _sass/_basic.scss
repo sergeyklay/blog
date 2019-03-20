@@ -170,6 +170,7 @@ code {
 }
 
 pre {
+    margin-top: 1em;
     font-size: $code-small;
     line-height: $code-lineheight;
 
@@ -183,6 +184,7 @@ pre {
 
     code {
         background-color: transparent;
+        padding: 0;
     }
 }
 
