@@ -30,4 +30,4 @@ This will start a server on port 4000.
 
 ## Copyright & Licenses
 
-The content of this site is licensed under the [CC BY](https://creativecommons.org/licenses/by/4.0/).
+The content of this site is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
