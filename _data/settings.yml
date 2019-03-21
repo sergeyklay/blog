@@ -1,8 +1,8 @@
 basic_settings:
-  site_title: Serghei's Blog
-  site_tagline: My personal thoughts
+  site_title: Сергей Яковлев
+  site_tagline: Мой блог — это мой блокнот, моя мастерская, место где я делюсь своим опытом и открытиями
   favicon_image: /images/favicon.png
-  site_description: 'The site where Serghei posts his thoughts'
+  site_description: 'Персональный блог Сергея Яковлева'
   site_keywords: 'phalcon, zephir, языки, грамматика, грамматика, компиляторы'
   site_baseurl: 'https://serghei.blog'
 
@@ -13,11 +13,11 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Latest'
+    - title: 'Статьи'
       url: '/'
-    - title: 'About'
+    - title: 'Обо мне'
       url: '/about'
-    - title: 'Contact'
+    - title: 'Контакты'
       url: '/contact'
 
 grid_settings:
@@ -27,7 +27,7 @@ contact_settings:
   form_action: 'https://formspree.io/sadhooklay@gmail.com'
   confirmation_url: '/thanks'
   email_subject: 'Contact form submission'
-  send_button_text: 'Send Message'
+  send_button_text: 'Отправить'
 
 social_settings:
   facebook_url: 'http://facebook.com/sergey.klay'
