@@ -1,6 +1,6 @@
 basic_settings:
   site_title: Сергей Яковлев
-  site_tagline: Мой блог — это мой блокнот, моя мастерская, место где я делюсь своим опытом и открытиями
+  site_tagline: Мой блокнот, моя мастерская, место где я делюсь своим опытом и открытиями
   favicon_image: /images/favicon.png
   site_description: 'Персональный блог Сергея Яковлева'
   site_keywords: 'phalcon, zephir, языки, грамматика, грамматика, компиляторы'
