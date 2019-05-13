@@ -31,3 +31,4 @@ This will start a server on port 4000.
 ## Copyright & Licenses
 
 The content of this site is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+Theme https://jekyllthemes.io/theme/journal-personal-jekyll-theme
