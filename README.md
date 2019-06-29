@@ -1,9 +1,6 @@
 # Serghei's blog
 
 You're looking at the source code of my brand-spanking new blog.
-Feel free to fork and mess around with it.
-
-You can adapt it to your own needs or improve it if you want.
 
 ## How to try it out
 
