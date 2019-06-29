@@ -1,6 +1,6 @@
 basic_settings:
   site_title: Сергей Яковлев
-  site_tagline: Мой блокнот, моя мастерская, место где я делюсь своим опытом и открытиями
+  site_tagline: Мой блокнот, моя мастерская, место где я делюсь своим опытом и мыслями
   favicon_image: /images/favicon.png
   site_description: 'Персональный блог Сергея Яковлева'
   site_keywords: 'phalcon, zephir, языки, грамматика, грамматика, компиляторы'
@@ -30,7 +30,7 @@ contact_settings:
   send_button_text: 'Отправить'
 
 social_settings:
-  facebook_url: 'http://facebook.com/sergey.klay'
+  facebook_url: ''
   twitter_url: 'http://twitter.com/sergey_klay'
   instagram_url: ''
   snapchat_url: ''
