@@ -1,8 +1,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image }}">
   <title>
     {% if page.url == "/" %}
       {{ site.data.settings.basic_settings.site_title }} – {{ page.title }}
@@ -21,11 +21,16 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt }}{% endif %}">
   <meta property="og:image" content="{{ site.data.settings.basic_settings.site_baseurl }}{{ page.featured_image }}">
 
+  <!-- Icons -->
+  <link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image }}">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
   {% if site.data.settings.font_settings.font_embed %}
     {{ site.data.settings.font_settings.font_embed }}
   {% endif %}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ site.data.settings.basic_settings.site_baseurl }}/css/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/g/highlight.js@9.11.0(styles/atom-one-light.min.css)">
 
