@@ -55,4 +55,4 @@ exclude:
   - CNAME
 
 include:
-  - .well-known
+  - _redirects

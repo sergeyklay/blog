@@ -1,1 +1,3 @@
 # For more see https://www.netlify.com/docs/redirects/
+
+/.well-known/keybase.txt /keybase.txt 301
