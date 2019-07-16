@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/klay
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://serghei.blog
+  * I am klay (https://keybase.io/klay) on keybase.
+  * I have a public key with fingerprint EDAC 8D91 F82C 0BBD 261C  1329 1E0B 5331 219B EA88
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01013b801cebcdce53acd9baa75208a338b6e99ed73d000cd0099496784fe5a8f4860a",
+      "fingerprint": "edac8d91f82c0bbd261c13291e0b5331219bea88",
+      "host": "keybase.io",
+      "key_id": "1e0b5331219bea88",
+      "kid": "0101e56e5f256dea78c578890cf488e64c15e0e375693922a5c73f4817bb258674040a",
+      "uid": "1a250c4d13ac2bad8fdda96a04b2e119",
+      "username": "klay"
+    },
+    "service": {
+      "hostname": "serghei.blog",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1563312853,
+  "expire_in": 157680000,
+  "prev": "fd1c6c65538c79a287842a8b1dcc31d45ff0f130faa9aee4b6090465c1fb3927",
+  "seqno": 55,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owJ4nG1Sa1BUZRjeBRxwjSQbiUERPK6TKO6e+4WQ4TpoQbUiaDLM+p1zvrOcFne3
+3WXjbkUFC463SrtpwxADMmGEQyUs0tCABYgX1plGkAyLYnAUKSPRmM4hnf705/vm
+e9/ned7nfd/vUGigRqft/zwsvGu8WaMdnOI1+YbUoDKEt4slSHwZYoWLFywUoctt
+tsoiEo+gGIoRPItiAuQFUYAUAQSR4wFgKBxlAUGwPA05DooMIaIoKigHx5EczbCk
+BCnASiRLowCJQyTZZoFOh1O2uRVZKAKBFTlMYnEB5XkRpzEBI3AOgyhPEQSGYxwP
+AcsqxAK7S2Uo5njgggbZrsSUh3nR3v/g//MNKRpSEk7RIgQMK1AMy3KooDhiIU0K
+GAVRSDAUzREcjgNKYAglhTE8j1MszZAouei76N86AKdQgRQxpX2cByIriSLgaICS
+PA4xjFOBLui0gb1Q9VoISpCKOESJeGQBqkNVu3iYVaKWAigb+EK7ReE5nHa3XbAX
+KpkCt9vhileZ7hKHCn0V8uaHImZetonKDBWGBzpdst2GxGMKUnDLqipG0eoYWIqI
+Q2CxQ3ZCs6wiKIZmlb2gah3oUSQlERNogaYogs0RGA7grLIqHLA8JgoCgYkkJUmo
+hBGoBAAHICR5GuVQkqYETOKVSTGI2tcrNjsST1GKUWBRW5ItNuAuckKkQucNIII0
+Wp0mKnxtkG9bJ+dvCTjxXbpu96OPtyRA/XUa3dKwRxHuyvIFFl/f7Q/dfTjyAdPT
+WmlKvJK8L63bezpx473NxpCbmmO+L1piRugMfeOSUxmnLB/EdForzblzwz/XV59b
+eD5/46GZvrPJNdMDF6rOW+pe7rdHf5R0r6Gt8IE4w6wcJ1PMf9/+fWhD6d2V1wI3
+9a2o2rQ6rfiwaWuwvn2ud+xIVnTentLXbqXB+ZMZ5X6rCdFvaQ8erh5dVhlb7jMl
++MYijtfNbw8qu/2TELmzJGZkR0Ns+/FseYBIbsragXZF/zV0tku/9ts/yBMnQX+g
+U9uhvfSp8cfc5tSpst5np3NCV5+pPQefmKzCgpvn0437x3+5syJ1qnJX/ktSa9LR
+pMpt+pGbkwVhzpLsLOvOg6+n67I73nov+rNi77t7W+BAaNOfbUTjtKfi1/CIiZm5
+VSHrPL1RQzOa5yZ9lz+8P7Vw9ZmLs5djc8+0rzsw4bA2VVhjX7zYaKj5YX3KcnID
+35fEzR6L0vmj/MmycZVpC2Zq3Grb1WiuyWGu4ilvbM4b9RvGfms5kCEm1HUGBNe/
+zyH4nYGvn1yzvWPsaLi3p3zwk9rJyBTNsNZfXzTX4F9ac+SbzNM9GaUgsXPZjeue
+85FkfOb3d5+6H1HBrtmv//idwS/tEQUXfDV5X83TY625+6yPT/hmjcbBtNDuaq8B
+JHj7H9tHJ1+/0Zv5wrU9IZdq+5xtT4/eevPt8H8AZ6TCYg==
+=xxDi
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/klay
+
+==================================================================
+
