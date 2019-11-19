@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="articles">
+  <h1 class="page-title">Блог</h1>
+  {{ content }}
+
+  <ul class="post-list">
+      {% for post in paginator.posts %}
+        <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+        </li>
+
+      {% endfor %}
+  </ul>
+</div>
+
+
