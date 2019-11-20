@@ -1,3 +1,5 @@
+@import "mixins";
+
 .inline-logo {
   height: 1.3em;
   vertical-align: middle;
@@ -9,4 +11,30 @@
 
 .masthead-title small {
   font-size: .78rem;
+}
+
+.blog-post {
+  margin-top: 40px;
+
+  @include mq(tabletp) {
+    margin-top: 60px;
+  }
+
+  @include mq(tabletl) {
+    margin-top: 80px;
+  }
+
+  @include mq(laptop) {
+    margin-top: 100px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.post-meta {
+    margin-top: 5px;
+    color: $text-light-color;
+    font-size: .9rem;
 }
