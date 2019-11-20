@@ -1,11 +1,11 @@
 <div class="toc">
     <h2>Последние публикации</h2>
 
-    {% assign post_list = 5 %}
-    {% assign total_list = site.posts | size %}
+    {% assign posts_limit = 5 %}
+    {% assign posts_total = site.posts | size %}
 
     <ul class="texts">
-      {% for item in site.posts offset: 0 limit: post_list %}
+      {% for item in site.posts offset: 0 limit: posts_limit %}
         <li class="text-title">
           <h4>
             <span class="post-meta">{{ item.date | date: "%Y.%m.%d" }}</span>
@@ -18,7 +18,7 @@
       {% endfor %}
     </ul>
 
-    {% if total_list > post_list %}
+    {% if posts_total > posts_limit %}
       <p>
         <a href="{{ site.baseurl }}/">&larr; Все публикации</a>
       </p>
