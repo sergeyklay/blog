@@ -51,3 +51,14 @@
 .sidebar-image-on {
   opacity: 1;
 }
+
+ul.pager {
+    text-align: center;
+    list-style: none;
+}
+
+ul.pager li {
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+}

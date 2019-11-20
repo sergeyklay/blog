@@ -6,7 +6,7 @@ layout: default
   <h1 class="page-title">Блог</h1>
   {{ content }}
 
-  <section class="blog single">
+  <section class="blog-list">
     {% for post in paginator.posts %}
     <article class="blog-post">
       <header>
@@ -32,6 +32,22 @@ layout: default
         </div>
     </article>
     {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+      {% if paginator.previous_page %}
+      <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Следующие статьи</a>
+      </li>
+      {% endif %}
+
+      {% if paginator.next_page %}
+      <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Предыдущие статьи &rarr;</a>
+      </li>
+      {% endif %}
+    </ul>
+    {% endif %}
   </section>
 </div>
 
