@@ -6,18 +6,31 @@ layout: default
   <h1 class="page-title">Блог</h1>
   {{ content }}
 
-  <ul class="post-list">
-      {% for post in paginator.posts %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section class="blog single">
+    {% for post in paginator.posts %}
+    <article class="blog-post">
+        <header>
+            <h2 class="blog-post-title">
+                <a href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h2>
+            <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%Y.%m.%d" }}
+            </time>
+        </header>
 
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-        </li>
-
-      {% endfor %}
-  </ul>
+        <div class="blog-post-content">
+            <p>{{ post.excerpt }}</p>
+            <p>
+                <a href="{{ post.url | relative_url }}" class="button">
+                    Далее &rarr;
+                </a>
+            </p>
+        </div>
+    </article>
+    {% endfor %}
+  </section>
 </div>
 
 
