@@ -8,9 +8,9 @@ layout: page
 
   <p>
      Я &mdash; Сергей Яковлев, программист родом из
-    <img src="{{site.baseurl}}/assets/images/norilsk.png" class="inline-logo" alt="Norilsk wappen">
+    <img src="{{ site.baseurl }}/assets/images/norilsk.png" class="inline-logo" alt="Norilsk wappen">
     Норильска, ныне живу под Киевом
-    <img src="{{site.baseurl}}/assets/images/kyiv.svg" class="inline-logo" alt="Kyiv wappen">.
+    <img src="{{ site.baseurl }}/assets/images/kyiv.svg" class="inline-logo" alt="Kyiv wappen">.
   </p>
 
   <p>
@@ -20,7 +20,8 @@ layout: page
   </p>
 
   <p>
-    В основном сфокусирован на разработке языка <a href="https://zephir-lang.com/ru-ru" target="_blank">Zephir</a>,
+    В основном сфокусирован на разработке языка
+    <a href="https://zephir-lang.com/ru-ru" hreflang="ru" target="_blank">Zephir</a>,
     создании языковых парсеров, работе со статическим и семантическим анализом и исследованиях в области разработки
     компиляторов: расширенный анализ и оптимизация для высокопроизводительных вычислений. В течение многих лет я
     работал над созданием и совершенствованием инструментов, которые облегчают жизнь разработчикам и дают им
@@ -28,15 +29,19 @@ layout: page
   </p>
 
   <p>
-    Я являюсь частью команды <a href="https://phalcon.io" hreflang="en" target="_blank">Phalcon</a>.
+    Я являюсь частью команды <a href="https://phalcon.io/ru-ru" hreflang="ru" target="_blank">Phalcon</a>.
     Вместе мы разрабатываем полнофункциональный PHP-фреймворк поставляемый в виде C-расширения.
     В свободное время (что бывает не часто), я люблю смотреть кино, читать и иногда пешие прогулки.
   </p>
 
   <p>
     Мой публичный GPG ключ:
-    <a href="{{site.baseurl}}/serghei.asc">1E0B&nbsp;5331&nbsp;219B&nbsp;EA88</a>
+    <a href="{{ site.baseurl }}/serghei.asc">1E0B&nbsp;5331&nbsp;219B&nbsp;EA88</a>
     (так-же в <a href="https://keybase.io/klay" hreflang="en" target="_blank">Keybase</a>).<br>
-    Для связи <a href="{{site.baseurl}}/contact">используйте контактную фому</a>.
+    Для связи <a href="{{ site.baseurl }}/contact">используйте контактную фому</a>.
   </p>
 </div>
+
+<hr>
+
+{% include mini-toc.html %}

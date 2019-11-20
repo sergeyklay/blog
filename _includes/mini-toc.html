@@ -1,0 +1,26 @@
+<div class="toc">
+    <h2>Последние публикации</h2>
+
+    {% assign post_list = 5 %}
+    {% assign total_list = site.posts | size %}
+
+    <ul class="texts">
+      {% for item in site.posts offset: 0 limit: post_list %}
+        <li class="text-title">
+          <h4>
+            <span class="post-meta">{{ item.date | date: "%Y.%m.%d" }}</span>
+
+            <a href="{{ site.baseurl }}{{ item.url }}">
+              {{ item.title | escape }}
+            </a>
+          </h4>
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% if total_list > post_list %}
+      <p>
+        <a href="{{ site.baseurl }}/">&larr; Все публикации</a>
+      </p>
+    {% endif %}
+  </div>
