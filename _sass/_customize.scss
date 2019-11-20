@@ -3,7 +3,7 @@
 .inline-logo {
   height: 1.3em;
   vertical-align: middle;
-  display: inline;
+  display: inline-block;
   max-width: none;
   margin: unset;
   border-radius: unset;
@@ -34,7 +34,20 @@
 }
 
 .post-meta {
-    margin-top: 5px;
-    color: $text-light-color;
-    font-size: .85rem;
+  margin-top: 5px;
+  color: $text-light-color;
+  font-size: .85rem;
+}
+
+.sidebar-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+
+  @include transition(opacity 0.4s ease-in-out);
+}
+
+.sidebar-image-on {
+  opacity: 1;
 }

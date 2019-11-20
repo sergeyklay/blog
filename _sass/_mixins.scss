@@ -3,7 +3,7 @@
 // - - - - - - - - - - - - - - - - - -
 
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Responsive
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Responsive
 // Usage: @include mq(tabletp) {}
 
 $break-phonel: 480px;
@@ -28,4 +28,15 @@ $break-desktop: 1600px;
   @else if $media == desktop {
     @media only screen and (min-width: $break-desktop) { @content; }
   }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Transitions
+// Usage: @include transition(color .3s ease);
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+      -ms-transition: $args;
+       -o-transition: $args;
+          transition: $args;
 }
