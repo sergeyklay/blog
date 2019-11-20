@@ -11,7 +11,7 @@ layout: default
     <article class="blog-post">
       <header>
         <h2 class="blog-post-title">
-          <a href="{{ post.url | relative_url }}">
+          <a href="{{ site.baseurl }}{{ post.url }}">
               {{ post.title | escape }}
           </a>
         </h2>
@@ -25,7 +25,7 @@ layout: default
         <div class="blog-post-content">
           <p>{{ post.excerpt }}</p>
           <p>
-            <a href="{{ post.url | relative_url }}" class="button">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="button">
                 Далее &rarr;
             </a>
           </p>
