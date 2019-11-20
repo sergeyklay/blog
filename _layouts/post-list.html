@@ -15,9 +15,11 @@ layout: default
                     {{ post.title | escape }}
                 </a>
             </h2>
-            <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}">
-                {{ post.date | date: "%Y.%m.%d" }}
-            </time>
+            <div class="post-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%Y.%m.%d" }}
+                </time>
+            </div>
         </header>
 
         <div class="blog-post-content">
