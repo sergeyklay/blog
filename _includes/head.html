@@ -15,6 +15,9 @@
 
   <title>{{ page_title }}</title>
 
+  <meta name="generator" content="Jekyll">
+  <meta name="application-name" content="{{ site.description }}">
+
   {% if page.description %}
     {% assign page_description = page.description %}
   {% else %}
@@ -22,6 +25,7 @@
   {% endif %}
 
   <meta name="description" content="{{ page_description }}">
+  <meta name="keyword" content="{{ site.keywords }}">
 
   {% capture resource_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
 
