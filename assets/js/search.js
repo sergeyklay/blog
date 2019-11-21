@@ -1,6 +1,5 @@
 ---
-sitemap: false
-layout:
+layout: null
 ---
 
 // Based on a script by Kathie Decora: https://katydecorah.com/code/lunr-and-jekyll
