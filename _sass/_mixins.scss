@@ -40,3 +40,38 @@ $break-desktop: 1600px;
        -o-transition: $args;
           transition: $args;
 }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Appearance
+// Used to display an element using platform-native styling based on the
+// operating system's theme.
+//
+// Usage: @include appearance(button);
+
+@mixin appearance($value) {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Placeholder
+// Style the placeholder text of a form element.
+//
+// Usage: @include input-placeholder(#ABB7B7, 15%);
+
+@mixin input-placeholder($color, $alpha) {
+  ::-webkit-input-placeholder {
+    color: lighten($color, $alpha);
+  }
+
+  ::-moz-placeholder {
+    color: lighten($color, $alpha);
+  }
+
+  :-ms-input-placeholder {
+    color: lighten($color, $alpha);
+  }
+
+  :-moz-placeholder {
+    color: lighten($color, $alpha);
+  }
+}

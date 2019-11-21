@@ -16,7 +16,9 @@ $text-color: #454545;
 $heading-color: #404040;
 $link-color: #841212;
 
-@import "ed";
-@import "syntax";
+// - - - - - - - - - - Global styles
 
-@import "customize";
+@import "_ed";
+@import "_syntax";
+@import "_customize";
+@import "_includes/_form-elements";

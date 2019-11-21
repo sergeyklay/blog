@@ -1,0 +1,51 @@
+---
+layout: page
+title: Контактная форма
+description: Контактная форма.
+---
+
+<section class="introduction">
+  <h1 class="page-title">{{ page.title }}</h1>
+
+  <p>
+    Используйте представленную ниже форму, чтобы отправить мне личное сообщение.
+    Обычно письма доходят в течении пары секунд. Но это не означает, что я доберусь
+    до вашего письма столь же стремительным образом.
+  </p>
+
+  <div class="contact-form">
+    <form method="post" action="{{ site.contact.form_action }}" id="contact-form">
+      <div class="contact-form-item">
+        <label class="contact-form-label">Ваше имя *</label>
+        <input type="text"
+               name="name"
+               class="contact-form-input form-input">
+      </div>
+
+      <div class="contact-form-item">
+        <label class="contact-form-label">Обратный адрес *</label>
+        <input type="text"
+                name="email"
+                class="contact-form-input form-input">
+      </div>
+
+      <div class="contact-form-item">
+        <label class="contact-form-label">Сообщение *</label>
+        <textarea name="message"
+                  class="contact-form-textarea form-input"></textarea>
+      </div>
+
+      <input type="hidden" name="_next" value="{{ site.contact.confirmation_url }}">
+      <input type="hidden" name="_subject" value="{{ site.contact.email_subject }}">
+      <input type="text"
+             name="_gotcha"
+             style="display: none;"
+             class="contact-form-gotcha"
+             value="">
+
+      <div class="contact-form-item">
+        <input type="submit" value="Отправить" class="button button-large">
+      </div>
+    </form>
+  </div>
+</section>

@@ -104,13 +104,19 @@ pagination:
 markdown: kramdown
 
 kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
+  auto_ids:          true
+  footnote_nr:       1
+  entity_output:     as_char
   footnote_backlink: "&#x21a9;&#xfe0e;"
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  toc_levels:        1..6
+  smart_quotes:      lsquo,rsquo,ldquo,rdquo
+  enable_coderay:    false
+
+# Contact form
+contact:
+  form_action:      'https://formspree.io/sadhooklay@gmail.com'
+  confirmation_url: '/thanks'
+  email_subject:    'Contact form submission'
 
 # Exclusions from the final site
 exclude:

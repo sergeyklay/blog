@@ -1,4 +1,4 @@
-@import "mixins";
+@import "_mixins";
 
 .inline-logo {
   height: 1.3em;
@@ -98,15 +98,4 @@ ul.pager li {
     display: inline;
     padding: 10px;
     margin: 5px;
-}
-
-input#search {
-  -webkit-appearance: none;
-  border: 1px solid #ccc;
-  border-radius: .2em;
-  font-family: inherit;
-  font-size: 1.25em;
-  margin: 2em auto 1em;
-  padding: 0.5em;
-  width: 100%;
 }
