@@ -22,7 +22,11 @@ jobs:
         architecture: 'x64'
 
     - name: Install blog dependencies using Ruby ${{ matrix.ruby }}
-      run: bundle install
+      run: |
+        gem install bundler
+        bundle install
 
-    - name: Run a multi-line script
-      run: ruby --version
+    - name: Build & test
+      run: |
+        bundle exec jekyll build -d _site
+        bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
