@@ -8,10 +8,12 @@ layout:
 // Create the lunr index for the search
 let index = elasticlunr(function () {
   this.setRef('id')
+
+  this.use(lunr.ru);
+
   this.addField('title')
   this.addField('category')
-  this.addField('content', { boost: 10 })
-  this.addField('author')
+  this.addField('content')
   this.addField('layout')
   this.addField('tags')
 });
@@ -24,7 +26,6 @@ let index = elasticlunr(function () {
     title:    {{ post.title | jsonify }},
     category: {{ post.categories[0] | jsonify }},
     content:  {{ post.content | jsonify | strip_html }},
-    author:   {{ post.author | jsonify }},
     layout:   {{ post.layout | jsonify }},
     tags:     {{ post.tags | jsonify }},
   });
@@ -41,7 +42,6 @@ let store = [
       "link":     {{ post.url | jsonify }},
       "image":    {{ post.featured_image | jsonify }},
       "date":     {{ post.date | date: '%Y.%m.%d' | jsonify }},
-      "author":   {{ post.author | jsonify }},
       "layout":   {{ post.layout | jsonify }},
       "excerpt":  {{ post.content | strip_html | truncatewords: 20 | jsonify }}
     }{% unless forloop.last %},{% endunless %}
@@ -62,28 +62,41 @@ function doSearch() {
   let query = $('input#search').val();
 
   // The search is then launched on the index built with Lunr
-  let result = index.search(query, {});
+  let result = index.search(query, {
+    fields: {
+      title:   { boost: 2 },
+      content: { boost: 1 }
+    }
+  });
+
   resultdiv.empty();
 
   if (result.length == 0) {
-    resultdiv.append('<p class="">Ничего не найдено</p>');
+    resultdiv.append('<p class="search-result-title">Ничего не найдено</p>');
   } else if (result.length == 1) {
-    resultdiv.append('<p class="">Найден '+result.length+' резульат</p>');
+    resultdiv.append('<p class="search-result-title">Найден один резульат</p>');
   } else {
-    resultdiv.append('<p class="">Результатов: '+result.length+'</p>');
+    resultdiv.append('<p class="search-result-title">Результатов: ' + result.length + '</p>');
   }
 
   // Loop through, match, and add results
   for (let item in result) {
     let ref = result[item].ref;
-    let searchitem = '<div class="result">' +
-                       '<p>' +
-                         '<a href="{{ site.baseurl }}' + store[ref].link + '?q=' + query + '">' +
-                           store[ref].title +
-                         '</a>' +
-                       '</p>' +
-                      '</div>';
-    resultdiv.append(searchitem);
+
+    resultdiv.append(
+      '<div class="result">' +
+        '<p>' +
+          '<span class="post-meta">' +
+            '<time datetime="' + store[ref].date + '">' +
+              store[ref].date +
+            '</time> &nbsp;' +
+          '</span>' +
+          '<a href="{{ site.baseurl }}' + store[ref].link + '?q=' + query + '">' +
+            store[ref].title +
+          '</a>' +
+        '</p>' +
+      '</div>'
+    );
   }
 }
 

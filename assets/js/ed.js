@@ -1,5 +1,3 @@
-// TODO: Highlight search Query
-
 // Toggle sidebar
 (function(document) {
   let toggle = document.querySelector('.sidebar-toggle');
