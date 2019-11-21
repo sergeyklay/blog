@@ -1,26 +1,30 @@
-<div class="toc">
-    <h2>Последние публикации</h2>
+<section class="toc">
+  <h2>Последние публикации</h2>
 
-    {% assign posts_limit = 5 %}
-    {% assign posts_total = site.posts | size %}
+  {% assign posts_limit = 5 %}
+  {% assign posts_total = site.posts | size %}
 
-    <ul class="texts">
-      {% for item in site.posts offset: 0 limit: posts_limit %}
-        <li class="text-title">
-          <h4>
-            <span class="post-meta">{{ item.date | date: "%Y.%m.%d" }}</span>
+  <ul class="texts">
+    {% for item in site.posts offset: 0 limit: posts_limit %}
+      <li class="text-title">
+        <h4>
+          <span class="post-meta">
+            <time datetime="{{ item.date | date_to_xmlschema }}">
+              {{ item.date | date: "%Y.%m.%d" }}
+            </time>
+          </span>
 
-            <a href="{{ site.baseurl }}{{ item.url }}">
-              {{ item.title | escape }}
-            </a>
-          </h4>
-        </li>
-      {% endfor %}
-    </ul>
+          <a href="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title | escape }}
+          </a>
+        </h4>
+      </li>
+    {% endfor %}
+  </ul>
 
-    {% if posts_total > posts_limit %}
-      <p>
-        <a href="{{ site.baseurl }}/">&larr; Все публикации</a>
-      </p>
-    {% endif %}
-  </div>
+  {% if posts_total > posts_limit %}
+    <p>
+      <a href="{{ site.baseurl }}/">&larr; Все публикации</a>
+    </p>
+  {% endif %}
+</section>
