@@ -31,7 +31,7 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /post/:slug
+    permalink: /post/:year/:month/:day/:slug.html
 
 defaults:
   -
@@ -69,7 +69,7 @@ pagination:
   title:        ':title (страница :num)'
   category:     'posts'
   tag:          ''
-  locale:       'ru_RU'
+  locale:       ''
   extension:    'html'
   indexpage:    'index'
   trail:
