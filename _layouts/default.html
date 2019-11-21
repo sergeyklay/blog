@@ -1,34 +1,37 @@
 <!doctype html>
-<html class="no-js" lang="ru">
+<html lang="ru">
 
-  {% include head.html %}
+{% include head.html %}
 
-<body class="loading{% if site.data.settings.advanced_settings.ajax_loading == true %} ajax-loading{% endif %}"
-      data-site-url="{{ site.url }}"
-      data-page-url="{{ page.url | replace: 'index.html', '' }}">
+<body class="theme-base-{{ site.color-scheme }}">
+  <!-- This if statement decides which sidebar to use -->
+  {% if page.toc %}
+    {% include sidebar-toc.html %}
+  {% else %}
+    {% include sidebar.html %}
+  {% endif %}
 
-  {% include header.html %}
-  {% include loader.html %}
-
-  <div class="page-loader"></div>
-
-    <div class="page">
-      <div class="page__content"
-           data-page-title="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}"
-           data-image="{{ page.featured_image }}">
-        {{ content }}
+  <!--
+  `wrap` is the content to shift when toggling the sidebar.
+  We wrap the content to avoid any CSS collisions with our real content.
+  -->
+  <div class="wrap">
+    <header class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="На главную">{{ site.title | newline_to_br }}</a>
+          <br><small>{{ site.tagline }}</small>
+        </h3>
       </div>
-    </div>
+    </header>
 
-    {% include footer.html %}
+    <main class="container content" id="main">
+      {{ content }}
+    </main>
+  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="{{ site.data.settings.basic_settings.site_baseurl }}/js/journal-min.js"></script>
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    {% if site.data.settings.advanced_settings.footer_js %}
-      {{ site.data.settings.advanced_settings.footer_js }}
-    {% endif %}
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/g/highlight.js@9.11.0(highlight.min.js+languages/abnf.min.js+languages/bash.min.js+languages/css.min.js+languages/dockerfile.min.js+languages/javascript.min.js+languages/json.min.js+languages/nginx.min.js+languages/php.min.js+languages/sql.min.js+languages/twig.min.js+languages/xml.min.js+languages/yaml.min.js+languages/zephir.min.js)"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+  <script src="{{ site.baseurl }}/assets/js/ed.js"></script>
 </body>
 </html>

@@ -1,56 +1,101 @@
-<head>
-  <meta charset="utf-8">
+<head prefix="og: http://ogp.me/ns#; dc: http://purl.org/dc/terms/#">
+
+  <!-- Basic meta elements -->
+  <meta charset="{{ site.encoding }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>
-    {% if page.url == "/" %}
-      {{ site.data.settings.basic_settings.site_title }} – {{ page.title }}
-    {% else %}
-      {{ page.title }} – {{ site.data.settings.basic_settings.site_title }}
-    {% endif %}
-  </title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt }}{% endif %}">
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
 
+  {% if page.url == "/" %}
+    {% assign page_title = site.title %}
+  {% else %}
+    {% assign page_title = page.title | append: ' - ' | append: site.title %}
+  {% endif %}
+
+  <title>{{ page_title }}</title>
+
+  <meta name="generator" content="Jekyll">
+  <meta name="application-name" content="{{ site.description }}">
+  <meta http-equiv="x-dns-prefetch-control" content="off">
+
+  {% if page.description %}
+    {% assign page_description = page.description %}
+  {% else %}
+    {% assign page_description = site.description %}
+  {% endif %}
+
+  <meta name="description" content="{{ page_description }}">
+  <meta name="keyword" content="{{ site.keywords }}">
+
+  {% capture resource_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
+
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="{{ resource_url }}">
+
+  {% if page.author %}
+    {% assign page_author = page.author %}
+  {% else %}
+    {% assign page_author = site.author.name %}
+  {% endif %}
+
+  <!-- Dublin Core metadata for Zotero -->
+  <meta property="dc:title" content="{{ page_title }}">
+  <meta property="dc:creator" content="{{ page_author }}">
+  <meta property="dc:identifier" content="{{ resource_url }}">
+  {% if page.editor %}<meta property="dc:contributor" content="{{ page.editor }}">{% endif %}
+  {% if page.date %}<meta property="dc:date" content="{{ page.date }}">{% endif %}
+  {% if page.rights %}<meta property="dc:rights" content="{{ page.rights }}">{% endif %}
+  <meta property="dc:source" content="{% if page.source %}{{ page.source }}{% else %}{{ site.url }}{% endif %}">
+
+  {% capture directory_url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+
+  {% if page.featured_image %}
+    {% assign featured_image = page.featured_image %}
+  {% else %}
+    {% assign featured_image = directory_url | append: '/assets/images/blog-logo.jpg' %}
+  {% endif %}
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:url" content="{{ resource_url }}">
+  <meta property="og:image" content="{{ featured_image }}">
+
+  {% if page.featured_image %}
+  {% else %}
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+  {% endif %}
+
+  {% if page.layout == "default" %}
+    <meta property="og:type" content="website">
+  {% else %}
+    <meta property="og:type" content="article">
+  {% endif %}
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt }}{% endif %}">
-  <meta name="twitter:image:src" content="{{ site.data.settings.basic_settings.site_baseurl }}{{ page.featured_image }}">
-
-  <meta property="og:title" content="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}" />
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt }}{% endif %}">
-  <meta property="og:image" content="{{ site.data.settings.basic_settings.site_baseurl }}{{ page.featured_image }}">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
+  <meta name="twitter:image:src" content="{{ featured_image }}">
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="{{ site.data.settings.basic_settings.favicon_image }}">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ directory_url }}/atom.xml">
 
-  {% if site.data.settings.font_settings.font_embed %}
-    {{ site.data.settings.font_settings.font_embed }}
-  {% endif %}
+  <!-- CSS link -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 
-  <link rel="stylesheet" href="{{ site.data.settings.basic_settings.site_baseurl }}/css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/g/highlight.js@9.11.0(styles/atom-one-light.min.css)">
+  <!-- Head sripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
-
-  {% if site.data.settings.advanced_settings.custom_styles %}
-    <style>{{ site.data.settings.advanced_settings.custom_styles }}</style>
-  {% endif %}
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85434340-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-85434340-4');
-  </script>
-
-  {% if site.data.settings.advanced_settings.header_js %}
-    {{ site.data.settings.advanced_settings.header_js }}
+  {% if site.seo.ga %}
+    <!-- Global site tag (gtag.js) - Google Tag Manager -->
+    {% include ga.html %}
   {% endif %}
 </head>
