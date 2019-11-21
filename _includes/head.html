@@ -51,7 +51,7 @@
   {% capture directory_url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
 
   {% if page.featured_image %}
-    {% assign featured_image = page.featured_image %}
+    {% assign featured_image = directory_url | append: page.featured_image %}
   {% else %}
     {% assign featured_image = directory_url | append: '/assets/images/blog-logo.jpg' %}
   {% endif %}
@@ -82,7 +82,7 @@
   <meta name="twitter:image:src" content="{{ featured_image }}">
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png">
 
   <!-- RSS -->
