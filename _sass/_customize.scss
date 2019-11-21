@@ -13,7 +13,7 @@
   font-size: .78rem;
 }
 
-section.introduction {
+.introduction {
   min-height: 40px;
   margin-bottom: 40px;
 
@@ -31,6 +31,23 @@ section.introduction {
     min-height: 100px;
     margin-bottom: 100px;
   }
+}
+
+.introduction .container {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.introduction h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.text-title h4 .post-meta time {
+  padding-right: 1rem;
 }
 
 .blog-post {
