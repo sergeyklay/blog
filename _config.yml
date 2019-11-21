@@ -116,14 +116,12 @@ kramdown:
 exclude:
   - optional
   - vendor
-  - ed..gemspec
   - Gemfile
   - Gemfile.lock
   - backstop_data
   - backstop.json
   - serve
   - LICENSE
-  - LICENSE-ED
   - README.md
   - CNAME
   - src
