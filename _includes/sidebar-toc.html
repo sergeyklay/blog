@@ -1,0 +1,37 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<aside class="sidebar sidebar-image sidebar-image-on"
+       id="sidebar"
+       style="background-image: url({{site.baseurl}}/assets/images/dark-forest.jpg);">
+
+  <div class="sidebar-item">
+    <p>{{ page.title }}</p>
+  </div>
+
+  <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">
+        Блог
+      </a>
+
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="#" data-proofer-ignore>
+        В начало статьи
+      </a>
+
+      {% for node in page.toc %}
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %} sidebar-nav-item-toc"
+           href="#{{ node | slugify }}">
+          {{ node }}
+        </a>
+      {% endfor %}
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; Сергей Яковлев, 2018-{{ 'now' | date: '%Y' }}.
+      Если не указано иного, всё содержимое сайта доступно под лицензией
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru" target="_blank">
+        CC BY-NC-SA 4.0
+      </a>.
+    </p>
+  </div>
+</aside>

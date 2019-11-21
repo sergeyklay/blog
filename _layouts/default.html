@@ -6,9 +6,6 @@
 <body class="theme-base-{{ site.color-scheme }}">
   <!-- This if statement decides which sidebar to use -->
   {% if page.toc %}
-    {% comment %}
-      TODO: Implement me
-    {% endcomment %}
     {% include sidebar-toc.html %}
   {% else %}
     {% include sidebar.html %}
