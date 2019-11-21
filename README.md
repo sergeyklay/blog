@@ -29,7 +29,7 @@ This will start a server on port 4000.
 
 ### Content
 
-The content of my blog (this project) is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+The content of my blog (this project) is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0).
 
 ### Theme
 
