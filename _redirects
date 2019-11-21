@@ -1,3 +1,8 @@
 # For more see https://www.netlify.com/docs/redirects/
 
-/.well-known/keybase.txt /keybase.txt 301
+/.well-known/keybase.txt /keybase.txt  301
+
+/about                   /about.html   301
+/contact                 /contact.html 301
+/search                  /search.html  301
+/thanks                  /thanks.html  301
