@@ -3,17 +3,30 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  build:
 
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby:
+          - '2.4.x'
+          - '2.5.x'
+          - '2.6.x'
 
     steps:
     - uses: actions/checkout@v1
 
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby }}
+        architecture: 'x64'
 
-    - name: Run a multi-line script
+    - name: Install blog dependencies using Ruby ${{ matrix.ruby }}
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        gem install bundler
+        bundle install
+
+    - name: Build & test
+      run: |
+        bundle exec jekyll build -d _site
+        bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
