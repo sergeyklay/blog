@@ -1,0 +1,21 @@
+---
+layout: page
+title: Поиск
+---
+
+<section class="introduction">
+  <form id="site-search">
+      <span>Упрощенный поиск по блогу:</span>
+      <input id="search"
+             type="text"
+             autocomplete="on"
+             autofocus=autofocus
+             placeholder="Введите искомую строку">
+  </form>
+
+  <div id="results"></div>
+  <ul id="search_results"></ul>
+
+  <script src="{{site.baseurl}}/assets/js/elasticlunr.min.js"></script>
+  <script src="{{site.baseurl}}/assets/js/search.js"></script>
+</section>
