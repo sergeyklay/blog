@@ -1,11 +1,14 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  - push
+  - pull_request
 
 jobs:
 
   build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         ruby:
@@ -14,31 +17,26 @@ jobs:
           - '2.6.x'
 
     steps:
-    - uses: actions/checkout@v1
+      - uses: actions/checkout@v1
 
-    - uses: actions/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby }}
-        architecture: 'x64'
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          architecture: 'x64'
 
-    - name: Setup environment variables
-      run: |
-        # speeds up installation of html-proofer
-        echo ::set-env name=NOKOGIRI_USE_SYSTEM_LIBRARIES::true
+      - uses: actions/cache@preview
+        id: bundle-cache
+        with:
+          path: ~/.bundle
+          key: ruby-${{ matrix.ruby }}
 
-    - uses: actions/cache@preview
-      id: bundle-cache
-      with:
-        path: ~/.bundle
-        key: ruby-${{ matrix.ruby }}
+      - name: Install blog dependencies using Ruby ${{ matrix.ruby }}
+        run: |
+          gem install bundler
+          bundle install --jobs "$(getconf _NPROCESSORS_ONLN)" --retry 3
 
-    - name: Install blog dependencies using Ruby ${{ matrix.ruby }}
-      run: |
-        gem install bundler
-        bundle install --jobs "$(getconf _NPROCESSORS_ONLN)" --retry 3
+      - name: Build static files
+        run: bundle exec jekyll build -d _site
 
-    - name: Build static files
-      run: bundle exec jekyll build -d _site
-
-    - name: Test
-      run: bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+      - name: Test
+        run: bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
