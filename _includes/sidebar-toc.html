@@ -17,6 +17,14 @@
         В начало статьи
       </a>
 
+      <span style="cursor:pointer;" onclick="let hypothesis = document.createElement('script');
+        hypothesis.setAttribute('src','https://hypothes.is/embed.js');
+        document.head.appendChild(hypothesis);">
+        <a class="sidebar-nav-item">
+          Включить аннотации
+        </a>
+      </span>
+
       {% for node in page.toc %}
         <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %} sidebar-nav-item-toc"
            href="#{{ node | slugify }}">
