@@ -17,6 +17,9 @@
 
   <meta name="generator" content="Jekyll">
   <meta name="application-name" content="{{ site.description }}">
+  {% if page.no_robots %}
+    <meta name="robots" content="noindex, follow">
+  {% endif %}
   <meta http-equiv="x-dns-prefetch-control" content="off">
 
   {% if page.description %}
