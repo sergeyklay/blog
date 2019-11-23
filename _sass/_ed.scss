@@ -111,10 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
-h1 {
-  font-size: 1.4rem;
-}
-
+h1,
 h1.text-title {
   font-size: 1.4rem;
 }
@@ -125,15 +122,12 @@ h2 {
 }
 
 h3, h4, h5 {
+  margin-top: 1rem;
   font-size: 1rem;
 }
 
 h3 {
   margin-top: 1.5rem;
-}
-
-h4, h5, h6 {
-  margin-top: 1rem;
 }
 
 /* Body text */
