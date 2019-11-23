@@ -22,11 +22,7 @@
   Update the foundational and global aspects of the page.
 */
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+@import "_mixins";
 
 html,
 body {
@@ -336,8 +332,7 @@ h3.masthead-title {
   font-size: .875rem;/* 15px*/
   color: rgba(255,255,255,.6);
   background-color: #202020;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
+  @include transition(all .3s ease-in-out);
 }
 
 @media (min-width: 30em) {
