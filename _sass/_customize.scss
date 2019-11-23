@@ -74,6 +74,10 @@ ul, ol {
   }
 }
 
+.blog-list article {
+  min-height: 100px;
+}
+
 .post-meta {
   margin-top: 5px;
   color: $text-light-color;
