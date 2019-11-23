@@ -94,19 +94,19 @@ body {
   }
 }
 
-/* Links*/
+/* Links */
 a, .text-title a {
   color: $link-color;
   text-decoration: none;
 }
 
-/* `:focus` is linked to `:hover` for basic accessibility*/
+/* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
   text-decoration: underline;
 }
 
-/* Headings*/
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   margin-bottom: .5rem;
@@ -142,13 +142,13 @@ h4, h5, h6 {
   margin-top: 1rem;
 }
 
-/* Body text*/
+/* Body text */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* Lists*/
+/* Lists */
 ul {
   list-style: circle;
 }
@@ -158,7 +158,7 @@ ul, ol {
   margin-bottom: 1rem;
 }
 
-/* Horizontal ruler*/
+/* Horizontal ruler */
 hr {
   margin-top: 60px;
   position: relative;
@@ -168,13 +168,13 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
-/* Search Highlihting*/
+/* Search highlighting */
 mark {
   color: white;
   background-color: $link-color;
 }
 
-/* Quotes*/
+/* Quotes */
 blockquote {
   padding: 0rem 1.5rem 0rem 2rem;
   margin: 0 0 20px 0;
@@ -194,7 +194,7 @@ blockquote p:last-child {
   }
 }
 
-/* To add an attribution make sure to make a line with the attribution class*/
+/* To add an attribution, make sure to make a line with the attribution class */
 li.attribution {
   text-align: right;
   list-style: none;
@@ -203,7 +203,7 @@ li.attribution {
   color: $text-color;
 }
 
-/* Images*/
+/* Images */
 img {
   display: block;
   max-width: 100%;
@@ -211,7 +211,7 @@ img {
   border-radius: 5px;
 }
 
-/* Tables*/
+/* Tables */
 table {
   margin-bottom: 1rem;
   width: 100%;
@@ -294,7 +294,7 @@ h3.masthead-title {
   }
 }
 
-/* Page and Posts*/
+/* Page and posts */
 .page {
   margin-bottom: 4em;
 }
@@ -337,11 +337,11 @@ h3.masthead-title {
 
 @media (min-width: 30em) {
   .sidebar {
-    font-size: .75rem;/* 14px*/
+    font-size: .75rem;/* 14px */
   }
 }
 
-/* Sidebar content*/
+/* Sidebar content */
 .sidebar {
   background-color: $link-color;
 }
@@ -359,7 +359,7 @@ h3.masthead-title {
   margin-bottom: 0;
 }
 
-/* Sidebar nav*/
+/* Sidebar nav */
 .sidebar-nav {
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
@@ -393,12 +393,12 @@ a.sidebar-nav-item:focus {
   }
 }
 
-/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle`*/
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
 .sidebar-checkbox {
   display: none;
 }
 
-/* Style the `label` that we use to target the `.sidebar-checkbox`*/
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
   top:  .8rem;
@@ -454,10 +454,10 @@ a.sidebar-nav-item:focus {
 /*
   Slide effect
 
-  Handle the sliding effects of the sidebar and content in one spot, seperate from the default
+  Handle the sliding effects of the sidebar and content in one spot, separate from the default
   styles.
 
-  As an a heads up, we don't use `transform: translate3d()` here because when mixed with
+  As an a heads-up, we don't use `transform: translate3d()` here because when mixed with
   `position: fixed;` for the sidebar toggle, it creates a new containing block. Put simply, the
   fixed sidebar toggle behaves like `position: absolute;` when transformed.
 
@@ -552,7 +552,7 @@ a.sidebar-nav-item:focus {
   Base16: http://chriskempson.com/projects/base16/
 */
 
-/* Red*/
+/* Red */
 .theme-base-red .sidebar,
 .theme-base-red .sidebar-toggle:active,
 .theme-base-red #sidebar-checkbox:checked ~ .sidebar-toggle {
@@ -565,7 +565,7 @@ a.sidebar-nav-item:focus {
   color: #ac4142;
 }
 
-/* Orange*/
+/* Orange */
 .theme-base-orange .sidebar,
 .theme-base-orange .sidebar-toggle:active {
   background-color: #d28445;
@@ -577,7 +577,7 @@ a.sidebar-nav-item:focus {
   color: #d28445;
 }
 
-/* Green*/
+/* Green */
 .theme-base-green .sidebar,
 .theme-base-green .sidebar-toggle:active {
   background-color: #90a959;
@@ -589,7 +589,7 @@ a.sidebar-nav-item:focus {
   color: #90a959;
 }
 
-/* Cyan*/
+/* Cyan */
 .theme-base-cyan .sidebar,
 .theme-base-cyan .sidebar-toggle:active {
   background-color: #75b5aa;
@@ -601,7 +601,7 @@ a.sidebar-nav-item:focus {
   color: #75b5aa;
 }
 
-/* Blue*/
+/* Blue */
 .theme-base-blue .sidebar,
 .theme-base-blue .sidebar-toggle:active {
   background-color: #6a9fb5;
@@ -613,7 +613,7 @@ a.sidebar-nav-item:focus {
   color: #6a9fb5;
 }
 
-/* Magenta*/
+/* Magenta */
 .theme-base-magenta .sidebar,
 .theme-base-magenta .sidebar-toggle:active {
   background-color: #aa759f;
@@ -625,7 +625,7 @@ a.sidebar-nav-item:focus {
   color: #aa759f;
 }
 
-/* Brown*/
+/* Brown */
 .theme-base-brown .sidebar,
 .theme-base-brown .sidebar-toggle:active {
   background-color: #8f5536;
@@ -639,7 +639,7 @@ a.sidebar-nav-item:focus {
 
 
 /*
- ED SPECIAL LAYOUTS
+ ED special layouts
 */
 
 p.centered {
@@ -687,7 +687,7 @@ ul.poetry {
 }
 
 
-/* This snippet helps us reset the margin for all spans with the indent- class*/
+/* This snippet helps us reset the margin for all spans with the indent-class*/
 .poetry span[class^='indent-']{
   margin: 0;/* reset browsers default margin styles*/
 }
@@ -695,7 +695,7 @@ ul.poetry {
 
 /*
   To set line indentation for poetry wrap the line in a span, with a class="indent-x" attribute.
-  The x is represents an rem (root em) value
+  The x is represents a rem (root em) value
 */
 
 .indent-1 {
@@ -756,7 +756,7 @@ ul.poetry {
   margin-top: -.5rem;
 }
 
-/* Footnotes styles*/
+/* Footnotes styles */
 sub,
 sup {
   font-size: 75%;
@@ -794,7 +794,7 @@ ol.bibliography {
   text-indent: -1rem;
 }
 
-/* Diplomatic editions*/
+/* Diplomatic editions */
 .add {
   color:#288828;
   font-style: italic;
