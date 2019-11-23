@@ -1,25 +1,21 @@
 <article class="blog-post">
   <section>
-    <header>
-      <h2 class="blog-post-title">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title | escape }}
-        </a>
-      </h2>
-      <div class="post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%Y.%m.%d" }}
-        </time>
-      </div>
-    </header>
-
-    <div class="blog-post-content">
-      <p>
-        {{ post.excerpt }}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          Читать далее...
-        </a>
-      </p>
+    <h2 class="blog-post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title | escape }}
+      </a>
+    </h2>
+    <div class="post-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%Y.%m.%d" }}
+      </time>
     </div>
+
+    <p class="blog-post-content">
+      {{ post.excerpt }}
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        Читать далее...
+      </a>
+    </p>
   </section>
 </article>
