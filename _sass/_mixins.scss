@@ -2,7 +2,6 @@
 // Mixins
 // - - - - - - - - - - - - - - - - - -
 
-
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Responsive
 // Usage: @include mq(tabletp) {}
 
@@ -42,8 +41,8 @@ $break-desktop: 1600px;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Appearance
-// Used to display an element using platform-native styling based on the
-// operating system's theme.
+// Used to display an element using platform-native styling based
+// on the operating system's theme.
 //
 // Usage: @include appearance(button);
 
@@ -74,4 +73,15 @@ $break-desktop: 1600px;
   :-moz-placeholder {
     color: lighten($color, $alpha);
   }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Box Sizing
+// Sets how the total width and height of an element is calculated.
+//
+// Usage: @include box-sizing (border-box);
+
+@mixin box-sizing ($value) {
+  -webkit-box-sizing: $value;
+     -moz-box-sizing: $value;
+          box-sizing: $value;
 }
