@@ -7,7 +7,7 @@
   <!-- Enable responsiveness on mobile devices -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
 
-  {% if page.url == "/" %}
+  {% if page.title == "Home" %}
     {% assign page_title = site.title %}
   {% else %}
     {% assign page_title = page.title | append: ' - ' | append: site.title %}
@@ -85,14 +85,15 @@
   <meta name="twitter:image:src" content="{{ featured_image }}">
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="{{ directory_url }}/favicon.ico">
+  <!-- Let the iOS devices scale icon down as needed -->
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ directory_url }}/atom.xml">
 
   <!-- CSS link -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="{{ directory_url }}/assets/css/style.css">
 
   <!-- Head sripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
