@@ -7,7 +7,7 @@
   <!-- Enable responsiveness on mobile devices -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
 
-  {% if page.url == "/" %}
+  {% if page.title == "Home" %}
     {% assign page_title = site.title %}
   {% else %}
     {% assign page_title = page.title | append: ' - ' | append: site.title %}
