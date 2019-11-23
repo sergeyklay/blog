@@ -211,63 +211,50 @@ tbody tr:nth-child(odd) th {
 
 /*
   Masthead
+
   Super small header above the content for site name and short description.
 */
 
 .masthead {
+  border-bottom: 1px solid #eee;
   margin-bottom: 3rem;
-  text-align: center;
   padding-top: 26px;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  text-align: center;
 }
 
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
   color: #505050;
+  font-family: $main-font;
+  font-size: 1.8rem;
   line-height: .777em;
-}
-
-.masthead-title a {
-  color: $link-color;
+  margin-top: 2em;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
 }
 
 .masthead-title small {
-  font-family: $main-font;
+  color: $text-color;
+  display: none; /* This is an accessibility no-no */
+  font-family: $heading-font;
   font-size: .88rem;
   font-weight: 300;
-  color: $text-color;
   letter-spacing: .05rem;
-  font-family: $heading-font;
 }
 
-.masthead-title {
-  font-family: $main-font;
-  font-size: 1.8rem;
-  margin-top: 2px;
-}
-
-@media (max-width: 48em) {
+@media (min-width: 320px) {
   .masthead-title {
-    text-align: center;
-  }
-
-  .masthead-title small {
-    display: none;
-  }
-
-  .masthead-title {
-    margin-left: 15%;
+    margin-top: 2px;
     margin-right: 15%;
+    margin-left: 15%;
   }
 }
 
-@media (max-width: 320px) {
-  .masthead-title {
-    margin-top: 2em;
-    margin-left: 0%;
-    margin-right: 0%;
+@media (min-width: 48em) {
+  .masthead-title small {
+    display: inline;
   }
 }
 
