@@ -18,7 +18,7 @@ toc:
 
 ## META II
 
-В 1963-1964 годах, буквально через несколько лет после появления <abbr title="Backus-Naur Form">BNF</abbr>, за авторством Dewey Val Schorre работавшим тогда в Калифорнийском университете в Лос-Анджелесе (<abbr title="University of California, Los Angeles">[UCLA](http://www.ucla.edu/)</abbr>) выходит в свет язык программирования META II. Примечательно, что в 1963 году была разработана и стандартизована <abbr title="American Standard Code for Information Interchange">ASCII</abbr>-таблица.
+В 1963-1964 годах, буквально через несколько лет после появления <abbr title="Backus-Naur Form">BNF</abbr>, за авторством Dewey Val Schorre работавшим тогда в Калифорнийском университете в Лос-Анджелесе ([<abbr title="University of California, Los Angeles">UCLA</abbr>](http://www.ucla.edu/)) выходит в свет язык программирования META II. Примечательно, что в 1963 году была разработана и стандартизована <abbr title="American Standard Code for Information Interchange">ASCII</abbr>-таблица.
 
 Основная сфера применения этого языка — создание компиляторов. В документации по языку, META II описывается как «синтакс-ориентированный язык для написания компиляторов», а так же «язык похожий на BNF». В этом языке были введены такие понятия и конструкции, которые в том или ином виде дожили и до наших дней в виде продолжения в <abbr title="Extended Backus-Naur Form">EBNF</abbr> и <abbr title="Augmented Backus-Naur Form">ABNF</abbr>, о которых мы поговорим ниже.
 
