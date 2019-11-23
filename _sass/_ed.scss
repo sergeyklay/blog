@@ -12,7 +12,8 @@
 */
 
 /*
-  To apply a different color scheme to the whole scroll down to the themes section for instructions
+  To apply a different color scheme to the whole scroll down to the themes section for instructions at
+  the very bottom of this file
 */
 
 
@@ -33,7 +34,7 @@ body {
 
 html {
   font-family: $main-font;
-  font-size: 16px;
+  font-size: 1em; /* 16px; specify in ems to support text resizing in all browsers */
   line-height: 1.5;
 }
 
@@ -75,17 +76,11 @@ body {
 */
 
 .container {
-  max-width: 38rem;
+  max-width: 32rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
-}
-
-@media (min-width: 38em) {
-  .container {
-    max-width: 32rem;
-  }
 }
 
 @media (min-width: 56em) {
@@ -94,33 +89,30 @@ body {
   }
 }
 
-/* Links*/
+/* Links */
 a, .text-title a {
   color: $link-color;
   text-decoration: none;
 }
 
-/* `:focus` is linked to `:hover` for basic accessibility*/
+/* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
   text-decoration: underline;
 }
 
-/* Headings*/
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   margin-bottom: .5rem;
-  font-weight: 300;
+  font-weight: normal;
   color: $heading-color;
   letter-spacing: -.025rem;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
 }
 
-h1 {
-  font-size: 1.4rem;
-}
-
+h1,
 h1.text-title {
   font-size: 1.4rem;
 }
@@ -131,6 +123,7 @@ h2 {
 }
 
 h3, h4, h5 {
+  margin-top: 1rem;
   font-size: 1rem;
 }
 
@@ -138,17 +131,13 @@ h3 {
   margin-top: 1.5rem;
 }
 
-h4, h5, h6 {
-  margin-top: 1rem;
-}
-
-/* Body text*/
+/* Body text */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* Lists*/
+/* Lists */
 ul {
   list-style: circle;
 }
@@ -158,9 +147,8 @@ ul, ol {
   margin-bottom: 1rem;
 }
 
-/* Horizontal ruler*/
+/* Horizontal ruler */
 hr {
-  margin-top: 60px;
   position: relative;
   margin: 1.5rem 0;
   border: 0;
@@ -168,13 +156,13 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
-/* Search Highlihting*/
+/* Search highlighting */
 mark {
   color: white;
   background-color: $link-color;
 }
 
-/* Quotes*/
+/* Quotes */
 blockquote {
   padding: 0rem 1.5rem 0rem 2rem;
   margin: 0 0 20px 0;
@@ -194,16 +182,7 @@ blockquote p:last-child {
   }
 }
 
-/* To add an attribution make sure to make a line with the attribution class*/
-li.attribution {
-  text-align: right;
-  list-style: none;
-  padding: 0rem 1.5rem 0rem 2rem;
-  margin: 0 0 20px 0;
-  color: $text-color;
-}
-
-/* Images*/
+/* Images */
 img {
   display: block;
   max-width: 100%;
@@ -211,7 +190,7 @@ img {
   border-radius: 5px;
 }
 
-/* Tables*/
+/* Tables */
 table {
   margin-bottom: 1rem;
   width: 100%;
@@ -238,72 +217,47 @@ tbody tr:nth-child(odd) th {
 */
 
 .masthead {
+  border-bottom: 1px solid #eee;
   margin-bottom: 3rem;
-  text-align: center;
   padding-top: 26px;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  text-align: center;
 }
 
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
   color: #505050;
+  font-family: $main-font;
+  font-size: 1.8rem;
   line-height: .777em;
-}
-
-.masthead-title a {
-  color: $link-color;
+  margin-top: 2em;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
 }
 
 .masthead-title small {
-  font-family: $main-font;
+  color: $text-color;
+  display: none; /* This is an accessibility no-no */
+  font-family: $heading-font;
   font-size: .88rem;
   font-weight: 300;
-  color: $text-color;
   letter-spacing: .05rem;
-  font-family: $heading-font;
 }
 
-h3.masthead-title {
-  font-family: $main-font;
-  font-size: 1.8rem;
-  margin-top: 2px;
-}
-
-@media (max-width: 48em) {
+@media (min-width: 320px) {
   .masthead-title {
-    text-align: center;
+    margin-top: 2px;
+    margin-right: 15%;
+    margin-left: 15%;
   }
+}
 
+@media (min-width: 48em) {
   .masthead-title small {
-    display: none;
-  }
-
-  h3.masthead-title {
-  margin-left: 15%;
-  margin-right: 15%;
+    display: inline;
   }
 }
-
-@media (max-width: 320px) {
-  h3.masthead-title {
-  margin-top: 2em;
-  margin-left: 0%;
-  margin-right: 0%;
-  }
-}
-
-/* Page and Posts*/
-.page {
-  margin-bottom: 4em;
-}
-
-.page-title {
-  color: $heading-color;
-  margin-top: 0;
-}
-
 
 /*
   Sidebar
@@ -337,11 +291,11 @@ h3.masthead-title {
 
 @media (min-width: 30em) {
   .sidebar {
-    font-size: .75rem;/* 14px*/
+    font-size: .75rem;/* 14px */
   }
 }
 
-/* Sidebar content*/
+/* Sidebar content */
 .sidebar {
   background-color: $link-color;
 }
@@ -359,7 +313,7 @@ h3.masthead-title {
   margin-bottom: 0;
 }
 
-/* Sidebar nav*/
+/* Sidebar nav */
 .sidebar-nav {
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
@@ -393,12 +347,12 @@ a.sidebar-nav-item:focus {
   }
 }
 
-/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle`*/
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
 .sidebar-checkbox {
   display: none;
 }
 
-/* Style the `label` that we use to target the `.sidebar-checkbox`*/
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
   top:  .8rem;
@@ -454,10 +408,10 @@ a.sidebar-nav-item:focus {
 /*
   Slide effect
 
-  Handle the sliding effects of the sidebar and content in one spot, seperate from the default
+  Handle the sliding effects of the sidebar and content in one spot, separate from the default
   styles.
 
-  As an a heads up, we don't use `transform: translate3d()` here because when mixed with
+  As an a heads-up, we don't use `transform: translate3d()` here because when mixed with
   `position: fixed;` for the sidebar toggle, it creates a new containing block. Put simply, the
   fixed sidebar toggle behaves like `position: absolute;` when transformed.
 
@@ -544,102 +498,8 @@ a.sidebar-nav-item:focus {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
-
 /*
-  Themes
-
-  Applies custom color schemes by adding the appropriate class to the `body`. Based on colors from
-  Base16: http://chriskempson.com/projects/base16/
-*/
-
-/* Red*/
-.theme-base-red .sidebar,
-.theme-base-red .sidebar-toggle:active,
-.theme-base-red #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #ac4142;
-}
-
-.theme-base-red .container a,
-.theme-base-red .sidebar-toggle,
-.theme-base-red .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange*/
-.theme-base-orange .sidebar,
-.theme-base-orange .sidebar-toggle:active {
-  background-color: #d28445;
-}
-
-.theme-base-orange .container a,
-.theme-base-orange .sidebar-toggle,
-.theme-base-orange .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Green*/
-.theme-base-green .sidebar,
-.theme-base-green .sidebar-toggle:active {
-  background-color: #90a959;
-}
-
-.theme-base-green .container a,
-.theme-base-green .sidebar-toggle,
-.theme-base-green .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan*/
-.theme-base-cyan .sidebar,
-.theme-base-cyan .sidebar-toggle:active {
-  background-color: #75b5aa;
-}
-
-.theme-base-cyan .container a,
-.theme-base-cyan .sidebar-toggle,
-.theme-base-cyan .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue*/
-.theme-base-blue .sidebar,
-.theme-base-blue .sidebar-toggle:active {
-  background-color: #6a9fb5;
-}
-
-.theme-base-blue .container a,
-.theme-base-blue .sidebar-toggle,
-.theme-base-blue .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta*/
-.theme-base-magenta .sidebar,
-.theme-base-magenta .sidebar-toggle:active {
-  background-color: #aa759f;
-}
-
-.theme-base-magenta .container a,
-.theme-base-magenta .sidebar-toggle,
-.theme-base-magenta .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown*/
-.theme-base-brown .sidebar,
-.theme-base-brown .sidebar-toggle:active {
-  background-color: #8f5536;
-}
-
-.theme-base-brown .container a,
-.theme-base-brown .sidebar-toggle,
-.theme-base-brown .related-posts li a:hover {
-  color: #8f5536;
-}
-
-
-/*
- ED SPECIAL LAYOUTS
+ ED special layouts
 */
 
 p.centered {
@@ -687,76 +547,67 @@ ul.poetry {
 }
 
 
-/* This snippet helps us reset the margin for all spans with the indent- class*/
-.poetry span[class^='indent-']{
+/* This snippet helps us reset the margin for all spans with the indent-class*/
+.poem span[class^='indent-'],
+.poetry span[class^='indent-'] {
   margin: 0;/* reset browsers default margin styles*/
 }
 
 
 /*
   To set line indentation for poetry wrap the line in a span, with a class="indent-x" attribute.
-  The x is represents an rem (root em) value
+  The x is represents a rem (root em) value
 */
 
 .indent-1 {
-  font-style: normal;
   padding-left: 1rem;
 }
 
 .indent-2 {
-  font-style: normal;
   padding-left: 2rem;
 }
 
 .indent-3 {
-  font-style: normal;
   padding-left: 3rem;
 }
 
 .indent-4 {
-  font-style: normal;
   padding-left: 4rem;
 }
 
 .indent-5 {
-  font-style: normal;
   padding-left: 5rem;
 }
 
 .indent-6 {
-  font-style: normal;
   padding-left: 6rem;
 }
 
 .indent-7 {
-  font-style: normal;
   padding-left: 7rem;
 }
 
 .indent-8 {
-  font-style: normal;
   padding-left: 8rem;
 }
 
 .indent-9 {
-  font-style: normal;
   padding-left: 9rem;
 }
 
 .indent-10 {
-  font-style: normal;
   padding-left: 10rem;
 }
 
 .poem .byline,
 .poetry .byline {
   font-style: italic;
-  font-weight: 300;
+  font-weight: normal;
   letter-spacing: 0;
   margin-top: -.5rem;
 }
 
-/* Footnotes styles*/
+/* Footnotes styles */
 sub,
 sup {
   font-size: 75%;
@@ -794,17 +645,20 @@ ol.bibliography {
   text-indent: -1rem;
 }
 
-/* Diplomatic editions*/
+/* Diplomatic editions */
+ins,
 .add {
   color:#288828;
   font-style: italic;
 }
 
+del,
 .delete {
   text-decoration: line-through;
   color: #AA3232;
 }
 
+u,
 .underline {
   text-decoration: underline;
 }
@@ -847,4 +701,96 @@ li.prose {
 
 li.prose-indent {
   text-indent: 2rem;
+}
+
+/*
+  Themes
+
+  Applies custom color schemes by adding the appropriate class to the `body`. Based on colors from
+  Base16: http://chriskempson.com/projects/base16/
+*/
+
+/* Red */
+.theme-base-red .sidebar,
+.theme-base-red .sidebar-toggle:active,
+.theme-base-red #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #ac4142;
+}
+
+.theme-base-red .container a,
+.theme-base-red .sidebar-toggle,
+.theme-base-red .related-posts li a:hover {
+  color: #ac4142;
+}
+
+/* Orange */
+.theme-base-orange .sidebar,
+.theme-base-orange .sidebar-toggle:active {
+  background-color: #d28445;
+}
+
+.theme-base-orange .container a,
+.theme-base-orange .sidebar-toggle,
+.theme-base-orange .related-posts li a:hover {
+  color: #d28445;
+}
+
+/* Green */
+.theme-base-green .sidebar,
+.theme-base-green .sidebar-toggle:active {
+  background-color: #90a959;
+}
+
+.theme-base-green .container a,
+.theme-base-green .sidebar-toggle,
+.theme-base-green .related-posts li a:hover {
+  color: #90a959;
+}
+
+/* Cyan */
+.theme-base-cyan .sidebar,
+.theme-base-cyan .sidebar-toggle:active {
+  background-color: #75b5aa;
+}
+
+.theme-base-cyan .container a,
+.theme-base-cyan .sidebar-toggle,
+.theme-base-cyan .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+/* Blue */
+.theme-base-blue .sidebar,
+.theme-base-blue .sidebar-toggle:active {
+  background-color: #6a9fb5;
+}
+
+.theme-base-blue .container a,
+.theme-base-blue .sidebar-toggle,
+.theme-base-blue .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+/* Magenta */
+.theme-base-magenta .sidebar,
+.theme-base-magenta .sidebar-toggle:active {
+  background-color: #aa759f;
+}
+
+.theme-base-magenta .container a,
+.theme-base-magenta .sidebar-toggle,
+.theme-base-magenta .related-posts li a:hover {
+  color: #aa759f;
+}
+
+/* Brown */
+.theme-base-brown .sidebar,
+.theme-base-brown .sidebar-toggle:active {
+  background-color: #8f5536;
+}
+
+.theme-base-brown .container a,
+.theme-base-brown .sidebar-toggle,
+.theme-base-brown .related-posts li a:hover {
+  color: #8f5536;
 }

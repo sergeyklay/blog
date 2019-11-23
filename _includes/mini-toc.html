@@ -7,7 +7,7 @@
   <ul class="texts">
     {% for item in site.posts offset: 0 limit: posts_limit %}
       <li class="text-title">
-        <h4>
+        <h3>
           <span class="post-meta">
             <time datetime="{{ item.date | date_to_xmlschema }}">
               {{ item.date | date: "%Y.%m.%d" }}
@@ -17,7 +17,7 @@
           <a href="{{ site.baseurl }}{{ item.url }}">
             {{ item.title | escape }}
           </a>
-        </h4>
+        </h3>
       </li>
     {% endfor %}
   </ul>
