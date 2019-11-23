@@ -6,7 +6,7 @@ layout: default
   <h1 class="page-title">Блог</h1>
   {{ content }}
 
-  <section class="blog-list">
+  <section class="blog-list" role="navigation">
     {% for post in paginator.posts %}
       {% include teaser.html %}
     {% endfor %}

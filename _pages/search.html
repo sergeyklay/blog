@@ -5,7 +5,7 @@ description: Поиск по блогу Сергея Яковлева.
 permalink: search.html
 ---
 
-<section class="introduction">
+<section class="introduction" role="search">
   <h1 class="page-title">{{ page.title }}</h1>
 
   <p>
@@ -19,7 +19,8 @@ permalink: search.html
              type="text"
              autocomplete="on"
              class="form-input"
-             placeholder="Введите искомую строку">
+             placeholder="Введите искомую строку"
+             role="searchbox">
   </form>
 
   <div id="results"></div>
