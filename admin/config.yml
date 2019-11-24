@@ -27,6 +27,7 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "TOC", name: "toc", widget: "list", required: false }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: 'page'
