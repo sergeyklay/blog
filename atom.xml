@@ -27,7 +27,7 @@ layout: null
     <name><![CDATA[{{ site.author.name }}]]></name>
     <email>
       {{ site.author.email | replace: ".no-spam.", "@" }}
-      </email>
+    </email>
   </author>
 
   <rights>
