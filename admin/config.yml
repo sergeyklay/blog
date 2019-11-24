@@ -11,28 +11,31 @@ slug:
   sanitize_replacement: "_"
 
 collections:
-  - name: "post"
-    label: "Post"
-    folder: "_posts"
+  - name: 'post'
+    label: 'Posts'
+    label_singular: 'Post'
+    folder: '_posts'
     sort: "date:desc"
     create: true
-    slug: "{{ year }}-{{ month }}-{{ day }}-{{ fields.slug }}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss" }
       - { label: "Image", name: "featured_image", widget: "image", required: false }
-      - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "TOC", name: "toc", widget: "markdown", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "TOC", name: "toc", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "page"
-    label: "Page"
-    folder: "_pages"
-    sort: "title:asc"
+  - name: 'page'
+    label: 'Pages'
+    label_singular: 'Page'
+    folder: '_pages'
+    sort: 'title:asc'
     create: true
-    slug: "{{ slug }}"
+    slug: '{{slug}}'
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Title", name: "title", widget: "string" }
