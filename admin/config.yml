@@ -15,9 +15,9 @@ collections:
     label: 'Posts'
     label_singular: 'Post'
     folder: '_posts'
-    sort: "date:desc"
+    sort: 'date:desc'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
@@ -43,3 +43,5 @@ collections:
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Image", name: "featured_image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Sitemap", name: "sitemap", widget: "select", options: [true, false] }
+      - { label: "Scan by robots", name: "no_robots", widget: "select", options: [true, false] }
