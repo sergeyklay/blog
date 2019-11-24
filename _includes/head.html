@@ -26,7 +26,11 @@
   {% if page.excerpt %}
     {% assign page_description = page.excerpt | strip_html | strip_newlines | truncate: 150 %}
   {% else %}
-    {% assign page_description = site.description | strip_html | strip_newlines | truncate: 150 %}
+    {% if page.description %}
+      {% assign page_description = page.description | strip_html | strip_newlines | truncate: 150 %}
+    {% else %}
+      {% assign page_description = site.description | strip_html | strip_newlines | truncate: 150 %}
+    {% endif %}
   {% endif %}
 
   <meta name="description" content="{{ page_description }}">
