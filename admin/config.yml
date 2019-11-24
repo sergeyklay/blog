@@ -34,7 +34,8 @@ collections:
     label_singular: 'Page'
     folder: '_pages'
     create: true
-    slug: '{{slug}}'
+    extension: 'html'
+    slug: '{{name}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - { label: 'Title', name: 'title', widget: 'string' }
