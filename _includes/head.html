@@ -14,6 +14,10 @@
 
   <title>{{ page_title }}</title>
 
+  {% if page.collection == 'posts' %}
+    {% include post-schema.html %}
+  {% endif %}
+
   <meta name="generator" content="Jekyll">
   {% if page.no_robots %}
     <meta name="robots" content="noindex, nofollow">
@@ -28,7 +32,7 @@
   <meta name="description" content="{{ page_description }}">
   <meta name="keyword" content="{{ site.keywords }}">
   <meta name="rating" content="General">
-  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode.txt">
+  <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru">
 
   {% capture resource_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
 
@@ -116,7 +120,7 @@
         href="{{ site.baseurl }}/assets/images/icons/apple-touch-icon-180x180.png">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ directory_url }}/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ directory_url }}/atom.xml">
 
   <!-- CSS link -->
   <link rel="stylesheet" href="{{ directory_url }}/assets/css/style.css">
