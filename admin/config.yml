@@ -3,45 +3,45 @@ backend:
   branch: master
 
 publish_mode: editorial_workflow
-media_folder: "/assets/images"
+media_folder: '/assets/images'
 
 slug:
-  encoding: "ascii"
+  encoding: 'ascii'
   clean_accents: true
-  sanitize_replacement: "_"
+  sanitize_replacement: '_'
 
 collections:
   - name: 'post'
     label: 'Posts'
     label_singular: 'Post'
     folder: '_posts'
-    sort: 'date:asc'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss" }
-      - { label: "Image", name: "featured_image", widget: "image", required: false }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "TOC", name: "toc", widget: "list", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD hh:mm:ss' }
+      - { label: 'Image', name: 'featured_image', widget: 'image', required: false }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
+      - { label: 'TOC', name: 'toc', widget: 'list', required: false }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'page'
     label: 'Pages'
     label_singular: 'Page'
     folder: '_pages'
-    sort: 'title:asc'
     create: true
-    slug: '{{slug}}'
+    extension: 'html'
+    slug: '{{name}}'
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
-      - { label: "Description", name: "description", widget: "string", required: false }
-      - { label: "Image", name: "featured_image", widget: "image", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Sitemap", name: "sitemap", widget: "boolean", default: true }
-      - { label: "Scan by robots", name: "no_robots", widget: "boolean", default: false }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Image', name: 'featured_image', widget: 'image', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Sitemap', name: 'sitemap', widget: 'boolean', default: true }
+      - { label: 'Scan by robots', name: 'no_robots', widget: 'boolean', default: false }
