@@ -85,3 +85,14 @@ $break-desktop: 1600px;
      -moz-box-sizing: $value;
           box-sizing: $value;
 }
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Box Shadow
+//
+// Usage: @include box-shadow (0 0 2px 1px #e21a23!important);
+
+@mixin box-shadow ($args...) {
+  -webkit-box-shadow: $args;
+     -moz-box-shadow: $args;
+          box-shadow: $args;
+}

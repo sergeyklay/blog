@@ -97,17 +97,11 @@ contact:
 
 # Exclusions from the final site
 exclude:
-  - optional
-  - vendor
   - Gemfile
   - Gemfile.lock
-  - backstop_data
-  - backstop.json
-  - serve
   - LICENSE
   - README.md
-  - CNAME
-  - src
+  - serve
 
 include:
   - _redirects
