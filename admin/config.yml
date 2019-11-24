@@ -16,14 +16,17 @@ collections:
     folder: "_posts"
     sort: "date:desc"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{ year }}-{{ month }}-{{ day }}-{{ fields.slug }}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
       - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       - { label: "Image", name: "featured_image", widget: "image", required: false }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "TOC", name: "toc", widget: "markdown", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Slug", name: "slug", widget: "string" }
+
   - name: "page"
     label: "Page"
     folder: "_pages"
