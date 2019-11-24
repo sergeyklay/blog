@@ -76,10 +76,10 @@ input#search {
 }
 
 .contact-form-item-error {
-	.contact-form-input,
-	.contact-form-textarea {
-		border-color: #D64541;
-	}
+  .contact-form-input,
+  .contact-form-textarea {
+    @include box-shadow (0 0 2px 1px #D64541!important);
+  }
 }
 
 .contact-form-label {
