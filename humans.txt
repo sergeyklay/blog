@@ -1,7 +1,7 @@
 /* AUTHOR */
 
 Author: Serghei (klay) Iakovlev
-Contact: egrep [at] protonmail.ch
+Contact: mail [at] serghei.blog
 GitHub: @sergeyklay
 From: Kyiv, Ukraine
 
