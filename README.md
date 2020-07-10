@@ -36,7 +36,7 @@ This will start a server on port 4000.
 ## Copyright & Licenses
 
 The content of my blog (this project) is licensed under the [CC-BY-4.0][:cc-by-4.0:].
-A modified version of [Ed][:gh-ed:] theme is distrubuted under the [MIT License][:ed-license:].
+A modified version of [Ed][:gh-ed:] theme is distributed under the [MIT License][:ed-license:].
 
 [:badge-gh:]: https://github.com/sergeyklay/blog/workflows/CI/badge.svg
 [:build-gh:]: https://github.com/sergeyklay/blog/actions
