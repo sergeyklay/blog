@@ -10,25 +10,26 @@ You're looking at the source code of my brand-spanking new blog.
 
 To play with this blog at your local environment you need the following requirements:
 
-- Ruby >= 2.4.0
+- Ruby >= 2.6.6
 
 First you need to get the project:
 
-```bash
-git clone git@github.com:sergeyklay/blog.git
-cd blog
+```shell
+$ git clone git@github.com:sergeyklay/blog.git
+$ cd blog
 ```
 
 After that, we need a few ruby dependencies:
 
-```bash
-bundle install
+```shell
+$ gem install bundler
+$ bundle install
 ```
 
 Then, from the root of the blog just run:
 
-```sh
-./serve
+```shell
+$ ./serve
 ```
 
 This will start a server on port 4000.
