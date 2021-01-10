@@ -22,7 +22,6 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-          architecture: 'x64'
 
       - uses: actions/cache@v2
         id: bundle-cache
