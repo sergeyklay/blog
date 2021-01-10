@@ -12,9 +12,9 @@ jobs:
     strategy:
       matrix:
         ruby:
-          - '2.4.x'
-          - '2.5.x'
           - '2.6.x'
+          - '2.7.x'
+          - '3.0.x'
 
     steps:
       - uses: actions/checkout@v1
@@ -24,7 +24,7 @@ jobs:
           ruby-version: ${{ matrix.ruby }}
           architecture: 'x64'
 
-      - uses: actions/cache@preview
+      - uses: actions/cache@v2
         id: bundle-cache
         with:
           path: ~/.bundle
