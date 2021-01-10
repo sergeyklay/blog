@@ -1,6 +1,7 @@
 # Serghei's blog
 
 [![Build Status][:badge-gh:]][:build-gh:]
+[![Netlify Status][:badge-netlify:]][:deploy-netlify:]
 
 You're looking at the source code of my brand-spanking new blog.
 
@@ -44,3 +45,5 @@ A modified version of [Ed][:gh-ed:] theme is distributed under the [MIT License]
 [:cc-by-4.0:]: https://creativecommons.org/licenses/by/4.0
 [:gh-ed:]: https://github.com/minicomp/ed
 [:ed-license:]: https://github.com/minicomp/ed/blob/bedbc4c6870174451368fc51ecccd8bad5a36bdf/LICENSE.md
+[:badge-netlify:]: https://api.netlify.com/api/v1/badges/79298078-1216-4189-b97a-31372814fbd5/deploy-status
+[:deploy-netlify:]: https://app.netlify.com/sites/serghei/deploys
