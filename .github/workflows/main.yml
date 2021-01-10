@@ -16,7 +16,10 @@ jobs:
           - '2.7.x'
 
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 5
 
       - uses: actions/setup-ruby@v1
         with:
@@ -38,3 +41,7 @@ jobs:
 
       - name: Test
         run: bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+
+      - name: Success Reporting
+        if: success()
+        run: git log --format=fuller -5
