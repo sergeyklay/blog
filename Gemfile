@@ -2,6 +2,7 @@
 
 source "https://rubygems.org"
 
+gem 'kramdown',  '>=2.3.1'
 gem 'jekyll', '4.0.0'
 gem 'html-proofer'
 
