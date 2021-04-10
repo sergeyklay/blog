@@ -1,7 +1,10 @@
 # Serghei's blog
 
 You're looking at the source code of my old blog.
-**Please note, I no longer maintain this project and keep it public for educational purposes and for historical reasons.**
+
+**Note:** I no longer maintain this project and keep it public for
+educational purposes and for historical reasons. The new blog lives at
+https://github.com/sergeyklay/branch
 
 ## How to try it out
 
