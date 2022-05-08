@@ -19,6 +19,12 @@ theme = 'ed'
   color_scheme = ''
   github_url = 'https://github.com/sergeyklay/blog'
   tagline = 'Мой блокнот, мастерская, место где я делюсь своим опытом и мыслями'
+  footer = """
+    © Сергей Яковлев, 2018-2022.
+    Если не указано иного, всё содержимое сайта доступно под лицензией
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru" target="_blank" rel="noopener noreferrer">
+      CC BY-NC-SA 4.0
+    </a>."""
 
 [menu]
   [[menu.main]]
