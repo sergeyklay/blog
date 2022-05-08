@@ -1,0 +1,50 @@
+baseURL = 'https://serghei.blog/'
+
+languageCode = 'ru'
+defaultContentLanguage = 'ru'
+title = 'Сергей Яковлев'
+theme = 'ed'
+
+[languages]
+  [languages.ru]
+    weight = 1
+    languageDirection = 'ltr'
+  [languages.en]
+    weight = 2
+    languageDirection = 'ltr'
+
+[params]
+  author = 'Сергей Яковлев'
+  description = 'Персональный блог Сергея Яковлева'
+  color_scheme = ''
+  github_url = 'https://github.com/sergeyklay/blog'
+  tagline = 'Мой блокнот, мастерская, место где я делюсь своим опытом и мыслями'
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Блог'
+    url = '/'
+    weight = -20
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Контактная форма'
+    url = '/contact/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'about'
+    name = 'Обо мне'
+    url = '/about/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'github'
+    name = 'GitHub профиль'
+    url = 'https://github.com/sergeyklay/'
+    weight = 20
+    [menu.main.params]
+      external = true
+
+
+[markup]
+  [markup.highlight]
+    style = 'monokailight'
