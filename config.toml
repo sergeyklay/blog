@@ -1,4 +1,5 @@
 baseURL = 'https://serghei.blog/'
+uglyurls = true
 
 languageCode = 'ru'
 defaultContentLanguage = 'ru'
@@ -12,6 +13,13 @@ theme = 'ed'
   [languages.en]
     weight = 2
     languageDirection = 'ltr'
+
+[permalinks]
+    posts = '/:section/:year/:month/:day/:slug'
+    dramas = '/:section/:year/:month/:day/:slug'
+    narratives = '/:section/:year/:month/:day/:slug'
+    poems = '/:section/:year/:month/:day/:slug'
+    pages = '/:slug'
 
 [params]
   author = 'Сергей Яковлев'
@@ -39,12 +47,12 @@ theme = 'ed'
   [[menu.main]]
     identifier = 'contact'
     name = 'Контактная форма'
-    url = '/contact/'
+    url = '/contact.html'
     weight = 1
   [[menu.main]]
     identifier = 'about'
     name = 'Обо мне'
-    url = '/about/'
+    url = '/about.html'
     weight = 2
   [[menu.main]]
     identifier = 'github'
