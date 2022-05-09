@@ -28,7 +28,7 @@ theme = 'ed'
   main_sections = ['posts', 'dramas', 'narratives', 'poems']
   post_meta = ['date']
   dateformat = 'January 02, 2006'
-  readmore = false
+  readmore = true
 
 [menu]
   [[menu.main]]
