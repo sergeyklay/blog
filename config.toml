@@ -62,7 +62,10 @@ theme = 'ed'
     [menu.main.params]
       external = true
 
-
 [markup]
   [markup.highlight]
     style = 'monokailight'
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
