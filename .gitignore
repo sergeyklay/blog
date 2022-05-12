@@ -7,6 +7,9 @@
 
 # Directories to ignore (do not add trailing '/'s, they skip symlinks).
 
+/public
+/resources
+
 # Temporary lock file while building.
 .hugo_build.lock
 
