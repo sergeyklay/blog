@@ -6,6 +6,8 @@ defaultContentLanguage = 'ru'
 title = 'Сергей Яковлев'
 theme = 'ed'
 
+enableRobotsTXT = true
+
 [languages]
   [languages.ru]
     weight = 1
