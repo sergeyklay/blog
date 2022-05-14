@@ -5,8 +5,21 @@ languageCode = 'ru'
 defaultContentLanguage = 'ru'
 title = 'Сергей Яковлев'
 theme = 'ed'
-
 enableRobotsTXT = true
+
+[outputs]
+  home = [ 'HTML', 'humanstxt' ]
+
+[outputFormats.humanstxt]
+  baseName = 'humans'
+  isPlainText = true
+  mediaType = 'text/plain'
+
+[author]
+  name = 'Serghei Iakovlev'
+  email = 'mail@serghei.blog'
+  github = '@sergeyklay'
+  location = 'Kyiv, Ukraine'
 
 [languages]
   [languages.ru]
