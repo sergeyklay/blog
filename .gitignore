@@ -12,6 +12,3 @@
 
 # Temporary lock file while building.
 .hugo_build.lock
-
-# I use this as my wish list
-LATER
