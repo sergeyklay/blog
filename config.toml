@@ -42,8 +42,7 @@ enableRobotsTXT = true
 [params]
   author = 'Сергей Яковлев'
   description = 'Персональный блог Сергея Яковлева'
-  color_scheme = ''
-  github_url = 'https://github.com/sergeyklay/blog'
+  colorScheme = ''
   tagline = 'Мой блокнот, мастерская, место где я делюсь своим опытом и мыслями'
   footer = """
     © Сергей Яковлев, 2018-2022.
@@ -51,8 +50,8 @@ enableRobotsTXT = true
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru" target="_blank" rel="noopener noreferrer">
       CC BY-NC-SA 4.0
     </a>."""
-  main_sections = ['posts', 'dramas', 'narratives', 'poems']
-  post_meta = ['date']
+  mainSections = ['posts', 'dramas', 'narratives', 'poems']
+  postMeta = ['date']
   dateformat = 'January 02, 2006'
   readmore = true
 
