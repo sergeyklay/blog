@@ -32,3 +32,27 @@
 
 [context.next.environment]
   HUGO_ENABLEGITINFO = 'true'
+
+[[redirects]]
+  from = '/page/about.html'
+  to = '/about.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/static/serghei.asc'
+  to = '/serghei.asc'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/post/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/post/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+  status = 301
+  force = false
