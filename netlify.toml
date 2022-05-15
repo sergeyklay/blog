@@ -6,7 +6,7 @@
   HUGO_VERSION = '0.98.0'
   HUGO_ENV = 'production'
   HUGO_BASEURL = 'https://serghei.netlify.app/'
-  HUGO_ENABLEGITINFO = true
+  HUGO_ENABLEGITINFO = 'true'
 
 [context.split1]
   command = 'hugo --gc --minify --enableGitInfo'
@@ -31,4 +31,4 @@
   HUGO_BASEURL = 'https://serghei.netlify.app/'
 
 [context.next.environment]
-  HUGO_ENABLEGITINFO = true
+  HUGO_ENABLEGITINFO = 'true'
