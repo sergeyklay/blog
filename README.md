@@ -1,5 +1,7 @@
 # Serghei's blog
 
+[![Netlify Status][netlify-badge]][deploy-status]
+
 You're looking at the source code of [my brand-spanking new blog][blog],
 permissively licensed for others to adapt.
 
@@ -48,6 +50,8 @@ Feel free to use the HTML and CSS as you please.
 If you do use anything here, a link back to https://github.com/sergeyklay/blog
 would be appreciated.
 
+[netlify-badge]: https://api.netlify.com/api/v1/badges/30629dcb-5a8d-4e2c-8089-f600b50e006b/deploy-status
+[deploy-status]: https://app.netlify.com/sites/serghei/deploys
 [blog]: https://serghei.blog/?utm_source=github.com&utm_campaign=banch_readme&utm_medium=smm
 [hugo]: http://gohugo.io
 [issues]: https://github.com/sergeyklay/blog/issues
