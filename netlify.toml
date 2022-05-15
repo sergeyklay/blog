@@ -1,0 +1,58 @@
+[build]
+  publish = 'public'
+  command = 'hugo --gc --verbose --minify'
+
+[context.production.environment]
+  HUGO_VERSION = '0.98.0'
+  HUGO_ENV = 'development' # production, staging, development
+  HUGO_BASEURL = 'https://serghei.netlify.app/'
+  HUGO_ENABLEGITINFO = 'true'
+
+[context.split1]
+  command = 'hugo --gc --minify --enableGitInfo'
+
+[context.split1.environment]
+  HUGO_VERSION = '0.98.0'
+  HUGO_ENV = 'development' # production, staging, development
+  HUGO_BASEURL = 'https://serghei.netlify.app/'
+
+[context.deploy-preview]
+  command = 'hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL'
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = '0.98.0'
+  HUGO_BASEURL = 'https://serghei.netlify.app/'
+
+[context.branch-deploy]
+  command = 'hugo --gc --minify -b $DEPLOY_PRIME_URL'
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = '0.98.0'
+  HUGO_BASEURL = 'https://serghei.netlify.app/'
+
+[context.next.environment]
+  HUGO_ENABLEGITINFO = 'true'
+
+[[redirects]]
+  from = '/page/about.html'
+  to = '/about.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/static/serghei.asc'
+  to = '/serghei.asc'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/post/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/post/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+  status = 301
+  force = false

@@ -1,0 +1,88 @@
+baseURL = 'https://serghei.blog/'
+uglyurls = true
+
+languageCode = 'ru'
+defaultContentLanguage = 'ru'
+title = 'Сергей Яковлев'
+theme = 'ed'
+enableRobotsTXT = true
+
+[outputs]
+  home = [ 'HTML', 'humanstxt' ]
+
+[outputFormats.humanstxt]
+  baseName = 'humans'
+  isPlainText = true
+  mediaType = 'text/plain'
+
+[author]
+  [author.serghei]
+    name = 'Serghei Iakovlev'
+    email = 'mail@serghei.blog'
+    github = '@sergeyklay'
+    location = 'Kyiv, Ukraine'
+
+[languages]
+  [languages.ru]
+    weight = 1
+    languageDirection = 'ltr'
+    languageName = 'Russian'
+  [languages.en]
+    weight = 2
+    languageDirection = 'ltr'
+    languageName = 'English'
+
+[permalinks]
+    posts = '/:section/:year/:month/:day/:slug'
+    dramas = '/:section/:year/:month/:day/:slug'
+    narratives = '/:section/:year/:month/:day/:slug'
+    poems = '/:section/:year/:month/:day/:slug'
+    pages = '/:slug'
+
+[params]
+  author = 'Сергей Яковлев'
+  description = 'Персональный блог Сергея Яковлева'
+  colorScheme = ''
+  tagline = 'Мой блокнот, мастерская, место где я делюсь своим опытом и мыслями'
+  footer = """
+    © Сергей Яковлев, 2018-2022.
+    Если не указано иного, всё содержимое сайта доступно под лицензией
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru" target="_blank" rel="noopener noreferrer">
+      CC BY-NC-SA 4.0
+    </a>."""
+  mainSections = ['posts', 'dramas', 'narratives', 'poems']
+  postMeta = ['date']
+  dateformat = 'January 02, 2006'
+  readmore = true
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Блог'
+    url = '/'
+    weight = -20
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Контактная форма'
+    url = '/contact.html'
+    weight = 1
+  [[menu.main]]
+    identifier = 'about'
+    name = 'Обо мне'
+    url = '/about.html'
+    weight = 2
+  [[menu.main]]
+    identifier = 'github'
+    name = 'GitHub профиль'
+    url = 'https://github.com/sergeyklay/'
+    weight = 20
+    [menu.main.params]
+      external = true
+
+[markup]
+  [markup.highlight]
+    style = 'monokailight'
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true

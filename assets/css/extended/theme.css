@@ -1,0 +1,8 @@
+.inline-logo {
+  display: inline-block;
+  height: 1.3em;
+  vertical-align: middle;
+  max-width: none;
+  margin: unset;
+  border-radius: unset;
+}
