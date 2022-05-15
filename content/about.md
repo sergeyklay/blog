@@ -15,4 +15,4 @@ caption: Привет!
 Моё резюме: [cv.pdf](https://github.com/sergeyklay/cv/raw/master/cv.pdf).  
 Для связи [используйте контактную фому](/contact.html).  
 
-Исходный код данного сайта доступен на {{< img src="/img/github-64x64.png" alt="GitHub logo" class="inline-logo" >}} [GitHub](https://github.com/sergeyklay/blog).
+Исходный код данного сайта доступен на {{< img src="/img/github-64x64.png" alt="GitHub logo" class="inline-logo" >}} {{< link src="https://github.com/sergeyklay/blog" target=_blank rel="noopener noreferrer" >}}GitHub{{< /link >}}.
