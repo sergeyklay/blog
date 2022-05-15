@@ -16,18 +16,21 @@ enableRobotsTXT = true
   mediaType = 'text/plain'
 
 [author]
-  name = 'Serghei Iakovlev'
-  email = 'mail@serghei.blog'
-  github = '@sergeyklay'
-  location = 'Kyiv, Ukraine'
+  [author.serghei]
+    name = 'Serghei Iakovlev'
+    email = 'mail@serghei.blog'
+    github = '@sergeyklay'
+    location = 'Kyiv, Ukraine'
 
 [languages]
   [languages.ru]
     weight = 1
     languageDirection = 'ltr'
+    languageName = 'Russian'
   [languages.en]
     weight = 2
     languageDirection = 'ltr'
+    languageName = 'English'
 
 [permalinks]
     posts = '/:section/:year/:month/:day/:slug'
