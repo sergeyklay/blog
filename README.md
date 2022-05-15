@@ -17,7 +17,7 @@ requirements:
 First you need to get the project:
 
 ```shell
-$ git clone git@github.com:sergeyklay/blog.git
+$ git clone --recurse-submodules https://github.com/sergeyklay/blog.git
 $ cd blog
 ```
 
@@ -43,6 +43,10 @@ The code of this project is released under the
 under the [CC-BY-4.0][cc-by-4.0], a modified version of [Ed][ed] theme that I
 ported from Jekyll to Hugo is distributed under the
 [MIT License][orig-ed-licence].
+
+Feel free to use the HTML and CSS as you please.
+If you do use anything here, a link back to https://github.com/sergeyklay/blog
+would be appreciated.
 
 [blog]: https://serghei.blog/?utm_source=github.com&utm_campaign=banch_readme&utm_medium=smm
 [hugo]: http://gohugo.io
