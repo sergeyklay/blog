@@ -1,0 +1,16 @@
+[build]
+  publish = 'public'
+  command = 'hugo --gc --verbose --minify'
+
+[build.environment]
+  HUGO_VERSION = '0.95.0'
+
+[context.production.environment]
+  HUGO_VERSION = '0.95.0'
+  HUGO_ENV = 'production'
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = '0.95.0'
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = '0.95.0'
