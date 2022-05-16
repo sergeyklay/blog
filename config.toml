@@ -7,13 +7,33 @@ title = 'Сергей Яковлев'
 theme = 'ed'
 enableRobotsTXT = true
 
+disableKinds = ['RSS']
+
 [outputs]
-  home = [ 'HTML', 'humanstxt' ]
+  home = [ 'HTML', 'Atom', 'humanstxt' ]
 
 [outputFormats.humanstxt]
-  baseName = 'humans'
-  isPlainText = true
   mediaType = 'text/plain'
+  baseName = 'humans'
+  rel = 'author'
+  isPlainText = true
+  isHTML = false
+  noUgly = true
+  permalinkable = false
+
+[outputFormats.Atom]
+  name = 'Atom'
+  mediaType = 'application/atom+xml'
+  baseName = 'feeds/feed.atom'
+  rel = 'alternate'
+  isPlainText = false
+  isHTML = false
+  noUgly = true
+  permalinkable = false
+
+[mediaTypes]
+  [mediaTypes.'application/atom+xml']
+    suffixes = ['xml']
 
 [author]
   name = 'Serghei Iakovlev'
@@ -26,10 +46,6 @@ enableRobotsTXT = true
     weight = 1
     languageDirection = 'ltr'
     languageName = 'Russian'
-  [languages.en]
-    weight = 2
-    languageDirection = 'ltr'
-    languageName = 'English'
 
 [permalinks]
     posts = '/:section/:year/:month/:day/:slug'
