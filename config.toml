@@ -16,11 +16,10 @@ enableRobotsTXT = true
   mediaType = 'text/plain'
 
 [author]
-  [author.serghei]
-    name = 'Serghei Iakovlev'
-    email = 'mail@serghei.blog'
-    github = '@sergeyklay'
-    location = 'Kyiv, Ukraine'
+  name = 'Serghei Iakovlev'
+  email = 'mail@serghei.blog'
+  github = '@sergeyklay'
+  location = 'Kyiv, Ukraine'
 
 [languages]
   [languages.ru]
@@ -40,8 +39,8 @@ enableRobotsTXT = true
     pages = '/:slug'
 
 [params]
-  author = 'Сергей Яковлев'
   description = 'Персональный блог Сергея Яковлева'
+  copyright = 'Copyright (c) 2018-2022 Сергей Яковлев'
   colorScheme = ''
   tagline = 'Мой блокнот, мастерская, место где я делюсь своим опытом и мыслями'
   footer = """
@@ -53,7 +52,9 @@ enableRobotsTXT = true
   mainSections = ['posts', 'dramas', 'narratives', 'poems']
   postMeta = ['date']
   dateformat = 'January 02, 2006'
+  dateFormatFeed = '2006-01-02T15:04:05Z'
   readmore = true
+  feedSize = 25
 
 [menu]
   [[menu.main]]
