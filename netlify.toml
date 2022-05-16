@@ -30,6 +30,18 @@
   HUGO_ENABLEGITINFO = 'true'
 
 [[redirects]]
+  from = '/feeds/rss/posts.xml'
+  to = '/feeds/feed.rss.xml'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/feeds/atom/posts.xml'
+  to = '/feeds/feed.atom.xml'
+  status = 301
+  force = false
+
+[[redirects]]
   from = '/page/about.html'
   to = '/about.html'
   status = 301
