@@ -23,7 +23,7 @@ disableKinds = ['RSS']
 
 [outputFormats.Atom]
   name = 'Atom'
-  mediaType = 'application/atom+xml'
+  mediaType = 'text/xml'
   baseName = 'feeds/feed.atom'
   rel = 'alternate'
   isPlainText = false
@@ -32,7 +32,7 @@ disableKinds = ['RSS']
   permalinkable = false
 
 [mediaTypes]
-  [mediaTypes.'application/atom+xml']
+  [mediaTypes.'text/xml']
     suffixes = ['xml']
 
 [author]
@@ -71,6 +71,12 @@ disableKinds = ['RSS']
   dateFormatFeed = '2006-01-02T15:04:05Z'
   readmore = true
   feedSize = 25
+
+  [params.assets]
+    # TODO: Add logo
+    logo = '/img/open-graph-logo.png' # Logo image, relative to ./assets
+    logo_width = 200
+    logo_height = 200
 
 [menu]
   [[menu.main]]
