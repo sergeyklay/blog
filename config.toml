@@ -14,7 +14,7 @@ disableKinds = ['RSS']
   disableXML = true
 
 [outputs]
-  home = [ 'HTML', 'Atom', 'FEED', 'humanstxt' ]
+  home = [ 'HTML', 'Atom', 'FEED', 'JSON', 'humanstxt' ]
 
 [outputFormats.Atom]
   name = 'Atom'
@@ -35,6 +35,15 @@ disableKinds = ['RSS']
   isHTML = false
   noUgly = true
   permalinkable = false
+
+[outputFormats.JSON]
+  name = 'Json'
+  mediaType = 'application/json'
+  baseName = 'feeds/feed'
+  rel = 'alternate'
+  isPlainText = true
+  isHTML = false
+  noUgly = false
 
 [outputFormats.humanstxt]
   mediaType = 'text/plain'
