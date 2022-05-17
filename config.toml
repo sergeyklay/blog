@@ -38,7 +38,7 @@ disableKinds = ['RSS']
 
 [outputFormats.JSON]
   name = 'Json'
-  mediaType = 'application/json'
+  mediaType = 'application/feed+json'
   baseName = 'feeds/feed'
   rel = 'alternate'
   isPlainText = true
@@ -57,11 +57,14 @@ disableKinds = ['RSS']
 [mediaTypes]
   [mediaTypes.'text/xml']
     suffixes = ['xml']
+  [mediaTypes.'application/feed+json']
+    suffixes = ['json']
 
 [author]
   name = 'Serghei Iakovlev'
   email = 'mail@serghei.blog'
-  github = '@sergeyklay'
+  github = 'sergeyklay'
+  twitter = 'egreps'
   location = 'Kyiv, Ukraine'
 
 [languages]

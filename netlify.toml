@@ -41,6 +41,13 @@
     # Note that you should be encoding your feed in UTF-8.
     Content-Type = 'text/xml; charset=utf-8'
 
+[[headers]]
+  for = '/feeds/*.json'
+  [headers.values]
+    # JSON Feed files should be served using the MIME type application/json.
+    # JSON Feeds should be encoded using UTF-8.
+    Content-Type = 'application/feed+json; charset=utf-8'
+
 [[redirects]]
   from = '/feeds/rss/posts.xml'
   to = '/feeds/feed.rss.xml'
