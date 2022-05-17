@@ -41,14 +41,12 @@
     # Note that you should be encoding your feed in UTF-8.
     Content-Type = 'text/xml; charset=utf-8'
 
-# TODO: Implement me
 [[redirects]]
   from = '/feeds/rss/posts.xml'
   to = '/feeds/feed.rss.xml'
   status = 301
   force = false
 
-# TODO: Implement me
 [[redirects]]
   from = '/feeds/atom/posts.xml'
   to = '/feeds/feed.atom.xml'

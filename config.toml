@@ -14,16 +14,7 @@ disableKinds = ['RSS']
   disableXML = true
 
 [outputs]
-  home = [ 'HTML', 'Atom', 'humanstxt' ]
-
-[outputFormats.humanstxt]
-  mediaType = 'text/plain'
-  baseName = 'humans'
-  rel = 'author'
-  isPlainText = true
-  isHTML = false
-  noUgly = true
-  permalinkable = false
+  home = [ 'HTML', 'Atom', 'FEED', 'humanstxt' ]
 
 [outputFormats.Atom]
   name = 'Atom'
@@ -31,6 +22,25 @@ disableKinds = ['RSS']
   baseName = 'feeds/feed.atom'
   rel = 'alternate'
   isPlainText = false
+  isHTML = false
+  noUgly = true
+  permalinkable = false
+
+[outputFormats.FEED]
+  name = 'Feed'
+  mediaType = 'text/xml'
+  baseName = 'feeds/feed.rss'
+  rel = 'alternate'
+  isPlainText = false
+  isHTML = false
+  noUgly = true
+  permalinkable = false
+
+[outputFormats.humanstxt]
+  mediaType = 'text/plain'
+  baseName = 'humans'
+  rel = 'author'
+  isPlainText = true
   isHTML = false
   noUgly = true
   permalinkable = false
@@ -73,6 +83,7 @@ disableKinds = ['RSS']
   postMeta = ['date']
   dateformat = 'January 02, 2006'
   dateFormatFeed = '2006-01-02T15:04:05Z'
+  dateFormatRFC822Z = '02 Jan 2006 15:04:05 UT'
   readmore = true
   feedSize = 25
 
