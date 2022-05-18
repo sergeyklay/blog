@@ -14,7 +14,7 @@ disableKinds = ['RSS']
   disableXML = true
 
 [outputs]
-  home = [ 'HTML', 'Atom', 'FEED', 'JSON', 'humanstxt' ]
+  home = [ 'HTML', 'Atom', 'FEED', 'JSON', 'MANIFEST', 'humanstxt' ]
 
 [outputFormats.Atom]
   name = 'Atom'
@@ -45,6 +45,21 @@ disableKinds = ['RSS']
   isHTML = false
   noUgly = false
 
+# The .webmanifest extension is specified in the Media type registration
+# section of the specification (the response of the manifest file should
+# return Content-Type: application/manifest+json).
+#
+# For more see: https://w3c.github.io/manifest/#media-type-registration=
+[outputFormats.MANIFEST]
+  name = 'Manifest'
+  mediaType = 'application/manifest+json'
+  baseName = 'manifest'
+  rel = 'manifest'
+  isPlainText = true
+  isHTML = false
+  noUgly = false
+  notAlternative = true
+
 [outputFormats.humanstxt]
   mediaType = 'text/plain'
   baseName = 'humans'
@@ -59,6 +74,8 @@ disableKinds = ['RSS']
     suffixes = ['xml']
   [mediaTypes.'application/feed+json']
     suffixes = ['json']
+  [mediaTypes.'application/manifest+json']
+    suffixes = ['webmanifest']
 
 [author]
   name = 'Serghei Iakovlev'

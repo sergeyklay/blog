@@ -48,6 +48,16 @@
     # JSON Feeds should be encoded using UTF-8.
     Content-Type = 'application/feed+json; charset=utf-8'
 
+[[headers]]
+  for = '/manifest.webmanifest'
+  [headers.values]
+    # The .webmanifest extension is specified in the Media type registration
+    # section of the specification (the response of the manifest file should
+    # return Content-Type: application/manifest+json).
+    #
+    # For more see: https://w3c.github.io/manifest/#media-type-registration=
+    Content-Type = 'application/manifest+json; charset=utf-8'
+
 [[redirects]]
   from = '/feeds/rss/posts.xml'
   to = '/feeds/feed.rss.xml'
