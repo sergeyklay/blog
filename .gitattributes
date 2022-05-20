@@ -5,11 +5,14 @@
 # Auto-detect text files, ensure they use LF.
 * text=auto eol=lf
 
-.editorconfig     export-ignore linguist-language=INI
-.gitattributes    export-ignore
-.gitignore        export-ignore
+.editorconfig     text export-ignore linguist-language=INI
+.gitattributes    text export-ignore
+.gitignore        text export-ignore
+.gitmodules       text export-ignore
+.
 .github           export-ignore
 
+*.asc             filter=gpg diff=gpg linguist-language=Public Key
 *.md              linguist-detectable=true linguist-documentation=false
 
 *.webmanifest     diff=json linguist-language=JSON
