@@ -15,6 +15,10 @@ disableKinds = ['RSS']
 
 [outputs]
   home = [ 'HTML', 'Atom', 'FEED', 'JSON', 'MANIFEST', 'humanstxt' ]
+  section = [ 'HTML', 'Atom', 'FEED', 'JSON' ]
+  page = [ 'HTML' ]
+  taxonomy = [ 'HTML' ]
+  term = [ 'HTML' ]
 
 [outputFormats.Atom]
   name = 'Atom'
