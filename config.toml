@@ -10,7 +10,6 @@ enableRobotsTXT = true
 disableKinds = ['RSS']
 
 [minify]
-  # Do not minify XML files to avoid CDATA escape issues
   disableXML = true
 
 [outputs]
@@ -49,11 +48,6 @@ disableKinds = ['RSS']
   isHTML = false
   noUgly = false
 
-# The .webmanifest extension is specified in the Media type registration
-# section of the specification (the response of the manifest file should
-# return Content-Type: application/manifest+json).
-#
-# For more see: https://w3c.github.io/manifest/#media-type-registration=
 [outputFormats.MANIFEST]
   name = 'Manifest'
   mediaType = 'application/manifest+json'
@@ -72,6 +66,7 @@ disableKinds = ['RSS']
   isHTML = false
   noUgly = true
   permalinkable = false
+  notAlternative = true
 
 [mediaTypes]
   [mediaTypes.'text/xml']
@@ -80,6 +75,11 @@ disableKinds = ['RSS']
     suffixes = ['json']
   [mediaTypes.'application/manifest+json']
     suffixes = ['webmanifest']
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
 
 [author]
   name = 'Serghei Iakovlev'
