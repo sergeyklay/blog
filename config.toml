@@ -125,8 +125,6 @@ disableKinds = ['RSS']
   [params.assets]
     # TODO: Add logo
     logo = '/img/open-graph-logo.png' # Logo image, relative to ./assets
-    logo_width = 200
-    logo_height = 200
 
 [menu]
   [[menu.main]]
