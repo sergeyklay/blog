@@ -58,6 +58,13 @@
     # For more see: https://w3c.github.io/manifest/#media-type-registration=
     Content-Type = 'application/manifest+json; charset=utf-8'
 
+[[headers]]
+  for = '/robots.txt'
+  [headers.values]
+    # The server’s robots.txt file must be saved as plain text with
+    # ASCII character encoding.
+    Content-Type = 'text/plain; charset=us-ascii'
+
 [[redirects]]
   from = '/posts'
   to = '/posts.html'

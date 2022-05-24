@@ -126,6 +126,11 @@ disableKinds = ['RSS']
     # TODO: Add logo
     logo = '/img/open-graph-logo.png' # Logo image, relative to ./assets
 
+[social]
+  facebook_admin = ''
+  facebook_id = ''
+  twitter = 'egreps'
+
 [menu]
   [[menu.main]]
     identifier = 'home'
