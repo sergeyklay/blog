@@ -89,6 +89,12 @@
   force = false
 
 [[redirects]]
+  from = '/post/2021/09/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
+  to = '/posts/2021/09/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
+  status = 301
+  force = false
+
+[[redirects]]
   from = '/post/2019/03/19/yazyk-yazykov-chast-pervaya.html'
   to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
   status = 301
