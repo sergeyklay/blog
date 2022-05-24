@@ -7,6 +7,8 @@ title = 'Сергей Яковлев'
 theme = 'ed'
 enableRobotsTXT = true
 
+refLinksErrorLevel = 'WARNING'
+
 disableKinds = ['RSS']
 
 [minify]
