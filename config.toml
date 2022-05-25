@@ -123,8 +123,7 @@ disableKinds = ['RSS']
   feedSize = 25
 
   [params.assets]
-    # TODO: Add logo
-    logo = '/img/open-graph-logo.png' # Logo image, relative to ./assets
+    logo = '/img/blog-logo.png'
 
 [social]
   facebook_admin = ''
