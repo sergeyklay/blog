@@ -123,7 +123,7 @@ disableKinds = ['RSS']
   feedSize = 25
 
   [params.assets]
-    logo = '/img/blog-logo.png'
+    logo = '/img/blog-logo.jpg'
 
 [social]
   facebook_admin = ''
