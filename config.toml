@@ -13,6 +13,7 @@ disableKinds = ['RSS']
 
 [minify]
   disableXML = true
+  disableJSON = true
 
 [outputs]
   home = [ 'HTML', 'Atom', 'FEED', 'JSON', 'MANIFEST', 'humanstxt' ]
