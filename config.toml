@@ -123,6 +123,11 @@ disableKinds = ['RSS']
   readmore = true
   feedSize = 25
 
+  [params.contact]
+    formAction = 'https://submit-form.com/ccPnq0Ur'
+    emailSubject = 'Contact form submission'
+    thanksUrl = '/thanks.html'
+
   [params.assets]
     logo = '/img/blog-logo.jpg'
 
@@ -147,6 +152,7 @@ disableKinds = ['RSS']
     name = 'Обо мне'
     url = '/about.html'
     weight = 2
+
   [[menu.main]]
     identifier = 'github'
     name = 'GitHub профиль'

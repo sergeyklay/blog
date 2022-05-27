@@ -61,9 +61,9 @@ Disallow: /
 User-agent: *
 {{- if eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production")  }}
 Allow: /
+Disallow: /thanks.html
 
-# TODO: implement sitemap.xml
-# Sitemap: {{ "stemap.xml" | absURL }}
+Sitemap: {{ "/stemap.xml" | absURL }}
 {{- else }}
 Disallow: /
 {{- end }}
