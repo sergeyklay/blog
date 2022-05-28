@@ -1,6 +1,6 @@
 [build]
   publish = 'public'
-  command = 'hugo --gc --verbose --minify'
+  command = 'make netlify-production-build'
 
 [context.production.environment]
   HUGO_VERSION = '0.99.1'
@@ -8,20 +8,20 @@
   HUGO_ENABLEGITINFO = 'true'
 
 [context.split1]
-  command = 'hugo --gc --minify --enableGitInfo'
+  command = 'make netlify-split1-build'
 
 [context.split1.environment]
   HUGO_VERSION = '0.99.1'
   HUGO_ENV = 'production'
 
 [context.deploy-preview]
-  command = 'hugo --gc --minify --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL'
+  command = 'make netlify-deploy-preview'
 
 [context.deploy-preview.environment]
   HUGO_VERSION = '0.99.1'
 
 [context.branch-deploy]
-  command = 'hugo --gc --minify -b $DEPLOY_PRIME_URL'
+  command = 'make netlify-branch-deploy'
 
 [context.branch-deploy.environment]
   HUGO_VERSION = '0.99.1'
