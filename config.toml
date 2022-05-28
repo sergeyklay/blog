@@ -117,7 +117,7 @@ disableKinds = ['RSS']
     </a>."""
   mainSections = ['posts', 'dramas', 'narratives', 'poems']
   postMeta = ['date']
-  dateformat = '02 January, 2006'
+  dateformat = '2 January, 2006'
   dateFormatToc = '2006.01.02'
   dateFormatFeed = '2006-01-02T15:04:05Z'
   dateFormatRFC822Z = '02 Jan 2006 15:04:05 UT'
