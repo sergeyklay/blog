@@ -30,6 +30,14 @@
   HUGO_ENABLEGITINFO = 'true'
 
 [[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "same-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+[[headers]]
   for = '/feeds/*.xml'
   [headers.values]
     # The correct header Content-Type header for an Atom feed is
