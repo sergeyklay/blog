@@ -125,6 +125,7 @@ disableKinds = ['RSS']
   readmore = true
   feedSize = 25
   recentPostsSize = 5
+  botpoisonPublicKey = 'pk_f07df795-ca43-494c-a3b1-362ac4380433'
 
   [params.contact]
     formAction = 'https://submit-form.com/ccPnq0Ur'
