@@ -1,6 +1,6 @@
 {{- $url := urls.Parse ("/" | absURL) -}}
 # robots.txt file for "{{ site.Title }}" website, {{ $url.Host }}
-
+{{- if eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production")  }}
 User-agent: MJ12bot
 Disallow: /
 
@@ -59,12 +59,12 @@ User-agent: ZoominfoBot
 Disallow: /
 
 User-agent: *
-{{- if eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production")  }}
 Allow: /
 Disallow: /404.html
 Disallow: /thanks.html
 
 Sitemap: {{ "/sitemap.xml" | absURL }}
 {{- else }}
+User-agent: *
 Disallow: /
 {{- end }}
