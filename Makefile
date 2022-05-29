@@ -13,7 +13,8 @@ serve:
 		--verbose \
 		--buildDrafts \
 		--buildFuture \
-		--ignoreCache
+		--ignoreCache \
+		--disableFastRender
 
 .PHONY: netlify-production-build
 netlify-production-build:
