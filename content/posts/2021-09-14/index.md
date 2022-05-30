@@ -1,9 +1,10 @@
 ---
 title: Запуск Celery-задачи после выполнения всех задач
 date: 2021-09-14T07:57:07+00:00
+lastmod: 2021-09-27T21:49:41+00:00
 draft: false
 slug: zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach
-featured_image: "celery-min.jpg"
+featured_image: 'celery-min.jpg'
 summary: >-
   В этой заметке я попробую разобраться в нехитрой задаче — запуск
   Celery-задачи X после выполнения всех задач Y. Некая задача X

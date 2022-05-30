@@ -1,9 +1,10 @@
 ---
 title: Процессы, потоки и конкурентное выполнение программ
 date: 2021-10-08T18:32:40+00:00
+lastmod: 2021-11-24T17:07:37+00:00
 draft: false
 slug: processy-potoki-i-konkurentnoe-vypolnenie-programm
-featured_image: "motherboard.jpg"
+featured_image: 'motherboard.jpg'
 summary: >-
   Этой публикацией я начинаю серию небольших заметок, посвящённую
   процессам, потокам, конкурентному выполнению программ, а также

@@ -1,9 +1,10 @@
 ---
 title: Шпаргалка по основным командам GnuPG
 date: 2021-04-14T09:51:37+00:00
+lastmod: 2021-09-03T10:09:59+00:00
 draft: false
 slug: shpargalka-po-osnovnym-komandam-gpg
-featured_image: "privacy_encrypt.jpg"
+featured_image: 'privacy_encrypt.jpg'
 description: >-
   Краткая шпаргалка по основным командам GnuPG 2.x используемым в
   повседневной жизни.
@@ -14,7 +15,7 @@ summary: >-
   сделав её таким образом полезной не только для меня.
 tags:
   - gpg
-  - шпаргалка
+  - cheatsheet
 toc:
   - 'Базовые команды'
   - 'Создание ключа'
