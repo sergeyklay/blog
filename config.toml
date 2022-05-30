@@ -185,3 +185,6 @@ disableKinds = ['RSS']
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
+
+[frontmatter]
+  lastmod = ['lastmod', ':git', 'date', 'publishDate']
