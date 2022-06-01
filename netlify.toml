@@ -114,25 +114,32 @@
   force = false
 
 [[redirects]]
-  from = '/post/2021/09/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
+  from = '/post/2021/9/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
   to = '/posts/2021/09/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
   status = 301
   force = false
 
 [[redirects]]
-  from = '/post/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+  from = '/post/2021/10/8/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
+  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
+  status = 301
+  force = false
+
+
+[[redirects]]
+  from = '/post/2019/3/19/yazyk-yazykov-chast-pervaya.html'
   to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
   status = 301
   force = false
 
 [[redirects]]
-  from = '/post/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+  from = '/post/2019/6/28/yazyk-yazykov-chast-vtoraya.html'
   to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
   status = 301
   force = false
 
 [[redirects]]
-  from = '/post/2021/04/14/shpargalka-po-osnovnym-komandam-gpg.html'
+  from = '/post/2021/4/14/shpargalka-po-osnovnym-komandam-gpg.html'
   to = '/posts/2021/04/14/shpargalka-po-osnovnym-komandam-gpg.html'
   status = 301
   force = false
