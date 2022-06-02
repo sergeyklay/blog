@@ -84,8 +84,14 @@ Permissions-Policy = "geolocation=(), gyroscope=(), magnetometer=()"
   Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 ```
 
-## Итоги
+## Выводы
 
-Установка этих заголовков должна дать вашему веб-сайту оценку типа A на таких сервисах, как {{< link src="https://securityheaders.com/?q=https%3A%2F%2Fserghei.blog&followRedirects=on" hreflang="en" target="_blank" rel="noopener noreferrer" >}}securityheaders.com{{< /link >}}, а осмысленное использование --- заставить любых тестировщиков безопасности считаться с вашим уровнем безопастности.
+Установка заголовков безопасности должна дать вашему веб-сайту оценку типа A на таких сервисах, как {{< link src="https://securityheaders.com/?q=https%3A%2F%2Fserghei.blog&followRedirects=on" hreflang="en" target="_blank" rel="noopener noreferrer" >}}securityheaders.com{{< /link >}}, а осмысленное использование --- заставить любых тестировщиков безопасности считаться с вашим уровнем безопастности.
 
 Настройка политики безопасности контента зависит от конкретного веб-сайта и может отличаться, например, если вы используете Google Analytics или другие сторонние скрипты. Учтите, при внедрении любой политики безопасности контента вы должны тщательно протестировать свой веб-сайт, чтобы убедиться, что все сторонние ресурсы и клиенты все еще работают с ним.
+
+## Ссылки
+
+- {{< link src="https://content-security-policy.com/" hreflang="en" target="_blank" rel="noopener noreferrer" >}}Content Security Policy Reference{{< /link >}}
+- {{< link src="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" hreflang="en" target="_blank" rel="noopener noreferrer" >}}MDN: Content Security Policy (CSP){{< /link >}}
+- {{< link src="https://securityheaders.com/" hreflang="en" target="_blank" rel="noopener noreferrer" >}}Security Headers{{< /link >}}
