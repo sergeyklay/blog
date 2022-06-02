@@ -28,7 +28,7 @@ Content-Security-Policy: default-src 'https://example.com'; script-src  'unsafe-
 X-Frame-Options: DENY
 ```
 
-3. **Заголовок `X-XSS-Protection`** -- в старых браузерах (в основном в Safary) позволяет защитить ваш сайт от {{< link src="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B6%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%D1%8B%D0%B9_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3" hreflang="ru" target="_blank" rel="noopener noreferrer" >}}XSS атак{{< /link >}}. Большинство браузеров понимает этот заголовок и при обнаружении прекращают зашружать страницу при обнаружении попыток таких атак. Пример использования:
+3. **Заголовок `X-XSS-Protection`** -- в старых браузерах (в основном в Safary) позволяет защитить ваш сайт от {{< link src="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B6%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2%D1%8B%D0%B9_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3" hreflang="ru" target="_blank" rel="noopener noreferrer" >}}XSS атак{{< /link >}}. Большинство браузеров понимает этот заголовок и при обнаружении прекращают загружать страницу при обнаружении попыток таких атак. Пример использования:
 ```
 X-XSS-Protection: 1; mode=block
 ```
@@ -86,7 +86,7 @@ Permissions-Policy = "geolocation=(), gyroscope=(), magnetometer=()"
 
 ## Выводы
 
-Установка заголовков безопасности должна дать вашему веб-сайту оценку типа A на таких сервисах, как {{< link src="https://securityheaders.com/?q=https%3A%2F%2Fserghei.blog&followRedirects=on" hreflang="en" target="_blank" rel="noopener noreferrer" >}}securityheaders.com{{< /link >}}, а осмысленное использование --- заставить любых тестировщиков безопасности считаться с вашим уровнем безопастности.
+Установка заголовков безопасности должна дать вашему веб-сайту оценку типа A на таких сервисах, как {{< link src="https://securityheaders.com/?q=https%3A%2F%2Fserghei.blog&followRedirects=on" hreflang="en" target="_blank" rel="noopener noreferrer" >}}securityheaders.com{{< /link >}}, а осмысленное использование --- заставить любых тестировщиков безопасности считаться с вашим уровнем безопасности.
 
 Настройка политики безопасности контента зависит от конкретного веб-сайта и может отличаться, например, если вы используете Google Analytics или другие сторонние скрипты. Учтите, при внедрении любой политики безопасности контента вы должны тщательно протестировать свой веб-сайт, чтобы убедиться, что все сторонние ресурсы и клиенты все еще работают с ним.
 
