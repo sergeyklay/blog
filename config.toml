@@ -135,6 +135,9 @@ disableKinds = ['RSS']
   [params.assets]
     logo = '/img/blog-logo.jpg'
 
+  [params.seo]
+    publisher = 'Serghei Iakovlev'
+
 [social]
   twitter = 'egreps'
 
