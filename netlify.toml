@@ -188,6 +188,7 @@
   status = 301
   force = false
 
+# Tags redirection
 
 [[redirects]]
   from = '/posts/tagged/celery'
@@ -201,14 +202,50 @@
   status = 301
   force = false
 
-  [[redirects]]
+[[redirects]]
   from = '/posts/tagged/python'
   to = '/tags/python.html'
   status = 301
   force = false
 
-  [[redirects]]
+[[redirects]]
   from = '/posts/tagged/bnf'
   to = '/tags/bnf.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/posts/tagged/parsing'
+  to = '/tags/parsing.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/posts/tagged/grammars'
+  to = '/tags/grammar.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/posts/tagged/cheatsheet'
+  to = '/tags/cheatsheet.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/posts/tagged/system-programming'
+  to = '/tags/system-programming.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/posts/tagged/threading'
+  to = '/tags/threading.html'
+  status = 301
+  force = false
+
+[[redirects]]
+  from = '/posts/tagged/posix'
+  to = '/tags/posix.html'
   status = 301
   force = false
