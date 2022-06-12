@@ -1,7 +1,7 @@
 ---
 title: Шпаргалка по основным командам GnuPG
 date: 2021-04-14T09:51:37+00:00
-lastmod: 2022-06-11T15:55:00+02:00
+lastmod: 2022-06-11T21:49:00+01:00
 draft: false
 slug: shpargalka-po-osnovnym-komandam-gpg
 featured_image: 'privacy_encrypt.jpg'
@@ -331,17 +331,16 @@ gpg: sending key 0x1E0B5331219BEA88 to hkp://ipv4.pool.sks-keyservers.net
 Сервер ключей, на который следует отправить ключи, указывается параметром командной строки `--keyserver`  .
 
 ~~~ bash
-$ gpg --keyserver keys.gnupg.net --send-kes 1E0B5331219BEA88
-gpg: sending key 0x1E0B5331219BEA88 to to hkp://keyserver.ubuntu.com
+$ gpg --keyserver hkps://keyserver.ubuntu.com --send-keys 1E0B5331219BEA88
+gpg: sending key 0x1E0B5331219BEA88 to hkps://keyserver.ubuntu.com
 ~~~
 
 Существуют несколько популярных серверов ключей. Основные серверы ключей синхронизируются друг с другом, поэтому лучше выбрать ближайший к вам и регулярно использовать его для отправки и получения ключей.
 
 На момент написания этой шпаргалки, мне удалось успешно отправить ключ на следующие сервера:
 
-  * [hkp://keyserver.ubuntu.com](https://keyserver.ubuntu.com)
-  * [hkp://keys.gnupg.net](https://keys.gnupg.net)
-  * [hkp://pgpkeys.eu](https://pgpkeys.eu)
-  * [hkp://pgp.net.nz](https://pgp.net.nz)
-  * [hkp://keys.openpgp.org](https://keys.openpgp.org)
-  * [hkp://pgp.mit.edu](https://pgp.mit.edu)
+  * [hkps://keyserver.ubuntu.com](https://keyserver.ubuntu.com)
+  * [hkps://keys.openpgp.org](https://keys.openpgp.org)
+  * [hkps://pgpkeys.eu](https://pgpkeys.eu)
+  * [hkps://pgp.net.nz](https://pgp.net.nz)
+  * [hkps://pgp.mit.edu](https://pgp.mit.edu)
