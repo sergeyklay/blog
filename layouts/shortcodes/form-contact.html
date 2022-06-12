@@ -30,7 +30,24 @@
         <input type="checkbox" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" class="contact-form-gotcha" value="">
 
         <div class="contact-form-item">
-            <button type="submit" class="button button-large">{{ i18n "send" }}</button>
+            <button type="submit" id="send-form-button" class="button button-large">{{ i18n "send" }}</button>
         </div>
     </form>
 </div>
+
+<script>
+    const formElement = document.getElementById("contact-form");
+    const buttonElement = document.getElementById("send-form-button");
+
+    formElement.addEventListener("botpoison-challenge-start", function () {
+        buttonElement.setAttribute("disabled", "disabled");
+    });
+
+    formElement.addEventListener("botpoison-challenge-success", function () {
+        buttonElement.removeAttribute("disabled");
+    });
+
+    formElement.addEventListener("botpoison-challenge-error", function () {
+        buttonElement.removeAttribute("disabled");
+    });
+</script>
