@@ -1,7 +1,7 @@
 ---
 title: Шпаргалка по основным командам GnuPG
 date: 2021-04-14T09:51:37+00:00
-lastmod: 2022-06-11T21:49:00+01:00
+lastmod: 2022-06-13T09:10:05+02:00
 draft: false
 slug: shpargalka-po-osnovnym-komandam-gpg
 featured_image: 'privacy_encrypt.jpg'
@@ -325,22 +325,23 @@ sub   rsa4096/0x4C8A6A49D31C9CA1 2019-05-13 [A] [expires: 2022-04-21]
 
 ~~~ bash
 $ gpg --send-keys 1E0B5331219BEA88
-gpg: sending key 0x1E0B5331219BEA88 to hkp://ipv4.pool.sks-keyservers.net
+gpg: sending key 0x1E0B5331219BEA88 to https://keyserver.ubuntu.com
 ~~~
 
 Сервер ключей, на который следует отправить ключи, указывается параметром командной строки `--keyserver`  .
 
 ~~~ bash
-$ gpg --keyserver hkps://keyserver.ubuntu.com --send-keys 1E0B5331219BEA88
-gpg: sending key 0x1E0B5331219BEA88 to hkps://keyserver.ubuntu.com
+$ gpg --keyserver hkps://keys.openpgp.org --send-keys 1E0B5331219BEA88
+gpg: sending key 0x1E0B5331219BEA88 to hkps://keys.openpgp.org
 ~~~
 
 Существуют несколько популярных серверов ключей. Основные серверы ключей синхронизируются друг с другом, поэтому лучше выбрать ближайший к вам и регулярно использовать его для отправки и получения ключей.
 
 На момент написания этой шпаргалки, мне удалось успешно отправить ключ на следующие сервера:
 
-  * [hkps://keyserver.ubuntu.com](https://keyserver.ubuntu.com)
   * [hkps://keys.openpgp.org](https://keys.openpgp.org)
+  * [hkps://keyserver.ubuntu.com](https://keyserver.ubuntu.com)
+  * [hkps://keyring.debian.org](https://keyring.debian.org)
   * [hkps://pgpkeys.eu](https://pgpkeys.eu)
   * [hkps://pgp.net.nz](https://pgp.net.nz)
   * [hkps://pgp.mit.edu](https://pgp.mit.edu)
