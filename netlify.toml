@@ -3,28 +3,29 @@
   command = 'make netlify-production-build'
 
 [context.production.environment]
-  HUGO_VERSION = '0.100.2'
+  HUGO_VERSION = '0.101.0'
   HUGO_ENV = 'production'
   HUGO_ENABLEGITINFO = 'true'
+  HUGO_GOOGLEANALYTICS = 'G-G3XCZPK59N'
 
 [context.split1]
   command = 'make netlify-split1-build'
 
 [context.split1.environment]
-  HUGO_VERSION = '0.100.2'
+  HUGO_VERSION = '0.101.0'
   HUGO_ENV = 'production'
 
 [context.deploy-preview]
   command = 'make netlify-deploy-preview'
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = '0.100.2'
+  HUGO_VERSION = '0.101.0'
 
 [context.branch-deploy]
   command = 'make netlify-branch-deploy'
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = '0.100.2'
+  HUGO_VERSION = '0.101.0'
 
 [context.next.environment]
   HUGO_ENABLEGITINFO = 'true'
@@ -67,7 +68,7 @@
     # files received from those allowed domains, ignoring all other scripts
     # (including inline scripts and event-handling HTML attributes).
     #
-    Content-Security-Policy = "base-uri 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'self'; media-src 'self'; worker-src 'self'; img-src 'self' data:; script-src 'self' *.netlify.app *.netlify.com unpkg.com; form-action 'self' submit-form.com; frame-ancestors 'none'; manifest-src 'self'; connect-src 'self';"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' *.netlify.app *.netlify.com *.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: *.google-analytics.com *.googletagmanager.com; font-src 'self'; connect-src 'self' *.google-analytics.com *.analytics.google.com *.googletagmanager.com; media-src 'self'; object-src 'self'; frame-src 'none'; worker-src 'self'; frame-ancestors 'none'; form-action 'self' submit-form.com; upgrade-insecure-requests; base-uri 'self'; manifest-src 'self'; report-uri https://edtheme.report-uri.com/r/d/csp/enforce"
 
 [[headers]]
   for = '/feeds/*.xml'
