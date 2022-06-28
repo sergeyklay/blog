@@ -182,7 +182,7 @@ disableKinds = ['RSS']
 
 [markup]
   [markup.highlight]
-    style = 'monokailight'
+    noClasses = false
   [markup.goldmark]
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
