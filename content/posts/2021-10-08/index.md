@@ -75,7 +75,7 @@ grep PPid /proc/<PID>/status | awk '{print $2}'
 
 Схематично вышесказанное можно изобразить следующим образом:
 
-{{< img src="concurrency.png" alt="Concurrency vs Threading vs Parallelism vs Multiprocessing" >}}
+{{< img src="/img/concurrency.png" alt="Concurrency vs Threading vs Parallelism vs Multiprocessing" >}}
 
 ## О потоках
 
