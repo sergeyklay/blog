@@ -27,7 +27,7 @@
         <input type="hidden" name="_email.subject" value="{{ site.Params.Contact.emailSubject | default "" }}">
         <input type="hidden" name="_redirect" value="{{ site.Params.Contact.thanksUrl | absURL }}">
 
-        <input type="checkbox" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off" class="contact-form-gotcha" value="">
+        <input type="checkbox" name="_honeypot" tabindex="-1" autocomplete="off" class="contact-form-gotcha" value="">
 
         <div class="contact-form-item">
             <button type="submit" id="send-form-button" class="button button-large">{{ i18n "send" }}</button>

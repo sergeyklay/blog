@@ -6,3 +6,7 @@
   margin: unset;
   border-radius: unset;
 }
+
+.contact-form-gotcha {
+  display: none;
+}
