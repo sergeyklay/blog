@@ -1,20 +1,16 @@
-function ready(f){
-    /in/.test(document.readyState) ? setTimeout('ready(' + f + ')', 9) : f()
-}
+$( document ).ready(function() {
+    const formElement = $("#contact-form");
+    const buttonElement = $("#send-form-button");
 
-ready(function(){
-    const formElement = document.getElementById("contact-form");
-    const buttonElement = document.getElementById("send-form-button");
-
-    formElement.addEventListener("botpoison-challenge-start", function () {
-        buttonElement.setAttribute("disabled", "disabled");
+    formElement.on("botpoison-challenge-start", function () {
+        buttonElement.attr("disabled", "disabled");
     });
 
-    formElement.addEventListener("botpoison-challenge-success", function () {
-        buttonElement.removeAttribute("disabled");
+    formElement.on("botpoison-challenge-success", function () {
+        buttonElement.removeAttr("disabled");
     });
 
-    formElement.addEventListener("botpoison-challenge-error", function () {
-        buttonElement.removeAttribute("disabled");
+    formElement.on("botpoison-challenge-error", function () {
+        buttonElement.removeAttr("disabled");
     });
 });

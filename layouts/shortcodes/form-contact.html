@@ -1,6 +1,11 @@
 {{ define "custom-scripts" }}
 <script src="https://unpkg.com/@botpoison/browser" async></script>
-<script src="/js/contact-form.js" async></script>
+{{ if eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production")  }}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{{ else }}
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+{{ end }}
+<script src="/js/contact-form.js"></script>
 {{ end }}
 
 <div class="contact-form">
