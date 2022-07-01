@@ -1,5 +1,6 @@
 {{ define "custom-scripts" }}
 <script src="https://unpkg.com/@botpoison/browser" async></script>
+<script src="/js/contact-form.js" async></script>
 {{ end }}
 
 <div class="contact-form">
@@ -34,20 +35,3 @@
         </div>
     </form>
 </div>
-
-<script>
-    const formElement = document.getElementById("contact-form");
-    const buttonElement = document.getElementById("send-form-button");
-
-    formElement.addEventListener("botpoison-challenge-start", function () {
-        buttonElement.setAttribute("disabled", "disabled");
-    });
-
-    formElement.addEventListener("botpoison-challenge-success", function () {
-        buttonElement.removeAttribute("disabled");
-    });
-
-    formElement.addEventListener("botpoison-challenge-error", function () {
-        buttonElement.removeAttribute("disabled");
-    });
-</script>
