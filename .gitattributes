@@ -19,7 +19,9 @@
 README.md         linguist-detectable=false linguist-documentation=true
 SECURITY.md       linguist-detectable=false linguist-documentation=true
 
-/assets/js/vendor/*.js linguist-vendored
+/assets/js/vendor/**/*.js linguist-vendored
+/assets/js/vendor/*.js    linguist-vendored
+
 #
 # Text files.
 # Set files to be explicitly interpreted as text,
