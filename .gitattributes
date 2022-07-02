@@ -14,6 +14,7 @@
 *.asc             linguist-language=Public Key
 *.md              linguist-detectable=true linguist-documentation=false
 README.md         linguist-detectable=false linguist-documentation=true
+SECURITY.md       linguist-detectable=false linguist-documentation=true
 
 #
 # Text files.
@@ -21,8 +22,9 @@ README.md         linguist-detectable=false linguist-documentation=true
 # plus any specific settings
 #
 
-LICENSE    text eol=lf
-README.md  text eol=lf
+LICENSE      text eol=lf
+README.md    text eol=lf
+SECURITY.md  text eol=lf
 
 #
 # Configuration and some text files.
