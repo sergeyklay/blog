@@ -26,10 +26,12 @@
     "build:split1": "hugo --enableGitInfo",
     "build:preview": "HUGO_PREVIEW=true hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL",
     "build:branch": "hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL",
-    "server": "HUGO_PREVIEW=true HUGO_ENV=development hugo server --verbose --buildDrafts --buildFuture --ignoreCache --disableFastRender"
+    "server": "HUGO_PREVIEW=true HUGO_ENV=development hugo server --verbose --buildDrafts --buildFuture --ignoreCache --disableFastRender",
+    "lint:editorconfig": "editorconfig-checker"
   },
   "dependencies": {},
   "devDependencies": {
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "editorconfig-checker": "^4.0.2"
   }
 }
