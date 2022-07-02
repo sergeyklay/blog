@@ -30,7 +30,6 @@ SECURITY.md  text eol=lf
 # Configuration and some text files.
 #
 
-*.webmanifest   text eol=lf filter=gpg diff=gpg
 *.webmanifest   text eol=lf diff=json
 .editorconfig   text eol=lf
 .gitattributes  text eol=lf
