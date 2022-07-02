@@ -9,13 +9,17 @@
 # Setting up linguist
 #
 
+.ecrc             linguist-language=JSON
 .editorconfig     linguist-language=INI
+.eslintrc         linguist-language=JSONC
 *.webmanifest     linguist-language=JSON
 *.asc             linguist-language=Public Key
 *.md              linguist-detectable=true linguist-documentation=false
+
 README.md         linguist-detectable=false linguist-documentation=true
 SECURITY.md       linguist-detectable=false linguist-documentation=true
 
+/assets/js/vendor/*.js linguist-vendored
 #
 # Text files.
 # Set files to be explicitly interpreted as text,
@@ -30,11 +34,13 @@ SECURITY.md  text eol=lf
 # Configuration and some text files.
 #
 
-*.webmanifest   text eol=lf diff=json
+.ecrc           text eol=lf diff=json
 .editorconfig   text eol=lf
+.eslintrc       text eol=lf diff=json
 .gitattributes  text eol=lf
 .gitignore      text eol=lf
 .gitmodules     text eol=lf
+*.webmanifest   text eol=lf diff=json
 netlify.toml    text eol=lf
 
 #
@@ -42,7 +48,9 @@ netlify.toml    text eol=lf
 # (used by the "download ZIP archive" option, for example).
 #
 
+.ecrc           export-ignore
 .editorconfig   export-ignore
+.eslintrc       export-ignore
 .gitattributes  export-ignore
 .gitignore      export-ignore
 .gitmodules     export-ignore

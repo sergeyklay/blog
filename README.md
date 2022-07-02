@@ -23,10 +23,15 @@ $ git clone --recurse-submodules https://github.com/sergeyklay/blog.git
 $ cd blog
 ```
 
+You may need to install dev dependencies to perform routine tasks:
+```shell
+$ npm install
+```
+
 Then, from the root of the blog just run:
 
 ```shell
-$ hugo server
+$ npm run server
 ```
 
 Copy the url from your terminal log and paste it into your browser of choice.
