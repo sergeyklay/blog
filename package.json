@@ -1,0 +1,35 @@
+{
+  "name": "egrep-blog",
+  "version": "6.0.0",
+  "private": true,
+  "description": "Serghei Iakovlev's blog",
+  "keywords": [
+    "blog",
+    "egrep",
+    "hugo"
+  ],
+  "homepage": "https://serghei.blog/",
+  "bugs": {
+    "url": "https://github.com/sergeyklay/blog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeyklay/blog.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Serghei Iakovlev",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf public",
+    "build": "hugo --gc --verbose",
+    "build:prod": "hugo",
+    "build:split1": "hugo --enableGitInfo",
+    "build:preview": "HUGO_PREVIEW=true hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL",
+    "build:branch": "hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL",
+    "server": "HUGO_PREVIEW=true HUGO_ENV=development hugo server --verbose --buildDrafts --buildFuture --ignoreCache --disableFastRender"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

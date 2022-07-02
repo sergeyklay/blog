@@ -7,6 +7,10 @@
 
 # Directories to ignore (do not add trailing '/'s, they skip symlinks).
 
+# Generated files from NPM.
+/node_modules
+
+# Generated files by hugo.
 /public
 /resources
 

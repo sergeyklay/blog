@@ -34,6 +34,7 @@ README.md  text eol=lf
 .gitattributes  text eol=lf
 .gitignore      text eol=lf
 .gitmodules     text eol=lf
+netlify.toml    text eol=lf
 
 #
 # Exclude files from exporting
@@ -45,3 +46,4 @@ README.md  text eol=lf
 .gitignore      export-ignore
 .gitmodules     export-ignore
 /.github        export-ignore
+netlify.toml    export-ignore

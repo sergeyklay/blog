@@ -1,6 +1,6 @@
 [build]
   publish = 'public'
-  command = 'make netlify-production-build'
+  command = 'npm run build:prod'
 
 [context.production.environment]
   HUGO_VERSION = '0.101.0'
@@ -9,20 +9,20 @@
   HUGO_GOOGLEANALYTICS = 'G-G3XCZPK59N'
 
 [context.split1]
-  command = 'make netlify-split1-build'
+  command = 'npm run build:split1'
 
 [context.split1.environment]
   HUGO_VERSION = '0.101.0'
   HUGO_ENV = 'production'
 
 [context.deploy-preview]
-  command = 'make netlify-deploy-preview'
+  command = 'npm run build:preview'
 
 [context.deploy-preview.environment]
   HUGO_VERSION = '0.101.0'
 
 [context.branch-deploy]
-  command = 'make netlify-branch-deploy'
+  command = 'npm run build:branch'
 
 [context.branch-deploy.environment]
   HUGO_VERSION = '0.101.0'
