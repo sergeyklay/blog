@@ -4,11 +4,12 @@
 {{ end }}
 
 <div class="contact-form">
-    <form accept-charset="UTF-8"
-          action="{{ site.Params.Contact.formAction | default site.BaseURL }}"
-          method="POST"
-          id="contact-form"
-          data-botpoison-public-key="{{ site.Params.botpoisonPublicKey }}">
+    <form
+        accept-charset="UTF-8"
+        action="{{ site.Params.Contact.formAction | default site.BaseURL }}"
+        method="POST"
+        id="contact-form"
+        data-botpoison-public-key="{{ site.Params.botpoisonPublicKey }}">
         <div class="contact-form-item">
             <label for="name" class="contact-form-label">{{ i18n "your_name" }}</label>
             <input type="text" id="name" name="name" class="contact-form-input form-input" placeholder="" required aria-labelledby="name">

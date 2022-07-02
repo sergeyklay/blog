@@ -37,11 +37,13 @@ $(foo)
 
 мы должны были бы написать что-то вроде:
 
+<!-- editorconfig-checker-disable -->
 ```
 expr = term
        $( '+' term .out('ADD')
         / '-' term .out('SUB'));
 ```
+<!-- editorconfig-checker-enable -->
 
 На что тут следует обратить внимание:
 
@@ -62,10 +64,12 @@ expr = term
 
 Если бы мы хотели как-то обозначить синтаксический элемент необязательным, в META II нам предлагалось служебное слово `empty`:
 
+<!-- editorconfig-checker-disable -->
 ```
 subsecondary = '*' primary / empty  ;
    secondary = primary subsecondary ;
 ```
+<!-- editorconfig-checker-enable -->
 
 Первую строку следует понимать так: либо символ `*`, за которым идёт нетерминал `primary`, либо ничего.
 
@@ -151,10 +155,12 @@ function connect (string host, port, string password)
 
 Здесь мы имеем некоторый выдуманный язык, где тип аргумента может быть не указан (здесь — `port`). Для определения грамматики аргументов функции мы могли бы составить следующие правила:
 
+<!-- editorconfig-checker-disable -->
 ```
        args = maybe typed { "," maybe typed } ;
 maybe typed = [ type ] arg ;
 ```
+<!-- editorconfig-checker-enable -->
 
 Как уже было отмечено ранее, угловые скобки в EBNF были убраны. Здесь наглядно показано с чем может возникнуть сложность у неподготовленного читателя (`maybe typed` это два нетерминала или один?).
 
