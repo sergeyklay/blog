@@ -1,3 +1,5 @@
+'use strict';
+
 $(function() {
   const formElement = $('#contact-form');
   const buttonElement = $('#send-form-button');
