@@ -16,8 +16,8 @@ disableKinds = ['RSS']
   disableJSON = true
 
 [outputs]
-  home = [ 'HTML', 'Atom', 'FEED', 'JSON', 'MANIFEST', 'humanstxt' ]
-  section = [ 'HTML', 'Atom', 'FEED', 'JSON' ]
+  home = [ 'HTML', 'Atom', 'FEED', 'JSONFEED', 'JSON', 'MANIFEST', 'humanstxt' ]
+  section = [ 'HTML', 'Atom', 'FEED', 'JSONFEED' ]
   page = [ 'HTML' ]
   taxonomy = [ 'HTML' ]
   term = [ 'HTML' ]
@@ -42,8 +42,8 @@ disableKinds = ['RSS']
   noUgly = true
   permalinkable = false
 
-[outputFormats.JSON]
-  name = 'Json'
+[outputFormats.JSONFEED]
+  name = 'JsonFeed'
   mediaType = 'application/feed+json'
   baseName = 'feeds/feed'
   rel = 'alternate'
