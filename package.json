@@ -30,7 +30,7 @@
     "lint": "npm run lint:js && npm run lint:editorconfig",
     "lint:editorconfig": "editorconfig-checker",
     "lint:js": "eslint static/js/*.js",
-    "vendor:js": "cp node_modules/@botpoison/browser/dist/index.js static/js/vendor/botpoison/browser.js"
+    "vendor:js": "ncp node_modules/@botpoison/browser/dist/index.js static/js/vendor/botpoison/browser.min.js"
   },
   "dependencies": {
     "@botpoison/browser": "~0.1.30"
@@ -38,6 +38,7 @@
   "devDependencies": {
     "rimraf": "^3.0.2",
     "editorconfig-checker": "^4.0.2",
-    "eslint": "^8.18.0"
+    "eslint": "^8.18.0",
+    "ncp": "^2.0.0"
   }
 }
