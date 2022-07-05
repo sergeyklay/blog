@@ -2,5 +2,5 @@ github.com/jquery/jquery-dist v0.0.0-20210302171154-e786e3d9707f h1:VrcFwwDo/nKE
 github.com/jquery/jquery-dist v0.0.0-20210302171154-e786e3d9707f/go.mod h1:/lTfttEqFU0GWTaOOMIeNTzLGQ7yTIgyzjtkS/pYIoc=
 github.com/olivernn/lunr.js v2.3.9+incompatible h1:eH8iBnjlR4mwlYDdNuqy9PCNLjp2bEs6aoNnTSaccx0=
 github.com/olivernn/lunr.js v2.3.9+incompatible/go.mod h1:yEkQ1DUSMtNsn8n2CqvQXZd0ErWPEG8g9QRmblR+KS8=
-github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220705221959-638903353764 h1:OgRa8z240vMwDwD30kTFQMvBS5W5GHZFhPSLqjxX0Iw=
-github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220705221959-638903353764/go.mod h1:x79sBRAejtnAm80ER7WcMQVfjNq1oSLWbtOKberx62s=
+github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220705233739-674415135175 h1:Qx2BaL6tB0JzDTL/8waZ1mxd21FWRIHJMsdUNHPW5hA=
+github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220705233739-674415135175/go.mod h1:x79sBRAejtnAm80ER7WcMQVfjNq1oSLWbtOKberx62s=
