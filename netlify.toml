@@ -70,14 +70,39 @@
     Strict-Transport-Security = 'max-age=31536000; includeSubDomains; preload'
     # This used to be called Feature Policy and is mainly only support by
     # Chrome browsers. It’s used to control what browser APIs can be used.
-    Permissions-Policy = 'accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()'
+    Permissions-Policy = '''
+    accelerometer=(),
+    camera=(),
+    geolocation=(),
+    gyroscope=(),
+    magnetometer=(),
+    microphone=(),
+    payment=(),
+    usb=(),
+    interest-cohort=()'''
     # CSP makes it possible for server administrators to reduce or eliminate
     # the vectors by which XSS can occur by specifying the domains that the
     # browser should consider to be valid sources of executable scripts.
     # A CSP compatible browser will then only execute scripts loaded in source
     # files received from those allowed domains, ignoring all other scripts
     # (including inline scripts and event-handling HTML attributes).
-    Content-Security-Policy = "default-src 'self'; script-src 'self' *.netlify.app *.netlify.com *.googletagmanager.com; style-src 'self' *.googleapis.com; img-src 'self' data: *.google-analytics.com *.googletagmanager.com *.gstatic.com *.google.ge *.google.ru; font-src 'self'; connect-src 'self' *.google-analytics.com analytics.google.com *.googletagmanager.com *.doubleclick.net api.botpoison.com; media-src 'self'; object-src 'self'; frame-src 'none'; worker-src 'self'; frame-ancestors 'none'; form-action 'self' submit-form.com; upgrade-insecure-requests; base-uri 'self'; manifest-src 'self'; report-uri https://egrep.report-uri.com/r/d/csp/enforce"
+    Content-Security-Policy = """
+    default-src 'self';
+    script-src 'self' *.netlify.app *.netlify.com *.googletagmanager.com;
+    style-src 'self' *.googleapis.com;
+    img-src 'self' data: *.google-analytics.com *.googletagmanager.com *.gstatic.com *.google.ge *.google.ru;
+    font-src 'self';
+    connect-src 'self' *.google-analytics.com analytics.google.com *.googletagmanager.com *.doubleclick.net api.botpoison.com;
+    media-src 'self';
+    object-src 'self';
+    frame-src 'none';
+    worker-src 'self';
+    frame-ancestors 'none';
+    form-action 'self' submit-form.com;
+    upgrade-insecure-requests;
+    base-uri 'self';
+    manifest-src 'self';
+    report-uri https://egrep.report-uri.com/r/d/csp/enforce"""
 
 [[headers]]
   for = '/feeds/*.xml'
