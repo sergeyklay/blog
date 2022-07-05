@@ -4,7 +4,7 @@ uglyurls = true
 languageCode = 'ru'
 defaultContentLanguage = 'ru'
 title = 'Сергей Яковлев'
-theme = 'ed'
+# theme = 'ed'
 enableRobotsTXT = true
 
 refLinksErrorLevel = 'WARNING'
@@ -157,6 +157,11 @@ disableKinds = ['RSS']
     url = '/about.html'
     weight = 2
   [[menu.main]]
+    identifier = 'search'
+    name = 'Поиск'
+    url = '/search.html'
+    weight = 3
+  [[menu.main]]
     identifier = 'github'
     name = 'GitHub профиль'
     url = 'https://github.com/sergeyklay/'
@@ -190,3 +195,7 @@ disableKinds = ['RSS']
 
 [frontmatter]
   lastmod = ['lastmod', ':git', 'date', 'publishDate']
+
+[module]
+  [[module.imports]]
+    path = 'github.com/sergeyklay/gohugo-theme-ed'

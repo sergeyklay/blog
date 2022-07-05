@@ -20,3 +20,7 @@ insert_final_newline     = false
 
 [.gitmodules]
 indent_style             = tab
+
+[go.{mod,sum}]
+indent_style             = tab
+indent_size              = 4
