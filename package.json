@@ -20,8 +20,6 @@
   "author": "Serghei Iakovlev",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf public",
-    "build": "hugo --gc --verbose",
     "server": "HUGO_ENV=development hugo server --verbose --buildDrafts --buildFuture --ignoreCache --disableFastRender",
     "lint": "npm run lint:js && npm run lint:editorconfig",
     "lint:editorconfig": "editorconfig-checker",
