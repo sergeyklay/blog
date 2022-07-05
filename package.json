@@ -22,11 +22,7 @@
   "scripts": {
     "clean": "rm -rf public",
     "build": "hugo --gc --verbose",
-    "build:prod": "hugo",
-    "build:split1": "hugo --enableGitInfo",
-    "build:preview": "HUGO_PREVIEW=true hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL",
-    "build:branch": "hugo --buildDrafts --buildFuture --baseURL $DEPLOY_PRIME_URL",
-    "server": "HUGO_PREVIEW=true HUGO_ENV=development hugo server --verbose --buildDrafts --buildFuture --ignoreCache --disableFastRender",
+    "server": "HUGO_ENV=development hugo server --verbose --buildDrafts --buildFuture --ignoreCache --disableFastRender",
     "lint": "npm run lint:js && npm run lint:editorconfig",
     "lint:editorconfig": "editorconfig-checker",
     "lint:js": "eslint static/js/*.js",
