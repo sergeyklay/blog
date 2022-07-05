@@ -19,13 +19,14 @@ requirements:
 First you need to get the project:
 
 ```shell
-$ git clone --recurse-submodules https://github.com/sergeyklay/blog.git
+$ git clone https://github.com/sergeyklay/blog.git
 $ cd blog
 ```
 
-You may need to install dev dependencies to perform routine tasks:
+Next, you will need to install dependencies:
+
 ```shell
-$ npm install
+$ hugo mod get -u
 ```
 
 Then, from the root of the blog just run:

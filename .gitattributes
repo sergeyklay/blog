@@ -40,7 +40,6 @@ SECURITY.md  text eol=lf
 .editorconfig   text eol=lf
 .gitattributes  text eol=lf
 .gitignore      text eol=lf
-.gitmodules     text eol=lf
 *.webmanifest   text eol=lf diff=json
 netlify.toml    text eol=lf
 
@@ -54,6 +53,5 @@ netlify.toml    text eol=lf
 .eslintrc.yml   export-ignore
 .gitattributes  export-ignore
 .gitignore      export-ignore
-.gitmodules     export-ignore
 /.github        export-ignore
 netlify.toml    export-ignore
