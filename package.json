@@ -20,7 +20,7 @@
   "author": "Serghei Iakovlev",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf public",
+    "clean": "rm -rf public",
     "build": "hugo --gc --verbose",
     "build:prod": "hugo",
     "build:split1": "hugo --enableGitInfo",
@@ -36,9 +36,7 @@
     "@botpoison/browser": "~0.1.30"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
     "editorconfig-checker": "^4.0.2",
-    "eslint": "^8.18.0",
-    "ncp": "^2.0.0"
+    "eslint": "^8.18.0"
   }
 }
