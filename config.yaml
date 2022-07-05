@@ -8,6 +8,8 @@ enableRobotsTXT: true
 
 refLinksErrorLevel: WARNING
 
+googleAnalytics: G-G3XCZPK59N
+
 disableKinds:
   - RSS
 

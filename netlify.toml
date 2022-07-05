@@ -18,16 +18,15 @@
 # here but we recommend using the Netlify UI for sensitive
 # values to keep them out of your source repository.
 [context.production]
-  command = 'hugo --enableGitInfo'
+  command = 'hugo'
 
 [context.production.environment]
   HUGO_ENV = 'production'
-  HUGO_GOOGLEANALYTICS = 'G-G3XCZPK59N'
 
 # Deploy Preview context: all deploys generated from
 # a pull/merge request will inherit these settings.
 [context.deploy-preview]
-  command = 'hugo --enableGitInfo --buildDrafts --buildFuture --baseURL ${DEPLOY_PRIME_URL}'
+  command = 'hugo --buildDrafts --buildFuture --baseURL ${DEPLOY_PRIME_URL}'
 
 [context.deploy-preview.environment]
   HUGO_ENV = 'development'
@@ -36,7 +35,7 @@
 # a pull/merge request or from the Production branch
 # will inherit these settings.
 [context.branch-deploy]
-  command = 'hugo --enableGitInfo --buildDrafts --buildFuture --baseURL ${DEPLOY_PRIME_URL}'
+  command = 'hugo --buildDrafts --buildFuture --baseURL ${DEPLOY_PRIME_URL}'
 
 [context.branch-deploy.environment]
   HUGO_ENV = 'development'
