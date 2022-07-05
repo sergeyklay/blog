@@ -23,16 +23,10 @@ $ git clone https://github.com/sergeyklay/blog.git
 $ cd blog
 ```
 
-Next, you will need to install dependencies:
-
-```shell
-$ hugo mod get -u
-```
-
 Then, from the root of the blog just run:
 
 ```shell
-$ npm run server
+$ hugo server
 ```
 
 Copy the url from your terminal log and paste it into your browser of choice.
