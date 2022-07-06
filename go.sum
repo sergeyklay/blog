@@ -1,6 +1,4 @@
-github.com/jquery/jquery-dist v0.0.0-20210302171154-e786e3d9707f h1:VrcFwwDo/nKErNIKmp//iOGu7DlRkBTeW//hN7tl7SU=
-github.com/jquery/jquery-dist v0.0.0-20210302171154-e786e3d9707f/go.mod h1:/lTfttEqFU0GWTaOOMIeNTzLGQ7yTIgyzjtkS/pYIoc=
 github.com/olivernn/lunr.js v2.3.9+incompatible h1:eH8iBnjlR4mwlYDdNuqy9PCNLjp2bEs6aoNnTSaccx0=
 github.com/olivernn/lunr.js v2.3.9+incompatible/go.mod h1:yEkQ1DUSMtNsn8n2CqvQXZd0ErWPEG8g9QRmblR+KS8=
-github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220705233739-674415135175 h1:Qx2BaL6tB0JzDTL/8waZ1mxd21FWRIHJMsdUNHPW5hA=
-github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220705233739-674415135175/go.mod h1:x79sBRAejtnAm80ER7WcMQVfjNq1oSLWbtOKberx62s=
+github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220706071758-3895a7702f48 h1:y8yreflGO0ReybyeXh9I2vlk51jl1sXcGc9uoVq4rIs=
+github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220706071758-3895a7702f48/go.mod h1:LbzoGVIqWgWnKZ/y3osoUCXhKPSNs0nSvBTdCZxRVp4=
