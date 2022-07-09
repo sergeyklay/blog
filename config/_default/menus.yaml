@@ -1,0 +1,37 @@
+main:
+  - identifier: home
+    name: Блог
+    url: /
+    weight: -20
+  - identifier: contact
+    name: Контактная форма
+    url: /contact.html
+    weight: 1
+  - identifier: about
+    name: Обо мне
+    url: /about.html
+    weight: 2
+  - identifier: search
+    name: Поиск
+    url: /search.html
+    weight: 3
+  - identifier: github
+    name: GitHub профиль
+    url: 'https://github.com/sergeyklay/'
+    weight: 20
+    params:
+      external: true
+
+feeds:
+  - identifier: rss
+    name: RSS 2.0
+    url: /feeds/feed.rss.xml
+    weight: 1
+  - identifier: atom
+    name: Atom
+    url: /feeds/feed.atom.xml
+    weight: 2
+  - identifier: json
+    name: Json
+    url: /feeds/feed.json
+    weight: 3
