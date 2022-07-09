@@ -5,83 +5,10 @@ languageCode: ru
 defaultContentLanguage: ru
 
 title: Сергей Яковлев
-enableRobotsTXT: true
 
 refLinksErrorLevel: WARNING
 
 googleAnalytics: G-G3XCZPK59N
-
-disableKinds:
-  - RSS
-
-outputs:
-  home: [HTML, Atom, FEED, JSONFEED, JSON, MANIFEST, humanstxt]
-  section: [HTML, Atom, FEED, JSONFEED]
-  page: [HTML]
-  taxonomy: [HTML]
-  term: [HTML]
-
-outputFormats:
-  Atom:
-    name: Atom
-    mediaType: text/xml
-    baseName: feeds/feed.atom
-    rel: alternate
-    isPlainText: false
-    isHTML: false
-    noUgly: true
-    permalinkable: false
-  FEED:
-    name: Feed
-    mediaType: text/xml
-    baseName: feeds/feed.rss
-    rel: alternate
-    isPlainText: false
-    isHTML: false
-    noUgly: true
-    permalinkable: false
-  JSONFEED:
-    name: JsonFeed
-    mediaType: application/feed+json
-    baseName: feeds/feed
-    rel: alternate
-    isPlainText: true
-    isHTML: false
-    noUgly: false
-  MANIFEST:
-    name: Manifest
-    mediaType: application/manifest+json
-    baseName: manifest
-    rel: manifest
-    isPlainText: true
-    isHTML: false
-    noUgly: false
-    notAlternative: true
-  humanstxt:
-    mediaType: text/plain
-    baseName: humans
-    rel: author
-    isPlainText: true
-    isHTML: false
-    noUgly: true
-    permalinkable: false
-    notAlternative: true
-
-mediaTypes:
-  text/xml:
-    suffixes:
-      - xml
-  application/feed+json:
-    suffixes:
-      - json
-  application/manifest+json:
-    suffixes:
-      - webmanifest
-
-sitemap:
-  changefreq: weekly
-  filename: sitemap.xml
-  priority: 0.5
 
 author:
   name: Serghei Iakovlev
@@ -107,13 +34,6 @@ markup:
     parser:
       attribute:
         block: true
-
-frontmatter:
-  lastmod:
-    - lastmod
-    - ':git'
-    - date
-    - publishDate
 
 module:
   hugoVersion:
