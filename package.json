@@ -2,7 +2,7 @@
   "name": "egrep-blog",
   "version": "6.0.0",
   "private": true,
-  "description": "Serghei Iakovlev's blog",
+  "description": "Serghei Iakovlev's blog.",
   "keywords": [
     "blog",
     "egrep",
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/sergeyklay/blog.git"
   },
   "license": "GPL-3.0-or-later",
-  "author": "Serghei Iakovlev",
+  "author": "Serghei Iakovlev <egrep@protonmail.ch>",
   "main": "index.js",
   "scripts": {
     "server": "HUGO_ENV=development hugo server --verbose --buildDrafts --buildFuture --ignoreCache --disableFastRender",
