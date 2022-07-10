@@ -90,9 +90,9 @@
     default-src 'self';
     script-src 'self' *.netlify.app *.netlify.com *.googletagmanager.com;
     style-src 'self' *.googleapis.com;
-    img-src 'self' data: *.google-analytics.com *.googletagmanager.com *.gstatic.com *.google.ge *.google.ru *.google.gr *.google.pl google.com.np;
+    img-src 'self' data: *.google-analytics.com *.googletagmanager.com *.gstatic.com www.google.ge www.google.ru www.google.gr www.google.pl www.google.com.np www.google.co.in www.google.com.ua;
     font-src 'self';
-    connect-src 'self' *.google-analytics.com *.analytics.google.com analytics.google.com *.googletagmanager.com *.google.com *.google.pl *.doubleclick.net api.botpoison.com;
+    connect-src 'self' *.google-analytics.com *.analytics.google.com analytics.google.com *.googletagmanager.com *.doubleclick.net api.botpoison.com www.google.ru www.google.com www.google.pl;
     media-src 'self';
     object-src 'self';
     frame-src 'none';
