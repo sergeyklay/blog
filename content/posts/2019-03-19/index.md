@@ -4,7 +4,7 @@ date: 2019-03-19T12:06:34+02:00
 lastmod: 2021-09-03T10:09:12+00:00
 draft: false
 slug: yazyk-yazykov-chast-pervaya
-featured_image: 'dark-forest.jpg'
+featuredImage: 'dark-forest.jpg'
 summary: >-
   Этой публикацией я начинаю серию небольших статей, посвящённую
   формальным грамматикам, системам описания грамматик, BNF и

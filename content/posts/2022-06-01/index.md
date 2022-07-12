@@ -3,7 +3,7 @@ title: Настройка заголовков безопасности с по�
 date: 2022-06-01T22:00:40+02:00
 draft: false
 slug: nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify
-featured_image: 'data-security.jpeg'
+featuredImage: 'data-security.jpeg'
 tags:
   - netlify
   - security

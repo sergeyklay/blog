@@ -4,7 +4,7 @@ date: 2021-04-14T09:51:37+00:00
 lastmod: 2022-06-13T09:10:05+02:00
 draft: false
 slug: shpargalka-po-osnovnym-komandam-gpg
-featured_image: 'privacy_encrypt.jpg'
+featuredImage: 'privacy_encrypt.jpg'
 description: >-
   Краткая шпаргалка по основным командам GnuPG 2.x используемым в
   повседневной жизни.

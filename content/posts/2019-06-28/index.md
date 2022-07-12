@@ -4,7 +4,7 @@ date: 2019-06-28T10:50:18+00:00
 lastmod: 2021-09-03T10:09:38+00:00
 draft: false
 slug: yazyk-yazykov-chast-vtoraya
-featured_image: 'bookcase-books.jpg'
+featuredImage: 'bookcase-books.jpg'
 summary: >-
   Вторая часть статьи посвящённой формальным грамматикам, системам
   описания грамматик, BNF и синтаксису языков.

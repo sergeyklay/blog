@@ -4,7 +4,7 @@ date: 2021-10-08T18:32:40+00:00
 lastmod: 2022-06-22T22:00:00+02:00
 draft: false
 slug: processy-potoki-i-konkurentnoe-vypolnenie-programm
-featured_image: 'motherboard.jpg'
+featuredImage: 'motherboard.jpg'
 summary: >-
   Этой публикацией я начинаю серию небольших заметок, посвящённую
   процессам, потокам, конкурентному выполнению программ, а также
