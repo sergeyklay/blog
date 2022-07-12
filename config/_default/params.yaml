@@ -42,6 +42,7 @@ assets:
 
 seo:
   publisher: Serghei Iakovlev
+  anonymizeIp: true
 
 search:
   maxSummaryLength: 100
