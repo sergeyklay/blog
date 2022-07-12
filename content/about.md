@@ -1,6 +1,7 @@
 ---
 title: Обо мне
 caption: Привет!
+semanticType: about
 ---
 
 Я — Сергей Яковлев, программист родом из {{< img src="/img/norilsk.png" alt="Norilsk emblem" class="inline-logo" >}} Норильска, поданный республики {{< img src="/img/moldova.png" alt="Moldova emblem" class="inline-logo" >}} Молдова, ныне живу под Киевом {{< img src="/img/kyiv.svg" alt="Kyiv emblem" class="inline-logo" >}}.
