@@ -1,6 +1,6 @@
 ---
 title: Обо мне
-caption: Привет!
+pageTitle: Привет!
 semanticType: about
 ---
 
