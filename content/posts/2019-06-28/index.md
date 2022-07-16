@@ -19,7 +19,7 @@ toc: true
 
 ## META II
 
-В 1963-1964 годах, буквально через несколько лет после появления {{< abbr title="Backus-Naur Form" text="BNF" >}}, за авторством Dewey Val Schorre работавшим тогда в Калифорнийском университете в Лос-Анджелесе ([{{< abbr title="University of California, Los Angeles" text="UCLA" >}}](http://www.ucla.edu/)) выходит в свет язык программирования META II. Примечательно, что в 1963 году была разработана и стандартизована {{< abbr title="American Standard Code for Information Interchange" text="ASCII" >}}-таблица.
+В 1963-1964 годах, буквально через несколько лет после появления {{< abbr title="Backus-Naur Form" text="BNF" >}}, за авторством Dewey Val Schorre работавшим тогда в Калифорнийском университете в Лос-Анджелесе ({{< link src="http://www.ucla.edu/" target="_blank" rel="noopener noreferrer" class="external" >}}{{< abbr title="University of California, Los Angeles" text="UCLA" >}}{{< /link >}}) выходит в свет язык программирования META II. Примечательно, что в 1963 году была разработана и стандартизована {{< abbr title="American Standard Code for Information Interchange" text="ASCII" >}}-таблица.
 
 Основная сфера применения этого языка — создание компиляторов. В документации по языку, META II описывается как «синтакс-ориентированный язык для написания компиляторов», а так же «язык похожий на BNF». В этом языке были введены такие понятия и конструкции, которые в том или ином виде дожили и до наших дней в виде продолжения в {{< abbr title="Extended Backus-Naur Form" text="EBNF" >}} и {{< abbr title="Augmented Backus-Naur Form" text="ABNF" >}}, о которых мы поговорим ниже.
 
@@ -96,7 +96,7 @@ expr1 = expr2 ('+' expr1 / empty) ;
 
 Остальной синтаксис META II не сложнее чем то, что я уже показал, а сам язык обладает богатыми возможностями. Но надолго останавливаться на нём мы не будем. Я лишь хотел показать некоторые черты, которые мы рассмотрим далее.
 
-Позднее, уже в 1970-ых, появилась небезызвестная утилита {{< link src="https://en.wikipedia.org/wiki/Yacc" target="_blank" rel="noopener noreferrer" >}}yacc{{< /link >}}, использующая BNF продукции очень похожие не те, которые использовались в META II. yacc чаще всего используется в качестве генератора [{{< abbr title="Look-Ahead LR" text="LALR" >}}-парсеров](https://en.wikipedia.org/wiki/LALR_parser), и корнями, очевидно, уходит в BNF. Когда вы где-то слышите или читаете, что yacc использует BNF, то знайте — только от части, оригинальный BNF был совсем другой.
+Позднее, уже в 1970-ых, появилась небезызвестная утилита {{< link src="https://en.wikipedia.org/wiki/Yacc" target="_blank" rel="noopener noreferrer" class="external" >}}yacc{{< /link >}}, использующая BNF продукции очень похожие не те, которые использовались в META II. yacc чаще всего используется в качестве генератора {{< link src="https://en.wikipedia.org/wiki/LALR_parser" target="_blank" rel="noopener noreferrer" class="external" >}}{{< abbr title="Look-Ahead LR" text="LALR" >}}-парсеров{{< /link >}}, и корнями, очевидно, уходит в BNF. Когда вы где-то слышите или читаете, что yacc использует BNF, то знайте — только от части, оригинальный BNF был совсем другой.
 
 ## EBNF нотация
 
@@ -189,15 +189,15 @@ end assignment = { assignment, ";", white space } ;
 
 На этом я позволю себе завершить краткий обзор отличительных черт. Документации по EBNF много, чего не скажешь о BNF или META II. Для дальнейшего изучения предлагаю начать со следующих ссылок:
 
-- {{< link src="https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf" target="_blank" rel="noopener noreferrer" >}}ISO/IEC 14977: EBNF{{< /link >}}
-- {{< link src="https://www.ics.uci.edu/~pattis/ICS-33/lectures/ebnf.pdf" target="_blank" rel="noopener noreferrer" >}}EBNF: A Notation to Describe Syntax{{< /link >}}
-- {{< link src="https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form" target="_blank" rel="noopener noreferrer" >}}Wikipedia: Extended Backus–Naur form{{< /link >}}
+- {{< link src="https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf" target="_blank" rel="noopener noreferrer" class="external" >}}ISO/IEC 14977: EBNF{{< /link >}}
+- {{< link src="https://www.ics.uci.edu/~pattis/ICS-33/lectures/ebnf.pdf" target="_blank" rel="noopener noreferrer" class="external" >}}EBNF: A Notation to Describe Syntax{{< /link >}}
+- {{< link src="https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form" target="_blank" rel="noopener noreferrer" class="external" >}}Wikipedia: Extended Backus–Naur form{{< /link >}}
 
 ## ABNF нотация
 
-К 1977 году Arpanet использовала несколько неформальных стандартов для текстовых сообщений, отправляемых между ее хост-компьютерами. Было сочтено необходимым систематизировать эти методы и обеспечить те функции, которые казались неизбежными. Результатом этих усилий стал стандарт «Standard for the Format of {{< abbr title="Advanced Research Projects Agency" text="ARPA" >}} Network Text Message» ({{< link src="https://tools.ietf.org/html/rfc733" target="_blank" rel="noopener noreferrer" >}}RFC733{{< /link >}}), а затем обновлённый и дополненный в 1982 году ({{< link src="https://tools.ietf.org/html/rfc822" target="_blank" rel="noopener noreferrer" >}}RFC822{{< /link >}}). В этих документах описывается модифицированная версия BNF нотации, которая была целесообразна для использования в {{< link src="https://en.wikipedia.org/wiki/ARPANET" target="_blank" rel="noopener noreferrer" >}}Arpanet{{< /link >}} в те годы. И в документах, которые использовали эту модифицированную версию нотации, она называлась «Augmented Backus-Naur Form».
+К 1977 году Arpanet использовала несколько неформальных стандартов для текстовых сообщений, отправляемых между ее хост-компьютерами. Было сочтено необходимым систематизировать эти методы и обеспечить те функции, которые казались неизбежными. Результатом этих усилий стал стандарт «Standard for the Format of {{< abbr title="Advanced Research Projects Agency" text="ARPA" >}} Network Text Message» ({{< link src="https://tools.ietf.org/html/rfc733" target="_blank" rel="noopener noreferrer" class="external" >}}RFC733{{< /link >}}), а затем обновлённый и дополненный в 1982 году ({{< link src="https://tools.ietf.org/html/rfc822" target="_blank" rel="noopener noreferrer" class="external" >}}RFC822{{< /link >}}). В этих документах описывается модифицированная версия BNF нотации, которая была целесообразна для использования в {{< link src="https://en.wikipedia.org/wiki/ARPANET" target="_blank" rel="noopener noreferrer" class="external" >}}Arpanet{{< /link >}} в те годы. И в документах, которые использовали эту модифицированную версию нотации, она называлась «Augmented Backus-Naur Form».
 
-Сложно по одним лишь RFC судить когда всё это началось, потому что не ясно, в каких ещё работах и когда использовалась нотация ABNF. К этому времени, уже существовало множество модификаций BNF. Крупные проекты, связанные с разработкой языков программирования, протоколов сообщений и форматов всяческих данных просто делали себе очередную модифицированную версию. В дальнейшем, в Arpanet была предпринята попытка стандартизировать и систематизировать собственные изменения внесённые в оригинальную версию BNF. Результатом этой работы в 2008 году стал стандарт «Augmented BNF for Syntax Specifications: ABNF» ({{< link src="https://tools.ietf.org/html/rfc5234" target="_blank" rel="noopener noreferrer" >}}RFC5234{{< /link >}}).
+Сложно по одним лишь RFC судить когда всё это началось, потому что не ясно, в каких ещё работах и когда использовалась нотация ABNF. К этому времени, уже существовало множество модификаций BNF. Крупные проекты, связанные с разработкой языков программирования, протоколов сообщений и форматов всяческих данных просто делали себе очередную модифицированную версию. В дальнейшем, в Arpanet была предпринята попытка стандартизировать и систематизировать собственные изменения внесённые в оригинальную версию BNF. Результатом этой работы в 2008 году стал стандарт «Augmented BNF for Syntax Specifications: ABNF» ({{< link src="https://tools.ietf.org/html/rfc5234" target="_blank" rel="noopener noreferrer" class="external" >}}RFC5234{{< /link >}}).
 
 Однако следует заметить, что к этому времени ABNF нотация уже использовалась в Arpanet на протяжении десятков лет. EBNF, как мы помним, появился аж в 1996 году, что примерно на 20 лет позже первых фактов использования ABNF. Многие RFC имели в своём определении копию определения ABNF. Выглядело это так: «вот документ, в котором мы описываем некоторые понятия, но в начале документа язык, который мы тут будем использовать». И спустя годы появился _официальный_ документ, описывающий стандарт.
 
@@ -227,7 +227,7 @@ DIGIT =  %x30-39
 
 то, для указания двузначного числа, мы могли бы использовать `2DIGIT`.
 
-Для более полного понимания отличий ниже приводится определение даты и времени с использованием ABNF формы. Данный пример получен с {{< link src="https://tools.ietf.org/html/rfc5322#section-3.3" target="_blank" rel="noopener noreferrer" >}}RFC5322{{< /link >}}.
+Для более полного понимания отличий ниже приводится определение даты и времени с использованием ABNF формы. Данный пример получен с {{< link src="https://tools.ietf.org/html/rfc5322#section-3.3" target="_blank" rel="noopener noreferrer" class="external" >}}RFC5322{{< /link >}}.
 
 ```
 date-time       =   [ day-of-week "," ] date time [CFWS]

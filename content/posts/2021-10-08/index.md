@@ -91,7 +91,7 @@ grep PPid /proc/<PID>/status | awk '{print $2}'
 
 ## Python
 
-В Python существует модуль {{< link src="https://docs.python.org/3/library/multiprocessing.html" target="_blank" rel="noopener noreferrer" >}}multiprocessing{{< /link >}}, позволяющий запускать дополнительные процессы и распределять вычислительную нагрузку между процессами параллельно, {{< link src="https://docs.python.org/3/library/concurrent.futures.htmll" target="_blank" rel="noopener noreferrer" >}}concurrent.futures{{< /link >}} предоставляющий высокоуровневый интерфейс к параллелизации сопрограмм, а также {{< link src="https://docs.python.org/3/library/threading.html" target="_blank" rel="noopener noreferrer" >}}threading{{< /link >}}, предоставляющий высокоуровневый интерфейс к реализации параллельного выполнения кода с использованием многопоточности.
+В Python существует модуль {{< link src="https://docs.python.org/3/library/multiprocessing.html" target="_blank" rel="noopener noreferrer" class="external" >}}multiprocessing{{< /link >}}, позволяющий запускать дополнительные процессы и распределять вычислительную нагрузку между процессами параллельно, {{< link src="https://docs.python.org/3/library/concurrent.futures.htmll" target="_blank" rel="noopener noreferrer" class="external" >}}concurrent.futures{{< /link >}} предоставляющий высокоуровневый интерфейс к параллелизации сопрограмм, а также {{< link src="https://docs.python.org/3/library/threading.html" target="_blank" rel="noopener noreferrer" class="external" >}}threading{{< /link >}}, предоставляющий высокоуровневый интерфейс к реализации параллельного выполнения кода с использованием многопоточности.
 
 ## Литература
 
