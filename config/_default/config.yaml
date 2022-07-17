@@ -97,9 +97,6 @@ permalinks:
   poems: '/:section/:year/:month/:day/:slug'
   pages: '/:slug'
 
-social:
-  twitter: egreps
-
 markup:
   highlight:
     noClasses: false

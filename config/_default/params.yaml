@@ -44,6 +44,11 @@ seo:
   publisher: Serghei Iakovlev
   anonymizeIp: true
 
+social:
+  facebookAdminIds: []
+  facebookId: ''
+  twitter: egreps
+
 search:
   maxSummaryLength: 100
   languages:
