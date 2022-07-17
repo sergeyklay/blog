@@ -47,4 +47,5 @@ seo:
 search:
   maxSummaryLength: 100
   languages:
+    - en
     - ru
