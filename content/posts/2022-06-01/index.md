@@ -95,3 +95,9 @@ Permissions-Policy = "geolocation=(), gyroscope=(), magnetometer=()"
 - {{< link src="https://content-security-policy.com/" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}Content Security Policy Reference{{< /link >}}
 - {{< link src="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}MDN: Content Security Policy (CSP){{< /link >}}
 - {{< link src="https://securityheaders.com/" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}Security Headers{{< /link >}}
+- {{< link src="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}MDN: X-Frame-Options{{< /link >}}
+- {{< link src="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}MDN: X-XSS-Protection{{< /link >}}
+- {{< link src="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}MDN: X-Content-Type-Options{{< /link >}}
+- {{< link src="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}MDN: Referrer-Policy{{< /link >}}
+- {{< link src="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}MDN: Strict-Transport-Security{{< /link >}}
+- {{< link src="https://w3c.github.io/webappsec-permissions-policy/" hreflang="en" target="_blank" rel="noopener noreferrer" class="external" >}}Permissions Policy{{< /link >}}
