@@ -14,6 +14,9 @@ googleAnalytics: G-G3XCZPK59N
 disableKinds:
   - RSS
 
+taxonomies:
+  tag: tags
+
 outputs:
   home: [HTML, Atom, FEED, JSONFEED, JSON, MANIFEST, humanstxt]
   section: [HTML, Atom, FEED, JSONFEED]

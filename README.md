@@ -52,7 +52,7 @@ would be appreciated.
 
 [netlify-badge]: https://api.netlify.com/api/v1/badges/30629dcb-5a8d-4e2c-8089-f600b50e006b/deploy-status
 [deploy-status]: https://app.netlify.com/sites/serghei/deploys
-[blog]: https://serghei.blog/?utm_source=github.com&utm_campaign=banch_readme&utm_medium=smm
+[blog]: https://serghei.blog/?utm_source=github.com&utm_campaign=repo_readme&utm_medium=smm
 [hugo]: http://gohugo.io
 [issues]: https://github.com/sergeyklay/blog/issues
 [gpl]: https://choosealicense.com/licenses/gpl-3.0/
