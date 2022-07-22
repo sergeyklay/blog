@@ -89,7 +89,7 @@
     default-src 'self';
     script-src 'self' *.googletagmanager.com;
     style-src 'self' *.googleapis.com;
-    img-src 'self' data: *.google-analytics.com *.googletagmanager.com *.gstatic.com www.google.ge www.google.ru www.google.gr www.google.pl www.google.com.np www.google.co.in www.google.co.uk www.google.com.ua www.google.pt www.google.de www.google.com.ar www.google.co.uz;
+    img-src 'self' data: *.google-analytics.com *.googletagmanager.com *.gstatic.com *.doubleclick.net www.google.ge www.google.ru www.google.gr www.google.pl www.google.com.np www.google.co.in www.google.co.uk www.google.com.ua www.google.pt www.google.de www.google.com.ar www.google.co.uz;
     connect-src 'self' *.google-analytics.com *.analytics.google.com analytics.google.com *.googletagmanager.com *.doubleclick.net api.botpoison.com www.google.ru www.google.com www.google.pl www.google.com.ar;
     frame-src 'none';
     frame-ancestors 'none';
