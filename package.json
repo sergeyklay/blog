@@ -23,7 +23,7 @@
     "server": "HUGO_ENV=development hugo server --verbose --buildDrafts --buildFuture --ignoreCache --disableFastRender",
     "lint": "npm run lint:js && npm run lint:editorconfig",
     "lint:editorconfig": "editorconfig-checker",
-    "lint:js": "eslint assets/js/*.js",
+    "lint:js": "eslint assets/js/*",
     "vendor:js": "ncp node_modules/@botpoison/browser/dist/index.js static/js/vendor/botpoison/browser.min.js"
   },
   "dependencies": {
@@ -31,6 +31,6 @@
   },
   "devDependencies": {
     "editorconfig-checker": "^4.0.2",
-    "eslint": "^8.18.0"
+    "eslint": "^8.20.0"
   }
 }
