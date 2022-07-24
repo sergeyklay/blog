@@ -4,5 +4,5 @@ go 1.18
 
 require (
 	github.com/olivernn/lunr.js v2.3.9+incompatible // indirect
-	github.com/sergeyklay/gohugo-theme-ed v0.5.0 // indirect
+	github.com/sergeyklay/gohugo-theme-ed v0.5.1-0.20220724174432-2db1f9cea249 // indirect
 )
