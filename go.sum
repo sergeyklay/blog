@@ -1,4 +1,4 @@
 github.com/olivernn/lunr.js v2.3.9+incompatible h1:eH8iBnjlR4mwlYDdNuqy9PCNLjp2bEs6aoNnTSaccx0=
 github.com/olivernn/lunr.js v2.3.9+incompatible/go.mod h1:yEkQ1DUSMtNsn8n2CqvQXZd0ErWPEG8g9QRmblR+KS8=
-github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220724113500-a06423f7356a h1:82swnBRuRwLHce2Y/4NRItXE8Gj4Qvq7VC1RdnP+RVU=
-github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220724113500-a06423f7356a/go.mod h1:vsvjLX7LF3WlYHach2ZeJqgGtuWmJZU7UyVf5KNsJdM=
+github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220724120401-98803eeaea20 h1:adNRnHnehPukt3qDQS2A/38bdnHqOWgmVHXzyL1WOfg=
+github.com/sergeyklay/gohugo-theme-ed v0.4.1-0.20220724120401-98803eeaea20/go.mod h1:vsvjLX7LF3WlYHach2ZeJqgGtuWmJZU7UyVf5KNsJdM=
