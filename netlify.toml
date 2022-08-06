@@ -87,6 +87,7 @@
     # (including inline scripts and event-handling HTML attributes).
     Content-Security-Policy = """
     default-src 'self';
+    object-src 'none';
     script-src 'self' www.googletagmanager.com hypothes.is cdn.hypothes.is;
     style-src 'self' fonts.googleapis.com cdn.hypothes.is;
     img-src 'self' data: *.google-analytics.com www.googletagmanager.com www.gstatic.com stats.g.doubleclick.net www.google.ge www.google.ru www.google.gr www.google.pl www.google.com.np www.google.co.in www.google.co.uk www.google.com.ua www.google.pt www.google.de www.google.com.ar www.google.co.uz www.google.ca www.google.am;
