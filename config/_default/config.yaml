@@ -11,6 +11,12 @@ refLinksErrorLevel: WARNING
 
 googleAnalytics: G-G3XCZPK59N
 
+minify:
+  disableXML: true
+  tdewolff:
+    html:
+      keepQuotes: true
+
 disableKinds:
   - RSS
 
