@@ -1,6 +1,6 @@
 ---
 title: Быстрый взгляд на FFI в Python
-date: 2023-03-15T00:14:26+01:00
+date: 2023-03-15T01:57:14+01:00
 draft: false
 slug: bystryj-vzglyad-na-ffi-v-python
 featuredImage: 'ffi.jpeg'
