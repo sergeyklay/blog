@@ -250,7 +250,7 @@ for _ in range(1000000):
 ~~~
 
 ~~~
-$ /usr/bin/time nice python fibonacci-ffi.py
+$ /usr/bin/time nice python fibonacci.py
        29.66 real        29.52 user         0.06 sys
 ~~~
 
@@ -288,7 +288,7 @@ for _ in range(1000000):
 Результат выполнения:
 
 ~~~
-$ /usr/bin/time nice python fibonacci.py
+$ /usr/bin/time nice python fibonacci-ffi.py
         1.09 real         1.01 user         0.01 sys
 ~~~
 
