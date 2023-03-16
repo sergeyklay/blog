@@ -315,9 +315,9 @@ FFI предоставляет возможность использовать �
 ## Ссылки
 
 *   Примеры использования FFI на различных языках: https://github.com/YOU54F/hello_ffi/tree/killercoda
-*   `libffi` --- A Portable Foreign Function Interface Library: http://sourceware.org/libffi/
-*   Oracle. Java Native Interface Specification Contents: https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/jniTOC.html
-*   JSNI --- JavaScript Native Interface: https://www.gwtproject.org/doc/latest/DevGuideCodingBasicsJSNI.html
+*   A Portable Foreign Function Interface Library: http://sourceware.org/libffi/
+*   Oracle Java Native Interface Specification: https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/jniTOC.html
+*   JSNI. JavaScript Native Interface: https://www.gwtproject.org/doc/latest/DevGuideCodingBasicsJSNI.html
 *   Common Foreign Function Interface, for Common Lisp: https://cffi.common-lisp.dev
-*   `cffi` --- Python CFFI: https://cffi.readthedocs.io/en/latest/
-*   `ctypes` --- A foreign function library for Python: https://docs.python.org/3/library/ctypes.html
+*   Python CFFI: https://cffi.readthedocs.io/en/latest/
+*   A foreign function library for Python: https://docs.python.org/3/library/ctypes.html
