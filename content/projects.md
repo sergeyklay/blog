@@ -1,6 +1,5 @@
 ---
 title: Проекты
-pageTitle: Проекты над которыми я работаю
 semanticType: projects
 ---
 
@@ -8,6 +7,6 @@ semanticType: projects
 
 ## `airslate`
 
-**Описание:** HTTP-клиент на языке Python, который была разработан для быстрой и простой реализации [airSlate](https://www.airslate.com/) REST API. Проект предлагает простой и элегантный способ взаимодействия с ресурсами airSlate API в ваших приложениях на Python.
-**GitHub:** https://github.com/airslate-oss/python-airslate
-**Лицензия:** Apache 2.0
+- **Описание:** HTTP-клиент на языке Python, который была разработан для быстрой и простой реализации [airSlate](https://www.airslate.com/) REST API. Проект предлагает простой и элегантный способ взаимодействия с ресурсами airSlate API в ваших приложениях на Python.
+- **GitHub:** https://github.com/airslate-oss/python-airslate
+- **Лицензия:** Apache 2.0
