@@ -28,3 +28,11 @@ HTTP-клиент на языке Python, который была разрабо
 - **Язык:** Python
 - **GitHub:** https://github.com/sergeyklay/gstore
 - **Лицензия:** GPL-3.0
+
+## `ed`
+
+Тема для [Hugo](http://gohugo.io/), разработанная для редакторов текста на основе принципов [минимальных вычислений](http://go-dh.github.io/mincomp/), с акцентом на читаемости, устойчивости, простоте и гибкости. Тема была адаптирована и дополнена новой функциональностью из темы [Jekyll](https://jekyllrb.com/) [Ed](https://github.com/minicomp/ed), созданной [Alex Gil](https://twitter.com/elotroalex).
+
+- **Язык:** HTML, CSS, JavaScript
+- **GitHub:** https://github.com/sergeyklay/gohugo-theme-ed
+- **Лицензия:** MIT
