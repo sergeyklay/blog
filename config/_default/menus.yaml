@@ -11,10 +11,14 @@ main:
     name: Обо мне
     url: /about.html
     weight: 2
+  - identifier: projects
+    name: Проекты
+    url: /projects.html
+    weight: 3
   - identifier: search
     name: Поиск
     url: /search.html
-    weight: 3
+    weight: 4
   - identifier: github
     name: GitHub профиль
     url: 'https://github.com/sergeyklay/'
