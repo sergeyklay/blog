@@ -165,24 +165,6 @@
   force = false
 
 [[redirects]]
-  from = '/pages/about.html'
-  to = '/about.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/page/about.html'
-  to = '/about.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/static/serghei.asc'
-  to = '/serghei.asc'
-  status = 301
-  force = false
-
-[[redirects]]
   from = '/post/2021/9/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
   to = '/posts/2021/09/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
   status = 301
