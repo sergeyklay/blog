@@ -15,3 +15,5 @@ https://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomosh
 http://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify       https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301
 https://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify.html https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301
 http://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify.html  https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301
+
+/test /index.html 301
