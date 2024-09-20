@@ -146,148 +146,148 @@
     # ASCII character encoding.
     Content-Type = 'text/plain; charset=us-ascii'
 
-[[redirects]]
-  from = '/posts'
-  to = '/posts.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/feeds/rss/posts.xml'
-  to = '/feeds/feed.rss.xml'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/feeds/atom/posts.xml'
-  to = '/feeds/feed.atom.xml'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2021/9/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
-  to = '/posts/2021/09/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2021/10/8/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
-  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2021/10/8/opisanie-potoka.html'
-  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2021/10/8/opisanie-processa.html'
-  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/%D1%8F%D0%B7%D1%8B%D0%BA-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F'
-  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2019/03/19/yazyk-yazykov-chast-pervaya.html'
-  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2019/3/19/yazyk-yazykov-chast-pervaya.html'
-  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/%D1%8F%D0%B7%D1%8B%D0%BA-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%B2%D1%82%D0%BE%D1%80%D0%B0%D1%8F'
-  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
-  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2019/6/28/yazyk-yazykov-chast-vtoraya.html'
-  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/post/2021/4/14/shpargalka-po-osnovnym-komandam-gpg.html'
-  to = '/posts/2021/04/14/shpargalka-po-osnovnym-komandam-gpg.html'
-  status = 301
-  force = false
-
-# Tags redirection
-
-[[redirects]]
-  from = '/posts/tagged/celery'
-  to = '/tags/celery.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/gpg'
-  to = '/tags/gpg.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/python'
-  to = '/tags/python.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/bnf'
-  to = '/tags/bnf.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/parsing'
-  to = '/tags/parsing.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/grammars'
-  to = '/tags/grammar.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/cheatsheet'
-  to = '/tags/cheatsheet.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/system-programming'
-  to = '/tags/system-programming.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/threading'
-  to = '/tags/threading.html'
-  status = 301
-  force = false
-
-[[redirects]]
-  from = '/posts/tagged/posix'
-  to = '/tags/posix.html'
-  status = 301
-  force = false
+#[[redirects]]
+#  from = '/posts'
+#  to = '/posts.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/feeds/rss/posts.xml'
+#  to = '/feeds/feed.rss.xml'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/feeds/atom/posts.xml'
+#  to = '/feeds/feed.atom.xml'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2021/9/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
+#  to = '/posts/2021/09/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2021/10/8/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
+#  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2021/10/8/opisanie-potoka.html'
+#  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2021/10/8/opisanie-processa.html'
+#  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/%D1%8F%D0%B7%D1%8B%D0%BA-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F'
+#  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+#  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2019/3/19/yazyk-yazykov-chast-pervaya.html'
+#  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/%D1%8F%D0%B7%D1%8B%D0%BA-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%B2%D1%82%D0%BE%D1%80%D0%B0%D1%8F'
+#  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+#  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2019/6/28/yazyk-yazykov-chast-vtoraya.html'
+#  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/post/2021/4/14/shpargalka-po-osnovnym-komandam-gpg.html'
+#  to = '/posts/2021/04/14/shpargalka-po-osnovnym-komandam-gpg.html'
+#  status = 301
+#  force = false
+#
+## Tags redirection
+#
+#[[redirects]]
+#  from = '/posts/tagged/celery'
+#  to = '/tags/celery.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/gpg'
+#  to = '/tags/gpg.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/python'
+#  to = '/tags/python.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/bnf'
+#  to = '/tags/bnf.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/parsing'
+#  to = '/tags/parsing.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/grammars'
+#  to = '/tags/grammar.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/cheatsheet'
+#  to = '/tags/cheatsheet.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/system-programming'
+#  to = '/tags/system-programming.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/threading'
+#  to = '/tags/threading.html'
+#  status = 301
+#  force = false
+#
+#[[redirects]]
+#  from = '/posts/tagged/posix'
+#  to = '/tags/posix.html'
+#  status = 301
+#  force = false
