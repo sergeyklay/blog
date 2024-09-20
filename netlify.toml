@@ -18,7 +18,7 @@
 # here but we recommend using the Netlify UI for sensitive
 # values to keep them out of your source repository.
 [context.production]
-  command = 'hugo --baseURL ${URL} --minify'
+  command = 'hugo --baseURL ${URL} --minify && cp _redirects public/'
 
 [context.production.environment]
   HUGO_ENV = 'production'
