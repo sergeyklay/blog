@@ -1,19 +1,19 @@
-https://serghei.blog/pages/about.html    https://blog.serghei.pl/about/    301
-http://serghei.blog/pages/about.html     https://blog.serghei.pl/about/    301
-https://serghei.blog/about.html          https://blog.serghei.pl/about/    301
-http://serghei.blog/about.html           https://blog.serghei.pl/about/    301
-https://serghei.blog/about               https://blog.serghei.pl/about/    301
-http://serghei.blog/about                https://blog.serghei.pl/about/    301
+https://serghei.blog/pages/about.html    https://blog.serghei.pl/about/    301!
+http://serghei.blog/pages/about.html     https://blog.serghei.pl/about/    301!
+https://serghei.blog/about.html          https://blog.serghei.pl/about/    301!
+http://serghei.blog/about.html           https://blog.serghei.pl/about/    301!
+https://serghei.blog/about               https://blog.serghei.pl/about/    301!
+http://serghei.blog/about                https://blog.serghei.pl/about/    301!
 
-https://serghei.blog/static/serghei.asc  https://serghei.pl/serghei.asc    301
-http://serghei.blog/static/serghei.asc   https://serghei.pl/serghei.asc    301
-https://serghei.blog/serghei.asc         https://serghei.pl/serghei.asc    301
-http://serghei.blog/serghei.asc          https://serghei.pl/serghei.asc    301
+https://serghei.blog/static/serghei.asc  https://serghei.pl/serghei.asc    301!
+http://serghei.blog/static/serghei.asc   https://serghei.pl/serghei.asc    301!
+https://serghei.blog/serghei.asc         https://serghei.pl/serghei.asc    301!
+http://serghei.blog/serghei.asc          https://serghei.pl/serghei.asc    301!
 
 # pages
-https://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify      https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301
-http://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify       https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301
-https://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify.html https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301
-http://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify.html  https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301
+https://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify      https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301!
+http://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify       https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301!
+https://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify.html https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301!
+http://serghei.blog/posts/2022/06/01/nastrojka-zagolovkov-bezopasnosti-s-pomoshchyu-netlify.html  https://blog.serghei.pl/posts/configuring-security-headers-with-netlify/ 301!
 
 /test /index.html 301
