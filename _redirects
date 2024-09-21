@@ -12,6 +12,11 @@ http://serghei.blog/projects             https://github.com/sergeyklay?tab=repos
 https://serghei.blog/projects.html       https://github.com/sergeyklay?tab=repositories&q=&type=source&language=&sort=stargazers    301!
 http://serghei.blog/projects.html        https://github.com/sergeyklay?tab=repositories&q=&type=source&language=&sort=stargazers    301!
 
+https://serghei.blog/posts               https://blog.serghei.pl/posts/    301!
+https://serghei.blog/post                https://blog.serghei.pl/posts/    301!
+https://serghei.blog/posts.html          https://blog.serghei.pl/posts/    301!
+http://serghei.blog/posts.html           https://blog.serghei.pl/posts/    301!
+
 # public key
 
 https://serghei.blog/static/serghei.asc  https://serghei.pl/serghei.asc    301!

@@ -147,12 +147,6 @@
     Content-Type = 'text/plain; charset=us-ascii'
 
 #[[redirects]]
-#  from = '/posts'
-#  to = '/posts.html'
-#  status = 301
-#  force = false
-#
-#[[redirects]]
 #  from = '/feeds/rss/posts.xml'
 #  to = '/feeds/feed.rss.xml'
 #  status = 301
