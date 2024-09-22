@@ -17,6 +17,11 @@ https://serghei.blog/post                https://blog.serghei.pl/posts/    301!
 https://serghei.blog/posts.html          https://blog.serghei.pl/posts/    301!
 http://serghei.blog/posts.html           https://blog.serghei.pl/posts/    301!
 
+https://serghei.blog/contact             https://blog.serghei.pl/about/    301!
+http://serghei.blog/contact              https://blog.serghei.pl/about/    301!
+https://serghei.blog/contact.html        https://blog.serghei.pl/about/    301!
+http://serghei.blog/contact.html         https://blog.serghei.pl/about/    301!
+
 # public key
 
 https://serghei.blog/static/serghei.asc  https://serghei.pl/serghei.asc    301!
