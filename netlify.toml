@@ -159,12 +159,6 @@
 #  force = false
 #
 #[[redirects]]
-#  from = '/post/2021/9/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
-#  to = '/posts/2021/09/14/zapusk-celery-zadachi-posle-vypolneniya-vseh-zadach.html'
-#  status = 301
-#  force = false
-#
-#[[redirects]]
 #  from = '/post/2021/10/8/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
 #  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
 #  status = 301
@@ -225,19 +219,6 @@
 #  force = false
 #
 ## Tags redirection
-#
-#[[redirects]]
-#  from = '/posts/tagged/celery'
-#  to = '/tags/celery.html'
-#  status = 301
-#  force = false
-#
-#[[redirects]]
-#  from = '/posts/tagged/gpg'
-#  to = '/tags/gpg.html'
-#  status = 301
-#  force = false
-#
 #[[redirects]]
 #  from = '/posts/tagged/python'
 #  to = '/tags/python.html'
@@ -261,13 +242,6 @@
 #  to = '/tags/grammar.html'
 #  status = 301
 #  force = false
-#
-#[[redirects]]
-#  from = '/posts/tagged/cheatsheet'
-#  to = '/tags/cheatsheet.html'
-#  status = 301
-#  force = false
-#
 #[[redirects]]
 #  from = '/posts/tagged/system-programming'
 #  to = '/tags/system-programming.html'
