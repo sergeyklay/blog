@@ -211,13 +211,7 @@
 #  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
 #  status = 301
 #  force = false
-#
-#[[redirects]]
-#  from = '/post/2021/4/14/shpargalka-po-osnovnym-komandam-gpg.html'
-#  to = '/posts/2021/04/14/shpargalka-po-osnovnym-komandam-gpg.html'
-#  status = 301
-#  force = false
-#
+
 ## Tags redirection
 #[[redirects]]
 #  from = '/posts/tagged/python'
