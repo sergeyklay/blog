@@ -9,8 +9,6 @@ enableRobotsTXT: true
 
 refLinksErrorLevel: WARNING
 
-googleAnalytics: G-G3XCZPK59N
-
 minify:
   disableXML: true
   tdewolff:
@@ -24,8 +22,8 @@ taxonomies:
   tag: tags
 
 outputs:
-  home: [HTML, Atom, FEED, JSONFEED, JSON, MANIFEST, humanstxt]
-  section: [HTML, Atom, FEED, JSONFEED]
+  home: [HTML, Atom, JSONFEED, JSON, MANIFEST, humanstxt]
+  section: [HTML, Atom, JSONFEED]
   page: [HTML]
   taxonomy: [HTML]
   term: [HTML]
@@ -35,15 +33,6 @@ outputFormats:
     name: Atom
     mediaType: text/xml
     baseName: feeds/feed.atom
-    rel: alternate
-    isPlainText: false
-    isHTML: false
-    noUgly: true
-    permalinkable: false
-  FEED:
-    name: Feed
-    mediaType: text/xml
-    baseName: feeds/feed.rss
     rel: alternate
     isPlainText: false
     isHTML: false
