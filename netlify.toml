@@ -175,25 +175,7 @@
 #  to = '/posts/2021/10/08/processy-potoki-i-konkurentnoe-vypolnenie-programm.html'
 #  status = 301
 #  force = false
-#
-#[[redirects]]
-#  from = '/post/%D1%8F%D0%B7%D1%8B%D0%BA-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F'
-#  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
-#  status = 301
-#  force = false
-#
-#[[redirects]]
-#  from = '/post/2019/03/19/yazyk-yazykov-chast-pervaya.html'
-#  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
-#  status = 301
-#  force = false
-#
-#[[redirects]]
-#  from = '/post/2019/3/19/yazyk-yazykov-chast-pervaya.html'
-#  to = '/posts/2019/03/19/yazyk-yazykov-chast-pervaya.html'
-#  status = 301
-#  force = false
-#
+
 #[[redirects]]
 #  from = '/post/%D1%8F%D0%B7%D1%8B%D0%BA-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%B2%D1%82%D0%BE%D1%80%D0%B0%D1%8F'
 #  to = '/posts/2019/06/28/yazyk-yazykov-chast-vtoraya.html'
