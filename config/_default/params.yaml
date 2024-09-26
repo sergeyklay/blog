@@ -20,9 +20,6 @@ footer: >
 
 mainSections:
   - posts
-  - dramas
-  - narratives
-  - poems
 
 dateformat: ':date_long'
 dateFormatToc: 2006.01.02
@@ -42,7 +39,6 @@ assets:
 
 seo:
   publisher: Serghei Iakovlev
-  anonymizeIp: true
 
 social:
   facebookAdminIds: []
@@ -52,5 +48,4 @@ social:
 search:
   maxSummaryLength: 100
   languages:
-    - en
     - ru
